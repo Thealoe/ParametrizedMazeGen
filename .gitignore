@@ -4,8 +4,10 @@ __pycache__/
 *$py.class
 
 # Project
-
 /maze-env/*
+
+# Mac OSX
+.DS_Store
 
 # C extensions
 *.so
