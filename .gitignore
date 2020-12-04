@@ -5,6 +5,7 @@ __pycache__/
 
 # Project
 /maze-env/*
+settings.json
 
 # Mac OSX
 .DS_Store
