@@ -1,111 +1,111 @@
 {
     "0" : {
-        "type": "dead",
+        "rate": "dead",
         "l" : "w",
         "u" : "w",
         "r" : "w",
         "d" : "w"
     },
     "1" : {
-        "type": "high-end",
+        "rate": "high-end",
         "l" : "w",
         "u" : "p",
         "r" : "w",
         "d" : "w"
     },
     "2" : {
-        "type": "high-end",
+        "rate": "high-end",
         "l" : "w",
         "u" : "w",
         "r" : "p",
         "d" : "w"
     },
     "3" : {
-        "type": "high-end",
+        "rate": "high-end",
         "l" : "w",
         "u" : "w",
         "r" : "w",
         "d" : "p"
     },
     "4" : {
-        "type": "high-end",
+        "rate": "high-end",
         "l" : "p",
         "u" : "w",
         "r" : "w",
         "d" : "w"
     },
     "5" : {
-        "type": "turn",
+        "rate": "turn",
         "l" : "p",
         "u" : "p",
         "r" : "w",
         "d" : "w"
     },
     "6" : {
-        "type": "turn",
+        "rate": "turn",
         "l" : "w",
         "u" : "p",
         "r" : "p",
         "d" : "w"
     },
     "7" : {
-        "type": "turn",
+        "rate": "turn",
         "l" : "w",
         "u" : "w",
         "r" : "p",
         "d" : "p"
     },
     "8" : {
-        "type": "turn",
+        "rate": "turn",
         "l" : "p",
         "u" : "w",
         "r" : "w",
         "d" : "p"
     },
     "9" : {
-        "type": "straight",
+        "rate": "straight",
         "l" : "p",
         "u" : "w",
         "r" : "p",
         "d" : "w"
     },
     "10" : {
-        "type": "straight",
+        "rate": "straight",
         "l" : "w",
         "u" : "p",
         "r" : "w",
         "d" : "p"
     },
     "11" : {
-        "type": "decision",
+        "rate": "decision",
         "l" : "p",
         "u" : "p",
         "r" : "p",
         "d" : "w"
     },
     "12" : {
-        "type": "decision",
+        "rate": "decision",
         "l" : "p",
         "u" : "w",
         "r" : "p",
         "d" : "p"
     },
     "13" : {
-        "type": "decision",
+        "rate": "decision",
         "l" : "p",
         "u" : "p",
         "r" : "w",
         "d" : "p"
     },
     "14" : {
-        "type": "decision",
+        "rate": "decision",
         "l" : "w",
         "u" : "p",
         "r" : "p",
         "d" : "p"
     },
     "15" : {
-        "type": "decision",
+        "rate": "decision",
         "l" : "p",
         "u" : "p",
         "r" : "p",

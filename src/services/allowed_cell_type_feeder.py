@@ -3,7 +3,7 @@ from services.allowed_cell_type import AllowedCellType
 
 class AllowedCellTypeFeeder():
     def __init__(self):
-        with open('src/data/allowed_cell_types.json', 'r') as f:
+        with open('src/data/cell_types.json', 'r') as f:
             json_object = json.load(f)
         self.cell_types = json_object
 

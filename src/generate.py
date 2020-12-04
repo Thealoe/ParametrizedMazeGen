@@ -1,13 +1,12 @@
 import json
 
 from services.maze_parameters import MazeParameters
-from services.allowed_cell_type_feeder import AllowedCellTypeFeeder
 from services.maze_grid import MazeGrid
-
-cell_type_feeder = AllowedCellTypeFeeder()
+from services.cell_feeder import CellFeeder
 
 def generate(parameters):
-    maze_grid = MazeGrid(parameters.get_rectangle_row_count(), parameters.get_rectangle_column_count())
+    cell_feeder = CellFeeder()
+    maze_grid = MazeGrid(cell_feeder, parameters.get_rectangle_row_count(), parameters.get_rectangle_column_count())
 
 # Entry point
 
