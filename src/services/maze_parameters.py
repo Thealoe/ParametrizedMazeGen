@@ -5,7 +5,7 @@ class MazeParameters():
     def get_rectangle_row_count(self):
         return self.parameters['RGen']['RC']
 
-    def get_rectangle_columns_count(self):
+    def get_rectangle_column_count(self):
         return self.parameters['RGen']['CC']
 
     def get_solution_path_straight_rate(self):
