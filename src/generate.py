@@ -3,10 +3,14 @@ import json
 from services.maze_parameters import MazeParameters
 from services.maze_grid import MazeGrid
 from services.cell_feeder import CellFeeder
+from services.maze_grid_printer import MazeGridPrinter
 
 def generate(parameters):
     cell_feeder = CellFeeder()
     maze_grid = MazeGrid(cell_feeder, parameters.get_rectangle_row_count(), parameters.get_rectangle_column_count())
+
+    maze_grid_printer = MazeGridPrinter()
+    maze_grid_printer.print_grid_to_console(maze_grid)
 
 # Entry point
 
