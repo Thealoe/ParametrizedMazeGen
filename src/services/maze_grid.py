@@ -103,8 +103,14 @@ class MazeGrid():
 
     def __get_cell_type(self, rate_dict, available_type_integers):
         res = []
+        attempts = 0
         while not res:
+            if attempts == 10000:
+                res = available_type_integers
+                continue
             res = self.__get_cell_type_internal(rate_dict, available_type_integers)
+            attempts += 1
+        print(res)
         return random.choice(res)
 
     def __get_cell_type_internal(self, rate_dict, available_type_integers):
