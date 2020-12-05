@@ -123,7 +123,7 @@ class MazeGrid():
                 cell = self.at(x, y)
                 if (cell.visited == False):
                     cell_types = self.__get_next_possible_cell_types(cell)
-                    cell_type = int(self.__get_cell_type(rate_dict, cell_types))
+                    cell_type = int(self.__get_weighted_cell_type(rate_dict, cell_types))
                     cell.info.type = cell_type
 
                     # print("=========================================================")
@@ -171,18 +171,19 @@ class MazeGrid():
             w_i += 1
         return res
 
-    def __get_cell_type(self, rate_dict, available_type_integers):
+    # Return a cell type based on available type and a rate random decision based on weights
+    def __get_weighted_cell_type(self, rate_dict, available_type_integers):
         res = []
         attempts = 0
         while not res:
             if attempts == 10000:
                 res = available_type_integers
                 continue
-            res = self.__get_cell_type_internal(rate_dict, available_type_integers)
+            res = self.__get_weighted_cell_type_internal(rate_dict, available_type_integers)
             attempts += 1
         return random.choice(res)
 
-    def __get_cell_type_internal(self, rate_dict, available_type_integers):
+    def __get_weighted_cell_type_internal(self, rate_dict, available_type_integers):
         sorted_rate_dict = {k: v for k, v in sorted(rate_dict.items(), key=lambda item: item[1])}
         next_d = self.__next_decision(sorted_rate_dict)
         rate_types = self.cell_feeder.allowed_cell_type_feeder.get_allowed_by_rate_type(next_d)
