@@ -12,5 +12,15 @@ class Cell():
         self.up = None
         self.down = None
 
+        # Start and end
+        self.is_start = False
+        self.is_end = False
+
+    def set_start(self):
+        self.is_start = True
+
+    def set_end(self):
+        self.is_end = True
+
     def is_open(self):
         return not self.visited

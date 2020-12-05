@@ -7,7 +7,8 @@ class MazeGrid():
         self.row_count = row_count
         self.col_count = col_count
         self.cell_feeder = cell_feeder
-        self.rates = ['e', 's', 't', 'd']
+        self.mb_rates = ['e', 's', 't', 'd']
+        self.sp_rates = ['s', 't', 'd']
 
         print("Row count: {}".format(self.row_count))
         print("Col count: {}".format(self.col_count))
@@ -43,8 +44,18 @@ class MazeGrid():
         return grid
 
     def generate_solution_path(self, straight, turn, decision, start_point, end_point):
+        # Get and define start point
         start_cell = self.at(start_point[0], start_point[1])
+        start_cell.set_start()
+
+        # Get and define end point
         end_cell = self.at(end_point[0], end_point[1])
+        end_cell.set_end()
+
+        # Build rate dictionary
+        weights = np.array([straight, turn, decision])
+        weights = np.array(weights / np.sum(weights))
+        rate_dict = self.__build_weight_dict(weights, self.sp_rates)
 
         print("====================================")
         print("Start cell: {} (x) - {} (y)".format(start_cell.x, start_cell.y))
@@ -52,14 +63,19 @@ class MazeGrid():
         print("====================================")
 
         current_cell = start_cell
-        while(current_cell.x != end_cell.x or current_cell.y != end_cell.y):
+        while True:
             next_cell = self.__get_manhattan_next_cell(current_cell, end_cell)
             print("====================================")
             print("Current cell: {} (x) - {} (y)".format(current_cell.x, current_cell.y))
             print("Next cell: {} (x) - {} (y)".format(next_cell.x, next_cell.y))
             print("====================================")
-            current_cell.info.type = 15 # TODO: Must be generated based on rates
+            current_cell.info.type = self.__get_next_cell_type(current_cell, rate_dict)
             current_cell.visited = True
+
+            # Simulate do-while
+            if (current_cell.x == end_cell.x and current_cell.y == end_cell.y):
+                break
+
             current_cell = next_cell
 
     def __get_manhattan_next_cell(self, current, goal):
@@ -96,37 +112,16 @@ class MazeGrid():
         pass
 
     def generate_sequential_body(self, end, straight, turn, decision):
+        # Build rate dictionary
         weights = np.array([end, straight, turn, decision])
         weights = np.array(weights / np.sum(weights))
-        rate_dict = self.__build_weight_dict(weights)
+        rate_dict = self.__build_weight_dict(weights, self.mb_rates)
 
         for x in range(0, self.row_count):
             for y in range(0, self.col_count):
                 cell = self.at(x, y)
                 if (cell.visited == False):
-                    available_type_integers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
-
-                    # Left
-                    left_of_cell = cell.left if isinstance(cell.left, DeadCell) else available_type_integers if cell.left.visited == False else cell.left.info.allowed.right
-                    a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("l", left_of_cell)
-                    if a: available_type_integers = self.__get_intersect_values_list(available_type_integers, a)
-
-                    # Up
-                    up_of_cell = cell.up if isinstance(cell.up, DeadCell) else available_type_integers if cell.left.visited == False else cell.up.info.allowed.down
-                    a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("u", up_of_cell)
-                    if a: available_type_integers = self.__get_intersect_values_list(available_type_integers, a)
-
-                    # Right
-                    right_of_cell = cell.right if isinstance(cell.right, DeadCell) else available_type_integers if cell.left.visited == False else cell.right.info.allowed.left
-                    a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("r", right_of_cell)
-                    if a: available_type_integers = self.__get_intersect_values_list(available_type_integers, a)
-
-                    # Down
-                    down_of_cell = cell.down if isinstance(cell.down, DeadCell) else available_type_integers if cell.left.visited == False else cell.down.info.allowed.up
-                    a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("d", down_of_cell)
-                    if a: available_type_integers = self.__get_intersect_values_list(available_type_integers, a)
-
-                    cell_type = int(self.__get_cell_type(rate_dict, available_type_integers))
+                    cell_type = self.__get_next_cell_type(cell, rate_dict)
                     cell.info.type = cell_type
 
                     # print("=========================================================")
@@ -140,10 +135,36 @@ class MazeGrid():
                     # print("Allowed type list: {}".format(available_type_integers))
                     # print("=========================================================")
 
-    def __build_weight_dict(self, w):
+    def __get_next_cell_type(self, cell, rate_dict):
+        available_types = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
+
+        # Left
+        left_of_cell = cell.left if isinstance(cell.left, DeadCell) else available_types if cell.left.visited == False else cell.left.info.allowed.right
+        a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("l", left_of_cell)
+        if a: available_types = self.__get_intersect_values_list(available_types, a)
+
+        # Up
+        up_of_cell = cell.up if isinstance(cell.up, DeadCell) else available_types if cell.left.visited == False else cell.up.info.allowed.down
+        a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("u", up_of_cell)
+        if a: available_types = self.__get_intersect_values_list(available_types, a)
+
+        # Right
+        right_of_cell = cell.right if isinstance(cell.right, DeadCell) else available_types if cell.left.visited == False else cell.right.info.allowed.left
+        a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("r", right_of_cell)
+        if a: available_types = self.__get_intersect_values_list(available_types, a)
+
+        # Down
+        down_of_cell = cell.down if isinstance(cell.down, DeadCell) else available_types if cell.left.visited == False else cell.down.info.allowed.up
+        a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("d", down_of_cell)
+        if a: available_types = self.__get_intersect_values_list(available_types, a)
+
+        cell_type = int(self.__get_cell_type(rate_dict, available_types))
+        return cell_type
+
+    def __build_weight_dict(self, w, all_rates):
         res = {}
         w_i = 0
-        for i in self.rates:
+        for i in all_rates:
             res[i] = w[w_i]
             w_i += 1
         return res
