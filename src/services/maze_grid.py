@@ -69,7 +69,8 @@ class MazeGrid():
             print("Current cell: {} (x) - {} (y)".format(current_cell.x, current_cell.y))
             print("Next cell: {} (x) - {} (y)".format(next_cell.x, next_cell.y))
             print("====================================")
-            current_cell.info.type = self.__get_next_cell_type(current_cell, rate_dict)
+            cell_types = self.__get_next_possible_cell_types(current_cell)
+            current_cell.info.type = int(random.choice(cell_types)) # TODO: It needs to be a path.. (not w/p toggle)
             current_cell.visited = True
 
             # Simulate do-while
@@ -121,7 +122,8 @@ class MazeGrid():
             for y in range(0, self.col_count):
                 cell = self.at(x, y)
                 if (cell.visited == False):
-                    cell_type = self.__get_next_cell_type(cell, rate_dict)
+                    cell_types = self.__get_next_possible_cell_types(cell)
+                    cell_type = int(self.__get_cell_type(rate_dict, cell_types))
                     cell.info.type = cell_type
 
                     # print("=========================================================")
@@ -135,7 +137,8 @@ class MazeGrid():
                     # print("Allowed type list: {}".format(available_type_integers))
                     # print("=========================================================")
 
-    def __get_next_cell_type(self, cell, rate_dict):
+    # Gives all the cell types possibilities of a given cell validating with neighbor cells
+    def __get_next_possible_cell_types(self, cell):
         available_types = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
 
         # Left
@@ -158,8 +161,7 @@ class MazeGrid():
         a = self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("d", down_of_cell)
         if a: available_types = self.__get_intersect_values_list(available_types, a)
 
-        cell_type = int(self.__get_cell_type(rate_dict, available_types))
-        return cell_type
+        return available_types
 
     def __build_weight_dict(self, w, all_rates):
         res = {}
