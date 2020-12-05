@@ -16,7 +16,7 @@ class AllowedCellTypeFeeder():
 
     def get_allowed_type(self, side, allowed_tile_of_the_side):
         if isinstance(allowed_tile_of_the_side, DeadCell):
-            return None
+            allowed_tile_of_the_side = "w"
 
         ret = []
 
@@ -25,3 +25,7 @@ class AllowedCellTypeFeeder():
                 ret.append(i)
 
         return ret
+
+    def get_allowed_by_rate_type(self, rate_type):
+        res = self.type_rules[rate_type]
+        return res

@@ -1,3 +1,3 @@
 class DeadCell():
     def __init__(self):
-        pass
+        self.visited = False
