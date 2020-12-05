@@ -11,3 +11,6 @@ class Cell():
         self.right = None
         self.up = None
         self.down = None
+
+    def is_open(self):
+        return not self.visited

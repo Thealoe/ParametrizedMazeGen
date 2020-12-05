@@ -7,10 +7,13 @@ from services.maze_grid_printer import MazeGridPrinter
 
 def generate(parameters):
     cell_feeder = CellFeeder()
+    maze_grid_printer = MazeGridPrinter()
     maze_grid = MazeGrid(cell_feeder, parameters.get_rectangle_row_count(), parameters.get_rectangle_column_count())
 
     # Generate forced pattern
-    # TODO: Insert forced cell types
+    maze_grid.generate_forced_pattern()
+
+    maze_grid_printer.print_grid_to_console(maze_grid)
 
     # Generate solution path
     sp_sr = parameters.get_solution_path_straight_rate()
@@ -27,7 +30,6 @@ def generate(parameters):
     mb_dr = parameters.get_maze_body_decision_rate()
     maze_grid.generate_sequential_body(mb_er, mb_sr, mb_tr, mb_dr)
 
-    maze_grid_printer = MazeGridPrinter()
     maze_grid_printer.print_grid_to_console(maze_grid)
 
 # Entry point

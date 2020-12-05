@@ -43,9 +43,56 @@ class MazeGrid():
         return grid
 
     def generate_solution_path(self, straight, turn, decision, start_point, end_point):
-        print(straight, turn, decision, start_point, end_point)
+        start_cell = self.at(start_point[0], start_point[1])
+        end_cell = self.at(end_point[0], end_point[1])
 
-    def generate_random_body(self):
+        print("====================================")
+        print("Start cell: {} (x) - {} (y)".format(start_cell.x, start_cell.y))
+        print("End cell: {} (x) - {} (y)".format(end_cell.x, end_cell.y))
+        print("====================================")
+
+        current_cell = start_cell
+        while(current_cell.x != end_cell.x or current_cell.y != end_cell.y):
+            next_cell = self.__get_manhattan_next_cell(current_cell, end_cell)
+            print("====================================")
+            print("Current cell: {} (x) - {} (y)".format(current_cell.x, current_cell.y))
+            print("Next cell: {} (x) - {} (y)".format(next_cell.x, next_cell.y))
+            print("====================================")
+            current_cell.info.type = 15 # TODO: Must be generated based on rates
+            current_cell.visited = True
+            current_cell = next_cell
+
+    def __get_manhattan_next_cell(self, current, goal):
+        distances = {}
+        if current.left.is_open(): distances[current.left] = abs(current.left.x - goal.x) + abs(current.left.y - goal.y)
+        if current.up.is_open(): distances[current.up] = abs(current.up.x - goal.x) + abs(current.up.y - goal.y)
+        if current.right.is_open(): distances[current.right] = abs(current.right.x - goal.x) + abs(current.right.y - goal.y)
+        if current.down.is_open(): distances[current.down] = abs(current.down.x - goal.x) + abs(current.down.y - goal.y)
+
+        # Shuffle in case of equality
+        l = list(distances.items())
+        random.shuffle(l)
+        distances = dict(l)
+
+        return min(distances, key=distances.get)
+
+    def generate_forced_pattern(self):
+        # TODO: Generated forced pattern based on params
+        # cell = self.grid[4][4]
+        # cell.info.type = 15
+        # cell.visited = True
+        # cell = self.grid[5][4]
+        # cell.info.type = 15
+        # cell.visited = True
+        # cell = self.grid[3][4]
+        # cell.info.type = 15
+        # cell.visited = True
+        # cell = self.grid[4][5]
+        # cell.info.type = 15
+        # cell.visited = True
+        # cell = self.grid[4][3]
+        # cell.info.type = 15
+        # cell.visited = True
         pass
 
     def generate_sequential_body(self, end, straight, turn, decision):
