@@ -1,8 +1,13 @@
+import random
+import numpy as np
+
+from services.dead_cell import DeadCell
 class MazeGrid():
     def __init__(self, cell_feeder, row_count, col_count):
         self.row_count = row_count
         self.col_count = col_count
         self.cell_feeder = cell_feeder
+        self.rates = ['e', 's', 't', 'd']
 
         print("Row count: {}".format(self.row_count))
         print("Col count: {}".format(self.col_count))
@@ -36,6 +41,56 @@ class MazeGrid():
                 # print("=========================================================")
 
         return grid
+
+    def random_generate_body(self):
+        pass
+
+    def sequential_generate_body(self, end, straight, turn, decision):
+        weights = np.array([straight, turn, decision])
+        weights = np.array(weights / np.sum(weights))
+
+        for x in range(0, self.row_count):
+            for y in range(0, self.col_count):
+                cell = self.at(x, y)
+                if (cell.visited == False):
+                    available_type_integers = []
+
+                    # Left
+                    next_cell_rate_type = self.next_decision(weights)
+                    left_of_cell = cell.left if isinstance(cell.left, DeadCell) else cell.left.info.allowed.right
+                    available_type_integers.append(self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("l", left_of_cell))
+
+                    # Up
+                    next_cell_rate_type = self.next_decision(weights)
+                    up_of_cell = cell.up if isinstance(cell.up, DeadCell) else cell.up.info.allowed.down
+                    available_type_integers.append(self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("u", up_of_cell))
+
+                    # Right
+                    next_cell_rate_type = self.next_decision(weights)
+                    right_of_cell = cell.right if isinstance(cell.right, DeadCell) else cell.right.info.allowed.left
+                    available_type_integers.append(self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("r", right_of_cell))
+
+                    # Down
+                    next_cell_rate_type = self.next_decision(weights)
+                    down_of_cell = cell.down if isinstance(cell.down, DeadCell) else cell.down.info.allowed.up
+                    available_type_integers.append(self.cell_feeder.allowed_cell_type_feeder.get_allowed_type("d", down_of_cell))
+
+                    # print("=========================================================")
+                    # print("Iteration --> x: {} | y: {} ".format(x, y))
+                    # print("Cell --> x: {} | y: {} ".format(cell.x, cell.y))
+                    # print("Cell.info.allowed.left --> type: {}".format(left_of_cell))
+                    # print("Cell.info.allowed.up --> type: {}".format(up_of_cell))
+                    # print("Cell.info.allowed.right --> type: {}".format(right_of_cell))
+                    # print("Cell.info.allowed.down --> type: {}".format(down_of_cell))
+                    # print("Allowed type list: {}".format(available_type_integers))
+                    # print("=========================================================")
+
+
+    def next_decision(self, w):
+        rand_float = random.random()
+        if rand_float <= w[0]: return self.rates[0]
+        if rand_float <= w[1]: return self.rates[2]
+        if rand_float <= w[2]: return self.rates[2]
 
     def at(self, x, y):
         return self.grid[x][y]

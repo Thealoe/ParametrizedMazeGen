@@ -10,8 +10,9 @@
 	},
 	"MBGen": {
 		"under_type" : "RMBGen",
-		"SR" : 0,
-		"TR" : 50,
-		"DR" : 20
+		"SR" : 25,
+		"TR" : 20,
+		"DR" : 50,
+		"ER" : 5
 	}
 }

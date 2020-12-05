@@ -3,6 +3,7 @@ from services.cell_info import CellInfo
 
 class Cell():
     def __init__(self, initial_type, rate_type, allowed_cell_types, x, y):
+        self.visited = False
         self.info = CellInfo(initial_type, rate_type, allowed_cell_types)
         self.x = x
         self.y = y

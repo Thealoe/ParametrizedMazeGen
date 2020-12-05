@@ -17,6 +17,9 @@ class MazeParameters():
     def get_solution_path_decision_rate(self):
         return self.parameters['SPGen']['DR']
 
+    def get_maze_body_end_rate(self):
+        return self.parameters['MBGen']['ER']
+
     def get_maze_body_straight_rate(self):
         return self.parameters['MBGen']['SR']
 
