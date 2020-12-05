@@ -20,9 +20,6 @@ class MazeGrid():
     def __build_start_grid(self):
         grid = [[self.cell_feeder.create_new_cell_at(0, x, y) for y in range(0, self.col_count)] for x in range(0, self.row_count)]
 
-        print("Initial grid row count: {}".format(len(grid)))
-        print("Initial grid col count: {}".format(len(grid[0])))
-
         # Attach all cells
         for x in range(0, self.row_count):
             for y in range(0, self.col_count):
@@ -45,10 +42,13 @@ class MazeGrid():
 
         return grid
 
-    def random_generate_body(self):
+    def generate_solution_path(self, straight, turn, decision, start_point, end_point):
+        print(straight, turn, decision, start_point, end_point)
+
+    def generate_random_body(self):
         pass
 
-    def sequential_generate_body(self, end, straight, turn, decision):
+    def generate_sequential_body(self, end, straight, turn, decision):
         weights = np.array([end, straight, turn, decision])
         weights = np.array(weights / np.sum(weights))
         rate_dict = self.__build_weight_dict(weights)
@@ -82,16 +82,16 @@ class MazeGrid():
                     cell_type = int(self.__get_cell_type(rate_dict, available_type_integers))
                     cell.info.type = cell_type
 
-                    print("=========================================================")
-                    print("Iteration --> x: {} | y: {} ".format(x, y))
-                    print("Cell --> x: {} | y: {} ".format(cell.x, cell.y))
-                    print("Cell.info.allowed.left --> type: {}".format(left_of_cell))
-                    print("Cell.info.allowed.up --> type: {}".format(up_of_cell))
-                    print("Cell.info.allowed.right --> type: {}".format(right_of_cell))
-                    print("Cell.info.allowed.down --> type: {}".format(down_of_cell))
-                    print("Weight dict: {}".format(rate_dict))
-                    print("Allowed type list: {}".format(available_type_integers))
-                    print("=========================================================")
+                    # print("=========================================================")
+                    # print("Iteration --> x: {} | y: {} ".format(x, y))
+                    # print("Cell --> x: {} | y: {} ".format(cell.x, cell.y))
+                    # print("Cell.info.allowed.left --> type: {}".format(left_of_cell))
+                    # print("Cell.info.allowed.up --> type: {}".format(up_of_cell))
+                    # print("Cell.info.allowed.right --> type: {}".format(right_of_cell))
+                    # print("Cell.info.allowed.down --> type: {}".format(down_of_cell))
+                    # print("Weight dict: {}".format(rate_dict))
+                    # print("Allowed type list: {}".format(available_type_integers))
+                    # print("=========================================================")
 
     def __build_weight_dict(self, w):
         res = {}
@@ -110,7 +110,6 @@ class MazeGrid():
                 continue
             res = self.__get_cell_type_internal(rate_dict, available_type_integers)
             attempts += 1
-        print(res)
         return random.choice(res)
 
     def __get_cell_type_internal(self, rate_dict, available_type_integers):
