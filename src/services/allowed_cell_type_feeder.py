@@ -5,8 +5,11 @@ from services.dead_cell import DeadCell
 class AllowedCellTypeFeeder():
     def __init__(self):
         with open('src/data/cell_types.json', 'r') as f:
-            json_object = json.load(f)
-        self.cell_types = json_object
+            ct = json.load(f)
+        self.cell_types = ct
+        with open('src/data/type_rules.json', 'r') as f:
+            tr = json.load(f)
+        self.type_rules = tr
 
     def get_type(self, cell_type):
         return AllowedCellType(self.cell_types[str(cell_type)])
