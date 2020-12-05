@@ -22,11 +22,11 @@ def generate(parameters):
     maze_grid.generate_solution_path(sp_sr, sp_tr, sp_dr, sp_sp, sp_ep)
 
     # Generate maze body
-    # mb_er = parameters.get_maze_body_end_rate()
-    # mb_sr = parameters.get_maze_body_straight_rate()
-    # mb_tr = parameters.get_maze_body_turn_rate()
-    # mb_dr = parameters.get_maze_body_decision_rate()
-    # maze_grid.generate_sequential_body(mb_er, mb_sr, mb_tr, mb_dr)
+    mb_er = parameters.get_maze_body_end_rate()
+    mb_sr = parameters.get_maze_body_straight_rate()
+    mb_tr = parameters.get_maze_body_turn_rate()
+    mb_dr = parameters.get_maze_body_decision_rate()
+    maze_grid.generate_sequential_body(mb_er, mb_sr, mb_tr, mb_dr)
 
     maze_grid_printer.print_grid_to_console(maze_grid)
 

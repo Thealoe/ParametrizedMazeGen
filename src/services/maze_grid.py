@@ -70,7 +70,7 @@ class MazeGrid():
             print("Next cell: {} (x) - {} (y)".format(next_cell.x, next_cell.y))
             print("====================================")
             cell_types = self.__get_next_possible_cell_types(current_cell)
-            current_cell.info.type = int(random.choice(cell_types)) # TODO: It needs to be a path.. (not w/p toggle)
+            current_cell.info.type = 15  # int(random.choice(cell_types)) # TODO: It needs to be a path.. (not w/p toggle)
             current_cell.visited = True
 
             # Simulate do-while
