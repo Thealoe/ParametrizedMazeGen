@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Maze -->
+      <package
+            uri="geodes.sms.maze"
+            class="Maze.MazePackage"/>
+   </extension>
+   <extension
+         point="org.eclipse.epsilon.evl.emf.validation">
+      <constraintsBinding
+            compose="true"
+            constraints="Maze.evl"
+            namespaceURI="geodes.sms.maze">
+      </constraintsBinding>
+   </extension>
+
+</plugin>

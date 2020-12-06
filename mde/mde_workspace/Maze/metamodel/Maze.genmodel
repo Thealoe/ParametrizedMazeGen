@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/Maze/src" modelPluginID="Maze"
+    modelName="Maze" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>Maze.ecore</foreignModel>
+  <genPackages prefix="Maze" disposableProviderFactory="true" ecorePackage="Maze.ecore#/">
+    <genClasses ecoreClass="Maze.ecore#//MazeDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeDiagram/rectangleGen"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//MazeDiagram/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeDiagram/solutionPathGen"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeDiagram/mazeBodyGen"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//Count">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//Count/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//Rate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//Rate/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//ColumnCount">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//ColumnCount/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//RowCount">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//RowCount/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//RectangleGenerator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Maze.ecore#//RectangleGenerator/spg"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//RectangleGenerator/rc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//RectangleGenerator/cc"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//RectangleGenerator/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//SolutionPathGenerator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/mbg"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/tr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/sr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/dr"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//SolutionPathGenerator/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Maze.ecore#//MazeBodyGenerator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeBodyGenerator/dr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeBodyGenerator/sr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeBodyGenerator/tr"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//MazeBodyGenerator/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//StackMazeBodyGenerator">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//StackMazeBodyGenerator/type_name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//RandomMazeBodyGenerator">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//RandomMazeBodyGenerator/type_name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//TurnRate">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//TurnRate/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//StraightRate">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//StraightRate/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//DecisionsRate">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//DecisionsRate/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

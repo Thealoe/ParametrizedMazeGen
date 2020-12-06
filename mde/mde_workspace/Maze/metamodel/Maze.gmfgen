@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgen:GenEditorGenerator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel" domainFileExtension="mz" copyrightText="">
+  <diagram visualID="1000" editPartClassName="MazeDiagramEditPart" itemSemanticEditPolicyClassName="MazeDiagramItemSemanticEditPolicy" canonicalEditPolicyClassName="MazeDiagramCanonicalEditPolicy" iconProviderPriority="Low" validationProviderPriority="Low" validationEnabled="true" validationDecorators="true" liveValidationUIFeedback="true">
+    <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
+    <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="MazeDiagramEditHelper"/>
+    <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
+    <containsShortcutsTo>mz</containsShortcutsTo>
+    <shortcutsProvidedFor>mz</shortcutsProvidedFor>
+    <domainDiagramElement href="Maze.genmodel#//Maze/MazeDiagram"/>
+    <childNodes visualID="3001" editPartClassName="DecisionsRateEditPart" itemSemanticEditPolicyClassName="DecisionsRateItemSemanticEditPolicy" canonicalEditPolicyClassName="DecisionsRateCanonicalEditPolicy" graphicalNodeEditPolicyClassName="DecisionsRateGraphicalNodeEditPolicy" createCommandClassName="DecisionsRateCreateCommand" containers="//@diagram/@compartments.0 //@diagram/@compartments.3">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="DecisionsRateEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DecisionsRateFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DecisionsRateFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDecisionsRateLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DecisionsRateFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureDecisionsRateLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDecisionsRateLabelFigure.setText(&quot;DecisionsRate&quot;);&#xA;&#xA;this.add(fFigureDecisionsRateLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDecisionsRateLabelFigure() {&#xA;&#x9;&#x9;return fFigureDecisionsRateLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 33, 224, 133);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="50" height="50"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/DecisionsRate"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/MazeBodyGenerator/dr"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/MazeBodyGenerator/dr"/>
+      </modelFacet>
+      <labels visualID="5001" editPartClassName="DecisionsRateNameEditPart" itemSemanticEditPolicyClassName="DecisionsRateNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureDecisionsRateLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/DecisionsRate/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3002" editPartClassName="StraightRateEditPart" itemSemanticEditPolicyClassName="StraightRateItemSemanticEditPolicy" canonicalEditPolicyClassName="StraightRateCanonicalEditPolicy" graphicalNodeEditPolicyClassName="StraightRateGraphicalNodeEditPolicy" createCommandClassName="StraightRateCreateCommand" containers="//@diagram/@compartments.1 //@diagram/@compartments.4">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="StraightRateEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="StraightRateFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class StraightRateFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureStraightRateLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public StraightRateFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureStraightRateLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureStraightRateLabelFigure.setText(&quot;StraightRate&quot;);&#xA;&#xA;this.add(fFigureStraightRateLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureStraightRateLabelFigure() {&#xA;&#x9;&#x9;return fFigureStraightRateLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 33, 224, 133);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="50" height="50"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/StraightRate"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/MazeBodyGenerator/sr"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/MazeBodyGenerator/sr"/>
+      </modelFacet>
+      <labels visualID="5002" editPartClassName="StraightRateNameEditPart" itemSemanticEditPolicyClassName="StraightRateNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureStraightRateLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/StraightRate/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3003" editPartClassName="TurnRateEditPart" itemSemanticEditPolicyClassName="TurnRateItemSemanticEditPolicy" canonicalEditPolicyClassName="TurnRateCanonicalEditPolicy" graphicalNodeEditPolicyClassName="TurnRateGraphicalNodeEditPolicy" createCommandClassName="TurnRateCreateCommand" containers="//@diagram/@compartments.2 //@diagram/@compartments.5">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="TurnRateEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TurnRateFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TurnRateFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTurnRateLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TurnRateFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureTurnRateLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureTurnRateLabelFigure.setText(&quot;TurnRate&quot;);&#xA;&#xA;this.add(fFigureTurnRateLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTurnRateLabelFigure() {&#xA;&#x9;&#x9;return fFigureTurnRateLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 33, 224, 133);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="50" height="50"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/TurnRate"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/MazeBodyGenerator/tr"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/MazeBodyGenerator/tr"/>
+      </modelFacet>
+      <labels visualID="5003" editPartClassName="TurnRateNameEditPart" itemSemanticEditPolicyClassName="TurnRateNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureTurnRateLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/TurnRate/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3004" editPartClassName="RowCountEditPart" itemSemanticEditPolicyClassName="RowCountItemSemanticEditPolicy" canonicalEditPolicyClassName="RowCountCanonicalEditPolicy" graphicalNodeEditPolicyClassName="RowCountGraphicalNodeEditPolicy" createCommandClassName="RowCountCreateCommand" containers="//@diagram/@compartments.6">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="RowCountEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RowCountFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RowCountFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureRowCountLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RowCountFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureRowCountLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureRowCountLabelFigure.setText(&quot;RowCount&quot;);&#xA;&#xA;this.add(fFigureRowCountLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureRowCountLabelFigure() {&#xA;&#x9;&#x9;return fFigureRowCountLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 102, 102);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" height="40"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/RowCount"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/RectangleGenerator/rc"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/RectangleGenerator/rc"/>
+      </modelFacet>
+      <labels visualID="5006" editPartClassName="RowCountNameEditPart" itemSemanticEditPolicyClassName="RowCountNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureRowCountLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/RowCount/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3005" editPartClassName="ColumnCountEditPart" itemSemanticEditPolicyClassName="ColumnCountItemSemanticEditPolicy" canonicalEditPolicyClassName="ColumnCountCanonicalEditPolicy" graphicalNodeEditPolicyClassName="ColumnCountGraphicalNodeEditPolicy" createCommandClassName="ColumnCountCreateCommand" containers="//@diagram/@compartments.7">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ColumnCountEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ColumnCountFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ColumnCountFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureColumnCountLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ColumnCountFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureColumnCountLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureColumnCountLabelFigure.setText(&quot;ColumnCount&quot;);&#xA;&#xA;this.add(fFigureColumnCountLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureColumnCountLabelFigure() {&#xA;&#x9;&#x9;return fFigureColumnCountLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 102, 102);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" height="40"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/ColumnCount"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/RectangleGenerator/cc"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/RectangleGenerator/cc"/>
+      </modelFacet>
+      <labels visualID="5007" editPartClassName="ColumnCountNameEditPart" itemSemanticEditPolicyClassName="ColumnCountNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureColumnCountLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/ColumnCount/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3006" editPartClassName="TurnRate2EditPart" itemSemanticEditPolicyClassName="TurnRate2ItemSemanticEditPolicy" canonicalEditPolicyClassName="TurnRate2CanonicalEditPolicy" graphicalNodeEditPolicyClassName="TurnRate2GraphicalNodeEditPolicy" createCommandClassName="TurnRate2CreateCommand" containers="//@diagram/@compartments.8">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@childNodes.2/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TurnRateFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TurnRateFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTurnRateLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TurnRateFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureTurnRateLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureTurnRateLabelFigure.setText(&quot;TurnRate&quot;);&#xA;&#xA;this.add(fFigureTurnRateLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTurnRateLabelFigure() {&#xA;&#x9;&#x9;return fFigureTurnRateLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 33, 224, 133);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="50" height="50"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/TurnRate"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/SolutionPathGenerator/tr"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/SolutionPathGenerator/tr"/>
+      </modelFacet>
+      <labels visualID="5009" editPartClassName="TurnRateName2EditPart" itemSemanticEditPolicyClassName="TurnRateName2ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureTurnRateLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/TurnRate/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3007" editPartClassName="StraightRate2EditPart" itemSemanticEditPolicyClassName="StraightRate2ItemSemanticEditPolicy" canonicalEditPolicyClassName="StraightRate2CanonicalEditPolicy" graphicalNodeEditPolicyClassName="StraightRate2GraphicalNodeEditPolicy" createCommandClassName="StraightRate2CreateCommand" containers="//@diagram/@compartments.9">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@childNodes.1/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="StraightRateFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class StraightRateFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureStraightRateLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public StraightRateFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureStraightRateLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureStraightRateLabelFigure.setText(&quot;StraightRate&quot;);&#xA;&#xA;this.add(fFigureStraightRateLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureStraightRateLabelFigure() {&#xA;&#x9;&#x9;return fFigureStraightRateLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 33, 224, 133);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="50" height="50"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/StraightRate"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/SolutionPathGenerator/sr"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/SolutionPathGenerator/sr"/>
+      </modelFacet>
+      <labels visualID="5010" editPartClassName="StraightRateName2EditPart" itemSemanticEditPolicyClassName="StraightRateName2ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureStraightRateLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/StraightRate/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3008" editPartClassName="DecisionsRate2EditPart" itemSemanticEditPolicyClassName="DecisionsRate2ItemSemanticEditPolicy" canonicalEditPolicyClassName="DecisionsRate2CanonicalEditPolicy" graphicalNodeEditPolicyClassName="DecisionsRate2GraphicalNodeEditPolicy" createCommandClassName="DecisionsRate2CreateCommand" containers="//@diagram/@compartments.10">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@childNodes.0/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DecisionsRateFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DecisionsRateFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureDecisionsRateLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DecisionsRateFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureDecisionsRateLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureDecisionsRateLabelFigure.setText(&quot;DecisionsRate&quot;);&#xA;&#xA;this.add(fFigureDecisionsRateLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureDecisionsRateLabelFigure() {&#xA;&#x9;&#x9;return fFigureDecisionsRateLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 33, 224, 133);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="50" height="50"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/DecisionsRate"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/SolutionPathGenerator/dr"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/SolutionPathGenerator/dr"/>
+      </modelFacet>
+      <labels visualID="5011" editPartClassName="DecisionsRateName2EditPart" itemSemanticEditPolicyClassName="DecisionsRateName2ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureDecisionsRateLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/DecisionsRate/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <topLevelNodes visualID="2005" editPartClassName="StackMazeBodyGeneratorEditPart" itemSemanticEditPolicyClassName="StackMazeBodyGeneratorItemSemanticEditPolicy" canonicalEditPolicyClassName="StackMazeBodyGeneratorCanonicalEditPolicy" compartments="//@diagram/@compartments.0 //@diagram/@compartments.1 //@diagram/@compartments.2" graphicalNodeEditPolicyClassName="StackMazeBodyGeneratorGraphicalNodeEditPolicy" createCommandClassName="StackMazeBodyGeneratorCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="StackMazeBodyGeneratorEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="StackMazeBodyGeneratorFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class StackMazeBodyGeneratorFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureStackMazeBodyGeneratorLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fStackMazeBodyGeneratorDrCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fStackMazeBodyGeneratorSrCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fStackMazeBodyGeneratorTrCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public StackMazeBodyGeneratorFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(100)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureStackMazeBodyGeneratorLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureStackMazeBodyGeneratorLabelFigure.setText(&quot;StackMazeBodyGenerator&quot;);&#xA;fFigureStackMazeBodyGeneratorLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureStackMazeBodyGeneratorLabelFigure);&#xA;&#xA;&#xA;&#xA;fStackMazeBodyGeneratorDrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fStackMazeBodyGeneratorDrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fStackMazeBodyGeneratorDrCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fStackMazeBodyGeneratorSrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fStackMazeBodyGeneratorSrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fStackMazeBodyGeneratorSrCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fStackMazeBodyGeneratorTrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fStackMazeBodyGeneratorTrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fStackMazeBodyGeneratorTrCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureStackMazeBodyGeneratorLabelFigure() {&#xA;&#x9;&#x9;return fFigureStackMazeBodyGeneratorLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getStackMazeBodyGeneratorDrCompartmentFigure() {&#xA;&#x9;&#x9;return fStackMazeBodyGeneratorDrCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getStackMazeBodyGeneratorSrCompartmentFigure() {&#xA;&#x9;&#x9;return fStackMazeBodyGeneratorSrCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getStackMazeBodyGeneratorTrCompartmentFigure() {&#xA;&#x9;&#x9;return fStackMazeBodyGeneratorTrCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 128, 159, 255);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="100" height="40"/>
+      </viewmap>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/StackMazeBodyGenerator"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/mazeBodyGen"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/mazeBodyGen"/>
+      </modelFacet>
+      <labels visualID="5013" editPartClassName="StackMazeBodyGeneratorType_nameEditPart" itemSemanticEditPolicyClassName="StackMazeBodyGeneratorType_nameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureStackMazeBodyGeneratorLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/StackMazeBodyGenerator/type_name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2006" editPartClassName="RandomMazeBodyGeneratorEditPart" itemSemanticEditPolicyClassName="RandomMazeBodyGeneratorItemSemanticEditPolicy" canonicalEditPolicyClassName="RandomMazeBodyGeneratorCanonicalEditPolicy" compartments="//@diagram/@compartments.3 //@diagram/@compartments.4 //@diagram/@compartments.5" graphicalNodeEditPolicyClassName="RandomMazeBodyGeneratorGraphicalNodeEditPolicy" createCommandClassName="RandomMazeBodyGeneratorCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="RandomMazeBodyGeneratorEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RandomMazeBodyGeneratorFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RandomMazeBodyGeneratorFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureRandomMazeBodyGeneratorLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fRandomMazeBodyGeneratorDrCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fRandomMazeBodyGeneratorSrCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fRandomMazeBodyGeneratorTrCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RandomMazeBodyGeneratorFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(100)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureRandomMazeBodyGeneratorLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureRandomMazeBodyGeneratorLabelFigure.setText(&quot;RandomMazeBodyGenerator&quot;);&#xA;fFigureRandomMazeBodyGeneratorLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureRandomMazeBodyGeneratorLabelFigure);&#xA;&#xA;&#xA;&#xA;fRandomMazeBodyGeneratorDrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fRandomMazeBodyGeneratorDrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fRandomMazeBodyGeneratorDrCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fRandomMazeBodyGeneratorSrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fRandomMazeBodyGeneratorSrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fRandomMazeBodyGeneratorSrCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fRandomMazeBodyGeneratorTrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fRandomMazeBodyGeneratorTrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fRandomMazeBodyGeneratorTrCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureRandomMazeBodyGeneratorLabelFigure() {&#xA;&#x9;&#x9;return fFigureRandomMazeBodyGeneratorLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getRandomMazeBodyGeneratorDrCompartmentFigure() {&#xA;&#x9;&#x9;return fRandomMazeBodyGeneratorDrCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getRandomMazeBodyGeneratorSrCompartmentFigure() {&#xA;&#x9;&#x9;return fRandomMazeBodyGeneratorSrCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getRandomMazeBodyGeneratorTrCompartmentFigure() {&#xA;&#x9;&#x9;return fRandomMazeBodyGeneratorTrCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 128, 159, 255);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="100" height="40"/>
+      </viewmap>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/RandomMazeBodyGenerator"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/mazeBodyGen"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/mazeBodyGen"/>
+      </modelFacet>
+      <labels visualID="5014" editPartClassName="RandomMazeBodyGeneratorType_nameEditPart" itemSemanticEditPolicyClassName="RandomMazeBodyGeneratorType_nameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureRandomMazeBodyGeneratorLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/RandomMazeBodyGenerator/type_name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2003" editPartClassName="RectangleGeneratorEditPart" itemSemanticEditPolicyClassName="RectangleGeneratorItemSemanticEditPolicy" canonicalEditPolicyClassName="RectangleGeneratorCanonicalEditPolicy" compartments="//@diagram/@compartments.6 //@diagram/@compartments.7" graphicalNodeEditPolicyClassName="RectangleGeneratorGraphicalNodeEditPolicy" createCommandClassName="RectangleGeneratorCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="RectangleGeneratorEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RectangleGeneratorFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RectangleGeneratorFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureRectangleGeneratorLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fRectangleGeneratorRcCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fRectangleGeneratorCcCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RectangleGeneratorFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(100)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureRectangleGeneratorLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureRectangleGeneratorLabelFigure.setText(&quot;RectangleGenerator&quot;);&#xA;fFigureRectangleGeneratorLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureRectangleGeneratorLabelFigure);&#xA;&#xA;&#xA;&#xA;fRectangleGeneratorRcCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fRectangleGeneratorRcCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fRectangleGeneratorRcCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fRectangleGeneratorCcCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fRectangleGeneratorCcCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fRectangleGeneratorCcCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureRectangleGeneratorLabelFigure() {&#xA;&#x9;&#x9;return fFigureRectangleGeneratorLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getRectangleGeneratorRcCompartmentFigure() {&#xA;&#x9;&#x9;return fRectangleGeneratorRcCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getRectangleGeneratorCcCompartmentFigure() {&#xA;&#x9;&#x9;return fRectangleGeneratorCcCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 128, 159, 255);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="100" height="40"/>
+      </viewmap>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/RectangleGenerator"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/rectangleGen"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/rectangleGen"/>
+      </modelFacet>
+      <labels visualID="5008" editPartClassName="RectangleGeneratorNameEditPart" itemSemanticEditPolicyClassName="RectangleGeneratorNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureRectangleGeneratorLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/RectangleGenerator/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2004" editPartClassName="SolutionPathGeneratorEditPart" itemSemanticEditPolicyClassName="SolutionPathGeneratorItemSemanticEditPolicy" canonicalEditPolicyClassName="SolutionPathGeneratorCanonicalEditPolicy" compartments="//@diagram/@compartments.8 //@diagram/@compartments.9 //@diagram/@compartments.10" graphicalNodeEditPolicyClassName="SolutionPathGeneratorGraphicalNodeEditPolicy" createCommandClassName="SolutionPathGeneratorCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SolutionPathGeneratorEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SolutionPathGeneratorFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SolutionPathGeneratorFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSolutionPathGeneratorLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fSolutionPathGeneratorTrCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fSolutionPathGeneratorSrCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fSolutionPathGeneratorDrCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SolutionPathGeneratorFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(100)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureSolutionPathGeneratorLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureSolutionPathGeneratorLabelFigure.setText(&quot;SolutionPathGenerator&quot;);&#xA;fFigureSolutionPathGeneratorLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureSolutionPathGeneratorLabelFigure);&#xA;&#xA;&#xA;&#xA;fSolutionPathGeneratorTrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fSolutionPathGeneratorTrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fSolutionPathGeneratorTrCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fSolutionPathGeneratorSrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fSolutionPathGeneratorSrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fSolutionPathGeneratorSrCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fSolutionPathGeneratorDrCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fSolutionPathGeneratorDrCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fSolutionPathGeneratorDrCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSolutionPathGeneratorLabelFigure() {&#xA;&#x9;&#x9;return fFigureSolutionPathGeneratorLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getSolutionPathGeneratorTrCompartmentFigure() {&#xA;&#x9;&#x9;return fSolutionPathGeneratorTrCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getSolutionPathGeneratorSrCompartmentFigure() {&#xA;&#x9;&#x9;return fSolutionPathGeneratorSrCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getSolutionPathGeneratorDrCompartmentFigure() {&#xA;&#x9;&#x9;return fSolutionPathGeneratorDrCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 128, 159, 255);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="100" height="40"/>
+      </viewmap>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="Maze.genmodel#//Maze/SolutionPathGenerator"/>
+        <containmentMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/solutionPathGen"/>
+        <childMetaFeature href="Maze.genmodel#//Maze/MazeDiagram/solutionPathGen"/>
+      </modelFacet>
+      <labels visualID="5012" editPartClassName="SolutionPathGeneratorNameEditPart" itemSemanticEditPolicyClassName="SolutionPathGeneratorNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureSolutionPathGeneratorLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="Maze.genmodel#//Maze/SolutionPathGenerator/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <links visualID="4001" editPartClassName="RectangleGeneratorSpgEditPart" itemSemanticEditPolicyClassName="RectangleGeneratorSpgItemSemanticEditPolicy" createCommandClassName="RectangleGeneratorSpgCreateCommand" reorientCommandClassName="RectangleGeneratorSpgReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RectangleGeneratorSpgFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RectangleGeneratorSpgFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RectangleGeneratorSpgFigure() {&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedForeground="true"/>
+      </viewmap>
+      <modelFacet xsi:type="gmfgen:FeatureLinkModelFacet">
+        <metaFeature href="Maze.genmodel#//Maze/RectangleGenerator/spg"/>
+      </modelFacet>
+      <labels visualID="6001" editPartClassName="WrappingLabelEditPart" itemSemanticEditPolicyClassName="WrappingLabelItemSemanticEditPolicy" readOnly="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="40"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:DesignLabelModelFacet" parser="//@labelParsers/@implementations.1"/>
+      </labels>
+    </links>
+    <links visualID="4002" editPartClassName="SolutionPathGeneratorMbgEditPart" itemSemanticEditPolicyClassName="SolutionPathGeneratorMbgItemSemanticEditPolicy" createCommandClassName="SolutionPathGeneratorMbgCreateCommand" reorientCommandClassName="SolutionPathGeneratorMbgReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SolutionPathGeneratorMbgFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SolutionPathGeneratorMbgFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SolutionPathGeneratorMbgFigure() {&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedForeground="true"/>
+      </viewmap>
+      <modelFacet xsi:type="gmfgen:FeatureLinkModelFacet">
+        <metaFeature href="Maze.genmodel#//Maze/SolutionPathGenerator/mbg"/>
+      </modelFacet>
+      <labels visualID="6002" editPartClassName="WrappingLabel2EditPart" itemSemanticEditPolicyClassName="WrappingLabel2ItemSemanticEditPolicy" readOnly="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="40"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:DesignLabelModelFacet" parser="//@labelParsers/@implementations.1"/>
+      </labels>
+    </links>
+    <compartments visualID="7012" editPartClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorDrCompartmentEditPart" itemSemanticEditPolicyClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorDrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorDrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="StackMazeBodyGeneratorDrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.0" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getStackMazeBodyGeneratorDrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7013" editPartClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorSrCompartmentEditPart" itemSemanticEditPolicyClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorSrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorSrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.1" title="StackMazeBodyGeneratorSrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.0" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getStackMazeBodyGeneratorSrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7014" editPartClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorTrCompartmentEditPart" itemSemanticEditPolicyClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorTrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="StackMazeBodyGeneratorStackMazeBodyGeneratorTrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.2" title="StackMazeBodyGeneratorTrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.0" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getStackMazeBodyGeneratorTrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7015" editPartClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorDrCompartmentEditPart" itemSemanticEditPolicyClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorDrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorDrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="RandomMazeBodyGeneratorDrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getRandomMazeBodyGeneratorDrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7016" editPartClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorSrCompartmentEditPart" itemSemanticEditPolicyClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorSrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorSrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.1" title="RandomMazeBodyGeneratorSrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getRandomMazeBodyGeneratorSrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7017" editPartClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorTrCompartmentEditPart" itemSemanticEditPolicyClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorTrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="RandomMazeBodyGeneratorRandomMazeBodyGeneratorTrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.2" title="RandomMazeBodyGeneratorTrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getRandomMazeBodyGeneratorTrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7007" editPartClassName="RectangleGeneratorRectangleGeneratorRcCompartmentEditPart" itemSemanticEditPolicyClassName="RectangleGeneratorRectangleGeneratorRcCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="RectangleGeneratorRectangleGeneratorRcCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.3" title="RectangleGeneratorRcCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.2" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getRectangleGeneratorRcCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7008" editPartClassName="RectangleGeneratorRectangleGeneratorCcCompartmentEditPart" itemSemanticEditPolicyClassName="RectangleGeneratorRectangleGeneratorCcCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="RectangleGeneratorRectangleGeneratorCcCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.4" title="RectangleGeneratorCcCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.2" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getRectangleGeneratorCcCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7009" editPartClassName="SolutionPathGeneratorSolutionPathGeneratorTrCompartmentEditPart" itemSemanticEditPolicyClassName="SolutionPathGeneratorSolutionPathGeneratorTrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="SolutionPathGeneratorSolutionPathGeneratorTrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.5" title="SolutionPathGeneratorTrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.3" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getSolutionPathGeneratorTrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7010" editPartClassName="SolutionPathGeneratorSolutionPathGeneratorSrCompartmentEditPart" itemSemanticEditPolicyClassName="SolutionPathGeneratorSolutionPathGeneratorSrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="SolutionPathGeneratorSolutionPathGeneratorSrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.6" title="SolutionPathGeneratorSrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.3" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getSolutionPathGeneratorSrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7011" editPartClassName="SolutionPathGeneratorSolutionPathGeneratorDrCompartmentEditPart" itemSemanticEditPolicyClassName="SolutionPathGeneratorSolutionPathGeneratorDrCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="SolutionPathGeneratorSolutionPathGeneratorDrCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.7" title="SolutionPathGeneratorDrCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.3" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getSolutionPathGeneratorDrCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <palette>
+      <groups title="Objects" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="ColumnCount" description="Create new ColumnCount" genNodes="//@diagram/@childNodes.4"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="DecisionsRate" description="Create new DecisionsRate" genNodes="//@diagram/@childNodes.0 //@diagram/@childNodes.7"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="RandomMazeBodyGenerator" description="Create new RandomMazeBodyGenerator" genNodes="//@diagram/@topLevelNodes.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="RectangleGenerator" description="Create new RectangleGenerator" genNodes="//@diagram/@topLevelNodes.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="RowCount" description="Create new RowCount" genNodes="//@diagram/@childNodes.3"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="SolutionPathGenerator" description="Create new SolutionPathGenerator" genNodes="//@diagram/@topLevelNodes.3"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="StackMazeBodyGenerator" description="Create new StackMazeBodyGenerator" genNodes="//@diagram/@topLevelNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="StraightRate" description="Create new StraightRate" genNodes="//@diagram/@childNodes.1 //@diagram/@childNodes.6"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="TurnRate" description="Create new TurnRate" genNodes="//@diagram/@childNodes.2 //@diagram/@childNodes.5"/>
+      </groups>
+      <groups title="Connections" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Mbg" description="Create new Mbg" genLinks="//@diagram/@links.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Spg" description="Create new Spg" genLinks="//@diagram/@links.0"/>
+      </groups>
+    </palette>
+    <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="Maze.diagram.general" name="Maze Diagram">
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="Maze.diagram.appearance" name="Appearance" kind="Appearance"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="Maze.diagram.connections" name="Connections" kind="Connections"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="Maze.diagram.printing" name="Printing" kind="Printing"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="Maze.diagram.rulersAndGrid" name="Rulers And Grid" kind="RulersAndGrid"/>
+    </preferencePages>
+  </diagram>
+  <plugin printingEnabled="true">
+    <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
+    <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
+    <requiredPlugins>org.eclipse.gmf.runtime.draw2d.ui</requiredPlugins>
+  </plugin>
+  <editor/>
+  <navigator>
+    <childReferences child="//@diagram"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@childNodes.1"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@childNodes.2"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.1"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.2"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.1"/>
+    <childReferences parent="//@diagram/@topLevelNodes.2" child="//@diagram/@childNodes.3"/>
+    <childReferences parent="//@diagram/@topLevelNodes.2" child="//@diagram/@childNodes.4"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.2"/>
+    <childReferences parent="//@diagram/@topLevelNodes.3" child="//@diagram/@childNodes.5"/>
+    <childReferences parent="//@diagram/@topLevelNodes.3" child="//@diagram/@childNodes.6"/>
+    <childReferences parent="//@diagram/@topLevelNodes.3" child="//@diagram/@childNodes.7"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.3"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.0" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@topLevelNodes.3" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.3" child="//@diagram/@links.0" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@topLevelNodes.2" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.2" child="//@diagram/@links.0" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.1" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.3" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.3" child="//@diagram/@links.1" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+  </navigator>
+  <diagramUpdater/>
+  <propertySheet>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="appearance"/>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="diagram"/>
+    <tabs xsi:type="gmfgen:GenCustomPropertyTab" iD="domain" label="Core">
+      <filter xsi:type="gmfgen:TypeTabFilter">
+        <types>org.eclipse.gmf.runtime.notation.View</types>
+        <types>org.eclipse.gef.EditPart</types>
+        <generatedTypes>abstractNavigatorItem</generatedTypes>
+      </filter>
+    </tabs>
+  </propertySheet>
+  <domainGenModel href="Maze.genmodel#/"/>
+  <labelParsers extensibleViaService="true">
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.5/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet"/>
+    <implementations xsi:type="gmfgen:ExternalParser" uses="//@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet"/>
+  </labelParsers>
+  <contextMenus context="//@diagram">
+    <items xsi:type="gmfgen:LoadResourceAction"/>
+  </contextMenus>
+</gmfgen:GenEditorGenerator>

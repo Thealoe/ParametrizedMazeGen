@@ -1,0 +1,4 @@
+rule Maze2Json transform self : M!MazeDiagram {
+	template: "maze_to_json.egl"
+	target: "../model/" + "maze_output.json"
+}

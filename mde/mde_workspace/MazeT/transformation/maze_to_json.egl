@@ -1,0 +1,17 @@
+{ 
+	"[%= self.rectangleGen.name %]": {
+		"[%= self.rectangleGen.cc.name %]" : [%= self.rectangleGen.cc.value %],
+		"[%= self.rectangleGen.rc.name %]" : [%= self.rectangleGen.rc.value %]
+	},
+	"[%= self.solutionPathGen.name %]": {
+		"[%= self.solutionPathGen.sr.name %]" : [%= self.solutionPathGen.sr.value %],
+		"[%= self.solutionPathGen.tr.name %]" : [%= self.solutionPathGen.tr.value %],
+		"[%= self.solutionPathGen.dr.name %]" : [%= self.solutionPathGen.dr.value %]
+	},
+	"[%= self.mazeBodyGen.name %]": {
+		"under_type" : [%= self.mazeBodyGen.type_name %],
+		"[%= self.mazeBodyGen.sr.name %]" : [%= self.mazeBodyGen.sr.value %],
+		"[%= self.mazeBodyGen.tr.name %]" : [%= self.mazeBodyGen.tr.value %],
+		"[%= self.mazeBodyGen.dr.name %]" : [%= self.mazeBodyGen.dr.value %]
+	}
+}

@@ -1,0 +1,99 @@
+@namespace(uri="geodes.sms.maze", prefix="mz")
+package Maze;
+
+@gmf.diagram(model.extension="mz")
+class MazeDiagram {
+	val RectangleGenerator[1] rectangleGen;
+	readonly id attr String name = "MDiagram";
+	val SolutionPathGenerator[1] solutionPathGen;
+	val MazeBodyGenerator[1] mazeBodyGen;
+}
+
+class Count {
+	attr int value;
+}
+
+class Rate {
+	attr int value;
+}
+
+@gmf.node(color="255,102,102", figure="rounded", label.icon="false", label="name", size="40,40")
+class ColumnCount extends Count {
+	readonly id attr String name = "CC";
+}
+
+@gmf.node(color="255,102,102", figure="rounded", label.icon="false", label="name", size="40,40")
+class RowCount extends Count {
+	readonly id attr String name = "RC";
+}
+
+@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="name", size="100,40")
+class RectangleGenerator {
+
+	@gmf.link(target.decoration="arrow", source.decoration="none", style="solid", color="0,0,0")
+	ref SolutionPathGenerator[1] spg;
+
+	@gmf.compartment
+	val RowCount[1] rc;
+
+	@gmf.compartment
+	val ColumnCount[1] cc;
+	readonly id attr String name = "RGen";
+}
+
+@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="name", size="100,40")
+class SolutionPathGenerator {
+
+	@gmf.link(target.decoration="arrow", source.decoration="none", style="solid", color="0,0,0")
+	ref MazeBodyGenerator[1] mbg;
+
+	@gmf.compartment
+	val TurnRate[1] tr;
+
+	@gmf.compartment
+	val StraightRate[1] sr;
+
+	@gmf.compartment
+	val DecisionsRate[1] dr;
+	readonly id attr String name = "SPGen";
+}
+
+@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="name", size="100,40")
+abstract class MazeBodyGenerator {
+
+	@gmf.compartment
+	val DecisionsRate[1] dr;
+
+	@gmf.compartment
+	val StraightRate[1] sr;
+
+	@gmf.compartment
+	val TurnRate[1] tr;
+	readonly id attr String name = "MBGen";
+}
+
+@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="type_name", size="100,40")
+class StackMazeBodyGenerator extends MazeBodyGenerator {
+	readonly attr String type_name = "SMBGen";
+}
+
+@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="type_name", size="100,40")
+class RandomMazeBodyGenerator extends MazeBodyGenerator {
+	readonly attr String type_name = "RMBGen";
+}
+
+@gmf.node(color="33,224,133", figure="ellipse", label.icon="false", label="name", size="50,50")
+class TurnRate extends Rate {
+	readonly id attr String name = "TR";
+}
+
+@gmf.node(color="33,224,133", figure="ellipse", label.icon="false", label="name", size="50,50")
+class StraightRate extends Rate {
+	readonly id attr String name = "SR";
+}
+
+@gmf.node(color="33,224,133", figure="ellipse", label.icon="false", label="name", size="50,50")
+class DecisionsRate extends Rate {
+	readonly id attr String name = "DR";
+}
+

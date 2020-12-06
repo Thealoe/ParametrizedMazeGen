@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_c8e8gDTKEeuvu5Xjlj1-mA" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_GcwqUDTOEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GcztoDTOEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GcztoTTOEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_04wscDTrEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//ColumnCount/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_04wscTTrEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GcztojTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GcztozTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GcztpDTOEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GcztpTTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GcztpjTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GcztpzTOEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GcztqDTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GcztqTTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//ColumnCount"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GcwqUTTOEeuvu5Xjlj1-mA" x="255" y="120" width="121" height="91"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_PoxG4DTOEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_PoxG4jTOEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_PoxG4zTOEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_5vWA4DTrEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//RowCount/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5vWA4TTrEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_PoxG5DTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_PoxG5TTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_PoxG5jTOEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_PoxG5zTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_PoxG6DTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_PoxG6TTOEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_PoxG6jTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_PoxG6zTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//RowCount"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PoxG4TTOEeuvu5Xjlj1-mA" x="255" y="315" width="121" height="91"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ej6QgDTOEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ej6QgjTOEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ej6QgzTOEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_8JwN0DTrEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//RectangleGenerator/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8JwN0TTrEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ej6QhDTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ej6QhTTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ej6QhjTOEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ej6QhzTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ej6QiDTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ej6QiTTOEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ej6QijTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ej6QizTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//RectangleGenerator"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ej6QgTTOEeuvu5Xjlj1-mA" x="450" y="210" width="163" height="112"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_l1wtgDTOEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_l1wtgjTOEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_l1wtgzTOEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_Do4R0DTsEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//SolutionPathGenerator/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Do4R0TTsEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_l1wthDTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_l1wthTTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_l1wthjTOEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_l1wthzTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_l1wtiDTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_l1wtiTTOEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_l1wtijTOEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_l1wtizTOEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//SolutionPathGenerator"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l1wtgTTOEeuvu5Xjlj1-mA" x="690" y="210" width="166" height="106"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_RdU_UDTPEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_RdU_UjTPEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_RdU_UzTPEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_F-3RwDTsEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//MazeBodyGenerator/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_F-3RwTTsEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RdU_VDTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RdU_VTTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_RdU_VjTPEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RdU_VzTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RdU_WDTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_RdU_WTTPEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RdU_WjTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RdU_WzTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//MazeBodyGenerator"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RdU_UTTPEeuvu5Xjlj1-mA" x="930" y="210" width="166" height="106"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ddGkADTPEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ddGkAjTPEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ddGkAzTPEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_VXCRQDTOEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//Count/value"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VXCRQTTOEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ddGkBDTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ddGkBTTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ddGkBjTPEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ddGkBzTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ddGkCDTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ddGkCTTPEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ddGkCjTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ddGkCzTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//Count"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ddGkATTPEeuvu5Xjlj1-mA" x="90" y="210" width="121" height="91"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_wL_sEDTPEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wL_sEjTPEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_wL_sEzTPEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="__Whr0DTrEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//MazeDiagram/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="__Whr0TTrEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_wL_sFDTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_wL_sFTTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_wL_sFjTPEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_wL_sFzTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_wL_sGDTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_wL_sGTTPEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_wL_sGjTPEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_wL_sGzTPEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//MazeDiagram"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wL_sETTPEeuvu5Xjlj1-mA" x="705" y="45" width="136" height="91"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_dlt4ADTQEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dlt4AjTQEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dlt4AzTQEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_YfKkMDTsEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//TurnRate/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YfKkMTTsEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dlt4BDTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dlt4BTTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dlt4BjTQEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dlt4BzTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dlt4CDTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_dlt4CTTQEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_dlt4CjTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_dlt4CzTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//TurnRate"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dlt4ATTQEeuvu5Xjlj1-mA" x="615" y="525" width="151" height="76"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eTSIoDTQEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eTSIojTQEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eTSIozTQEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_WVx10DTsEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//StraightRate/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WVx10TTsEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eTSIpDTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eTSIpTTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eTSIpjTQEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eTSIpzTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eTSIqDTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eTSIqTTQEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eTSIqjTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eTSIqzTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//StraightRate"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eTSIoTTQEeuvu5Xjlj1-mA" x="735" y="465" width="151" height="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_fe0HoDTQEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_fe0HojTQEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fe0HozTQEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_Tgj8MDTsEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//DecisionsRate/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Tgj8MTTsEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fe0HpDTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fe0HpTTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fe0HpjTQEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fe0HpzTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fe0HqDTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fe0HqTTQEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fe0HqjTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fe0HqzTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//DecisionsRate"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe0HoTTQEeuvu5Xjlj1-mA" x="855" y="405" width="151" height="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_jyIW8DTQEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_jyIW8jTQEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jyIW8zTQEeuvu5Xjlj1-mA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_dv5eADTsEeuvu5Xjlj1-mA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//Rate/value"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_dv5eATTsEeuvu5Xjlj1-mA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jyIW9DTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jyIW9TTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jyIW9jTQEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jyIW9zTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jyIW-DTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_jyIW-TTQEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_jyIW-jTQEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_jyIW-zTQEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//Rate"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jyIW8TTQEeuvu5Xjlj1-mA" x="750" y="630" width="89" height="57"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_FjRgwDTSEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_FjRgwjTSEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_FjRgwzTSEeuvu5Xjlj1-mA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FjRgxDTSEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FjRgxTTSEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_FjRgxjTSEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FjRgxzTSEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FjRgyDTSEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_FjRgyTTSEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FjRgyjTSEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FjRgyzTSEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//StackMazeBodyGenerator"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FjRgwTTSEeuvu5Xjlj1-mA" x="1170" y="135" width="151" height="91"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_t3FoMDTlEeuvu5Xjlj1-mA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_t3FoMjTlEeuvu5Xjlj1-mA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_t3FoMzTlEeuvu5Xjlj1-mA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_t3FoNDTlEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_t3FoNTTlEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_t3GPQDTlEeuvu5Xjlj1-mA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_t3GPQTTlEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_t3GPQjTlEeuvu5Xjlj1-mA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_t3GPQzTlEeuvu5Xjlj1-mA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_t3GPRDTlEeuvu5Xjlj1-mA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_t3GPRTTlEeuvu5Xjlj1-mA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//RandomMazeBodyGenerator"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t3FoMTTlEeuvu5Xjlj1-mA" x="1170" y="255" width="151" height="106"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_c8e8gTTKEeuvu5Xjlj1-mA"/>
+  <element xmi:type="ecore:EPackage" href="Maze.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_r7vX0DTPEeuvu5Xjlj1-mA" type="4004" source="_GcwqUDTOEeuvu5Xjlj1-mA" target="_ddGkADTPEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_r7vX0TTPEeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r7vX0jTPEeuvu5Xjlj1-mA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_r7ybIDTPEeuvu5Xjlj1-mA" type="4004" source="_PoxG4DTOEeuvu5Xjlj1-mA" target="_ddGkADTPEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_r7ybITTPEeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r7ybIjTPEeuvu5Xjlj1-mA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_Va9dEDTQEeuvu5Xjlj1-mA" type="4003" source="_wL_sEDTPEeuvu5Xjlj1-mA" target="_ej6QgDTOEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Va-EIDTQEeuvu5Xjlj1-mA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Va-EITTQEeuvu5Xjlj1-mA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Va-EIjTQEeuvu5Xjlj1-mA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Va-EIzTQEeuvu5Xjlj1-mA" x="-12" y="38"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Va9dETTQEeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeDiagram/rectangleGen"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Va9dEjTQEeuvu5Xjlj1-mA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_7CNLMDTQEeuvu5Xjlj1-mA" type="4003" source="_l1wtgDTOEeuvu5Xjlj1-mA" target="_dlt4ADTQEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7CNLMzTQEeuvu5Xjlj1-mA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_7CNLNDTQEeuvu5Xjlj1-mA" x="51" y="34"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7CNLNTTQEeuvu5Xjlj1-mA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_7CNLNjTQEeuvu5Xjlj1-mA" x="6" y="34"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_7CNLMTTQEeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//SolutionPathGenerator/tr"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7CNLMjTQEeuvu5Xjlj1-mA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_7CNyQDTQEeuvu5Xjlj1-mA" type="4004" source="_dlt4ADTQEeuvu5Xjlj1-mA" target="_jyIW8DTQEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_7CNyQTTQEeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7CNyQjTQEeuvu5Xjlj1-mA" points="[0, 28, -104, -77]$[0, 105, -104, 0]$[60, 105, -44, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_7COZUDTQEeuvu5Xjlj1-mA" type="4004" source="_eTSIoDTQEeuvu5Xjlj1-mA" target="_jyIW8DTQEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_7COZUTTQEeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7COZUjTQEeuvu5Xjlj1-mA" points="[-10, 28, 6, -137]$[-16, 47, 0, -118]$[-16, 137, 0, -28]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_7CPAYDTQEeuvu5Xjlj1-mA" type="4004" source="_fe0HoDTQEeuvu5Xjlj1-mA" target="_jyIW8DTQEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_7CPAYTTQEeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7CPAYjTQEeuvu5Xjlj1-mA" points="[0, 28, 136, -197]$[0, 225, 136, 0]$[-10, 225, 126, 0]$[-91, 225, 45, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_AJq0QDTREeuvu5Xjlj1-mA" type="4003" source="_l1wtgDTOEeuvu5Xjlj1-mA" target="_eTSIoDTQEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AJq0QzTREeuvu5Xjlj1-mA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AJq0RDTREeuvu5Xjlj1-mA" x="38" y="12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AJq0RTTREeuvu5Xjlj1-mA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AJq0RjTREeuvu5Xjlj1-mA" x="9" y="-33"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AJq0QTTREeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//SolutionPathGenerator/sr"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AJq0QjTREeuvu5Xjlj1-mA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_AJsCYDTREeuvu5Xjlj1-mA" type="4003" source="_l1wtgDTOEeuvu5Xjlj1-mA" target="_fe0HoDTQEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AJsCYzTREeuvu5Xjlj1-mA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AJsCZDTREeuvu5Xjlj1-mA" x="17" y="17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_AJsCZTTREeuvu5Xjlj1-mA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AJsCZjTREeuvu5Xjlj1-mA" x="9" y="-19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AJsCYTTREeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//SolutionPathGenerator/dr"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AJsCYjTREeuvu5Xjlj1-mA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_uP5g4DTREeuvu5Xjlj1-mA" type="4003" source="_RdU_UDTPEeuvu5Xjlj1-mA" target="_fe0HoDTQEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uP5g4zTREeuvu5Xjlj1-mA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uP5g5DTREeuvu5Xjlj1-mA" x="-4" y="23"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uP5g5TTREeuvu5Xjlj1-mA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uP5g5jTREeuvu5Xjlj1-mA" x="-3" y="-12"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uP5g4TTREeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeBodyGenerator/dr"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uP5g4jTREeuvu5Xjlj1-mA" points="[0, 1, 105, -117]$[0, 118, 105, 0]$[-29, 118, 76, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xtuSoDTREeuvu5Xjlj1-mA" id="(0.6325301204819277,0.9905660377358491)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_uP6vADTREeuvu5Xjlj1-mA" type="4003" source="_RdU_UDTPEeuvu5Xjlj1-mA" target="_eTSIoDTQEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uP6vAzTREeuvu5Xjlj1-mA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uP6vBDTREeuvu5Xjlj1-mA" x="38" y="-12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uP6vBTTREeuvu5Xjlj1-mA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uP6vBjTREeuvu5Xjlj1-mA" x="-61" y="-12"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uP6vATTREeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeBodyGenerator/sr"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uP6vAjTREeuvu5Xjlj1-mA" points="[6, 10, 255, -177]$[6, 187, 255, 0]$[-173, 187, 76, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wLWg8DTREeuvu5Xjlj1-mA" id="(0.7771084337349398,0.9056603773584906)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_uP7WEDTREeuvu5Xjlj1-mA" type="4003" source="_RdU_UDTPEeuvu5Xjlj1-mA" target="_dlt4ADTQEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uP7WEzTREeuvu5Xjlj1-mA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uP7WFDTREeuvu5Xjlj1-mA" x="-13" y="-12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uP79IDTREeuvu5Xjlj1-mA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_uP79ITTREeuvu5Xjlj1-mA" x="-167" y="-12"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_uP7WETTREeuvu5Xjlj1-mA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeBodyGenerator/tr"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uP7WEjTREeuvu5Xjlj1-mA" points="[0, 5, 391, -237]$[0, 242, 391, 0]$[-315, 242, 76, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y_cZMDTREeuvu5Xjlj1-mA" id="(0.9096385542168675,0.9528301886792453)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eMBkEDUSEeuR-NmLJeVBGA" type="4003" source="_ej6QgDTOEeuvu5Xjlj1-mA" target="_PoxG4DTOEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eMCLIDUSEeuR-NmLJeVBGA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eMCLITUSEeuR-NmLJeVBGA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_eMCLIjUSEeuR-NmLJeVBGA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eMCLIzUSEeuR-NmLJeVBGA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_eMBkETUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//RectangleGenerator/rc"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eMBkEjUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eMEAUDUSEeuR-NmLJeVBGA" type="4003" source="_ej6QgDTOEeuvu5Xjlj1-mA" target="_GcwqUDTOEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eMEnYDUSEeuR-NmLJeVBGA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eMEnYTUSEeuR-NmLJeVBGA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_eMEnYjUSEeuR-NmLJeVBGA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eMEnYzUSEeuR-NmLJeVBGA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_eMEAUTUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//RectangleGenerator/cc"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eMEAUjUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eMGckDUSEeuR-NmLJeVBGA" type="4004" source="_FjRgwDTSEeuvu5Xjlj1-mA" target="_RdU_UDTPEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_eMGckTUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eMGckjUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eMIRwDUSEeuR-NmLJeVBGA" type="4004" source="_t3FoMDTlEeuvu5Xjlj1-mA" target="_RdU_UDTPEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_eMIRwTUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eMIRwjUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_rcq6wDUSEeuR-NmLJeVBGA" type="4002" source="_ej6QgDTOEeuvu5Xjlj1-mA" target="_l1wtgDTOEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rcq6wzUSEeuR-NmLJeVBGA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rcq6xDUSEeuR-NmLJeVBGA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rcq6xTUSEeuR-NmLJeVBGA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rcq6xjUSEeuR-NmLJeVBGA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rcq6wTUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//RectangleGenerator/spg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rcq6wjUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_rct-EDUSEeuR-NmLJeVBGA" type="4002" source="_l1wtgDTOEeuvu5Xjlj1-mA" target="_RdU_UDTPEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rct-EzUSEeuR-NmLJeVBGA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rct-FDUSEeuR-NmLJeVBGA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rct-FTUSEeuR-NmLJeVBGA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rct-FjUSEeuR-NmLJeVBGA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rct-ETUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//SolutionPathGenerator/mbg"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rct-EjUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_rct-FzUSEeuR-NmLJeVBGA" type="4003" source="_wL_sEDTPEeuvu5Xjlj1-mA" target="_l1wtgDTOEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rct-GjUSEeuR-NmLJeVBGA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rct-GzUSEeuR-NmLJeVBGA" x="17" y="-61"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_rct-HDUSEeuR-NmLJeVBGA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rct-HTUSEeuR-NmLJeVBGA" x="-8" y="27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rct-GDUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeDiagram/solutionPathGen"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rct-GTUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>

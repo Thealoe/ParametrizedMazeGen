@@ -10,6 +10,15 @@ settings.json
 # Mac OSX
 .DS_Store
 
+# MDE
+
+mde/mde_workspace/.metadata/
+mde/mde_workspace/Maze.diagram
+mde/mde_workspace/Maze.edit
+mde/mde_workspace/Maze.editor
+mde/mde_workspace/Maze.tests
+mde/mde_workspace/.gitignore
+
 # C extensions
 *.so
 

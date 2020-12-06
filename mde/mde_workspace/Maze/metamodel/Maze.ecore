@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Maze" nsURI="geodes.sms.maze" nsPrefix="mz">
+  <eClassifiers xsi:type="ecore:EClass" name="MazeDiagram">
+    <eAnnotations source="gmf.diagram">
+      <details key="model.extension" value="mz"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rectangleGen" lowerBound="1"
+        eType="#//RectangleGenerator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="MDiagram" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="solutionPathGen" lowerBound="1"
+        eType="#//SolutionPathGenerator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mazeBodyGen" lowerBound="1"
+        eType="#//MazeBodyGenerator" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Count">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rate">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ColumnCount" eSuperTypes="#//Count">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="255,102,102"/>
+      <details key="figure" value="rounded"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="40,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="CC" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RowCount" eSuperTypes="#//Count">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="255,102,102"/>
+      <details key="figure" value="rounded"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="40,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="RC" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RectangleGenerator">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="128,159,255"/>
+      <details key="figure" value="rectangle"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="100,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="spg" lowerBound="1" eType="#//SolutionPathGenerator">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="source.decoration" value="none"/>
+        <details key="style" value="solid"/>
+        <details key="color" value="0,0,0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rc" lowerBound="1" eType="#//RowCount"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cc" lowerBound="1" eType="#//ColumnCount"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="RGen" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SolutionPathGenerator">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="128,159,255"/>
+      <details key="figure" value="rectangle"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="100,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mbg" lowerBound="1" eType="#//MazeBodyGenerator">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="source.decoration" value="none"/>
+        <details key="style" value="solid"/>
+        <details key="color" value="0,0,0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tr" lowerBound="1" eType="#//TurnRate"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sr" lowerBound="1" eType="#//StraightRate"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dr" lowerBound="1" eType="#//DecisionsRate"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="SPGen" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MazeBodyGenerator" abstract="true">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="128,159,255"/>
+      <details key="figure" value="rectangle"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="100,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dr" lowerBound="1" eType="#//DecisionsRate"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sr" lowerBound="1" eType="#//StraightRate"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tr" lowerBound="1" eType="#//TurnRate"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="MBGen" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StackMazeBodyGenerator" eSuperTypes="#//MazeBodyGenerator">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="128,159,255"/>
+      <details key="figure" value="rectangle"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="type_name"/>
+      <details key="size" value="100,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="SMBGen"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RandomMazeBodyGenerator" eSuperTypes="#//MazeBodyGenerator">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="128,159,255"/>
+      <details key="figure" value="rectangle"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="type_name"/>
+      <details key="size" value="100,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="RMBGen"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TurnRate" eSuperTypes="#//Rate">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="33,224,133"/>
+      <details key="figure" value="ellipse"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="50,50"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="TR" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StraightRate" eSuperTypes="#//Rate">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="33,224,133"/>
+      <details key="figure" value="ellipse"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="50,50"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="SR" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DecisionsRate" eSuperTypes="#//Rate">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="33,224,133"/>
+      <details key="figure" value="ellipse"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="50,50"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="DR" iD="true"/>
+  </eClassifiers>
+</ecore:EPackage>

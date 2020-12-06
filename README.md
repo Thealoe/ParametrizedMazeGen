@@ -49,3 +49,12 @@ python src/generate.py # Default pretty=True
 python src/generate.py pretty=True
 python src/generate.py pretty=False # For Windows
 ```
+
+## Model-driven Engineering
+
+TODO
+
+### Set up
+
+Open Projects from File System... > ParametrizedMazeGen\mde\maze
+Use Epsilon and required tools to generate GMF Model

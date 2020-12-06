@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: Maze;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Automatic-Module-Name: Maze
+Bundle-RequiredExecutionEnvironment: JavaSE-14
+Export-Package: Maze,
+ Maze.impl,
+ Maze.util
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.epsilon.evl.emf.validation;bundle-version="2.3.0"
+Bundle-ActivationPolicy: lazy

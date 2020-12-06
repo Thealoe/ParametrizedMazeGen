@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mz:MazeDiagram
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mz="geodes.sms.maze">
+  <rectangleGen
+      spg="//@solutionPathGen">
+    <rc value="100"/>
+    <cc value="100"/>
+  </rectangleGen>
+  <solutionPathGen
+      mbg="//@mazeBodyGen">
+    <tr value="20"/>
+    <sr value="50"/>
+    <dr value="30"/>
+  </solutionPathGen>
+  <mazeBodyGen
+      xsi:type="mz:RandomMazeBodyGenerator">
+    <dr value="20"/>
+    <sr/>
+    <tr value="50"/>
+  </mazeBodyGen>
+</mz:MazeDiagram>

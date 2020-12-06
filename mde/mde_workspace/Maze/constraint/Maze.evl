@@ -1,0 +1,11 @@
+context Rate {
+	constraint Value {
+		check : self.value <= 100 and self.value >= 0
+	}
+}
+
+context Count {
+	constraint Value {
+		check : self.value <= 200 and self.value >= 5
+	}
+}
