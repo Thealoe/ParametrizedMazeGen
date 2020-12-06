@@ -189,7 +189,6 @@ class MazeGrid():
         while not res:
             if attempts == 1000:
                 res = available_type_integers
-                print("Attempts maxed: ".format(res)) # TODO: Remove
                 break
             res = self.__get_weighted_cell_type_internal(rate_dict, available_type_integers)
             attempts += 1

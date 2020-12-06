@@ -1,10 +1,14 @@
 import json
 import sys, getopt
+from os import path
 
 from services.maze_parameters import MazeParameters
 from services.maze_grid import MazeGrid
 from services.cell_feeder import CellFeeder
 from services.maze_grid_printer import MazeGridPrinter
+
+MDE_FILE = 'mde/mde_workspace/MazeT/model/maze_output.json'
+SECOND_FILE = 'input_params.json'
 
 def generate(parameters, pretty):
     cell_feeder = CellFeeder()
@@ -34,12 +38,17 @@ def generate(parameters, pretty):
 # Entry point
 
 if __name__ == "__main__":
+    print("Generation started ...")
+    param_file = MDE_FILE if path.exists(MDE_FILE) else SECOND_FILE
     pretty = True
+
+    # Read options
     opts, args = getopt.getopt(sys.argv,"hi:o:",["pretty="])
     if "pretty=False" in args:
         pretty = False
-    print(opts, args)
-    with open('input_params.json', 'r') as f:
+
+    print("Using in put file: {}".format(param_file))
+    with open(param_file, 'r') as f:
         json_object = json.load(f)
     params = MazeParameters(json_object)
     generate(params, pretty)
