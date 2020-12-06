@@ -90,7 +90,7 @@ class MazeGrid():
 
             # Simulate do-while
             visited_cells.append(current_cell)
-            if (current_cell.x == end_cell.x and current_cell.y == end_cell.y):
+            if (current_cell == end_cell):
                 break
 
             prev_direction = self.__convert_next_to_prev_direction(next_direction)

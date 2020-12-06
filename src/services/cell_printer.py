@@ -138,6 +138,23 @@ class CellPrinter():
             if row == 2:
                 return "🟫🟩🟫"
 
+    def get_start(self, line_str):
+        return self.__change_middle_char(line_str, "🟦")
+
+    def get_end(self, line_str):
+        return self.__change_middle_char(line_str, "🟥")
+
+    def get_start_primitive_format(self, line_str):
+        return self.__change_middle_char(line_str, "S")
+
+    def get_end_primitive_format(self, line_str):
+        return self.__change_middle_char(line_str, "E")
+
+    def __change_middle_char(self, line_str, char):
+        l = list(line_str)
+        l[1] = char
+        return "".join(l)
+
     def get_print_string_primitive_format(self, cell_type, row):
         if cell_type == 0:
             if row == 0:
