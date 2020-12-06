@@ -33,6 +33,8 @@ Windows:
 
 ```bash
 .\maze-env\Scripts\activate
+set-executionpolicy RemoteSigned # For Powershell (step 1)
+.\maze-env\Scripts\activate.ps1 # For Powershell (step 2)
 ```
 
 ## Install requirements
@@ -44,10 +46,12 @@ pip install -r requirements.txt
 
 ## Generate
 
+Note you need to support Unicode 12.0 on your command line tool to use pretty=True option
+
 ```bash
 python src/generate.py # Default pretty=True
 python src/generate.py pretty=True
-python src/generate.py pretty=False # For Windows
+python src/generate.py pretty=False
 ```
 
 ## Model-driven Engineering
