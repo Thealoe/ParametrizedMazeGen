@@ -54,6 +54,18 @@ python src/generate.py pretty=True
 python src/generate.py pretty=False
 ```
 
+## Pretty Output Example
+
+![alt text](doc/pretty_output.png "Output")
+
+## Implementation Details
+
+### Types of maze cells
+
+Here an image of all 16 possible maze types that are used during generation.
+
+![alt text](doc/cells.jpg "Maze cell types")
+
 ## Model-driven Engineering
 
 This makes reference to the _mde_ folder. MDE part works only on Windows.
