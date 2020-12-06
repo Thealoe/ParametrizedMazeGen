@@ -1,13 +1,14 @@
 import json
+import sys, getopt
 
 from services.maze_parameters import MazeParameters
 from services.maze_grid import MazeGrid
 from services.cell_feeder import CellFeeder
 from services.maze_grid_printer import MazeGridPrinter
 
-def generate(parameters):
+def generate(parameters, pretty):
     cell_feeder = CellFeeder()
-    maze_grid_printer = MazeGridPrinter()
+    maze_grid_printer = MazeGridPrinter(pretty)
     maze_grid = MazeGrid(cell_feeder, parameters.get_rectangle_row_count(), parameters.get_rectangle_column_count())
 
     # Generate forced pattern
@@ -33,7 +34,12 @@ def generate(parameters):
 # Entry point
 
 if __name__ == "__main__":
+    pretty = True
+    opts, args = getopt.getopt(sys.argv,"hi:o:",["pretty="])
+    if "pretty=False" in args:
+        pretty = False
+    print(opts, args)
     with open('input_params.json', 'r') as f:
         json_object = json.load(f)
     params = MazeParameters(json_object)
-    generate(params)
+    generate(params, pretty)

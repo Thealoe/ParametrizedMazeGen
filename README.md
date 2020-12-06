@@ -45,5 +45,7 @@ pip install -r requirements.txt
 ## Generate
 
 ```bash
-python src/generate.py
+python src/generate.py # Default pretty=True
+python src/generate.py pretty=True
+python src/generate.py pretty=False # For Windows
 ```
