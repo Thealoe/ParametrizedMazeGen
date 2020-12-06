@@ -54,10 +54,14 @@ python src/generate.py pretty=False # For Windows
 
 This makes reference to the _mde_ folder.
 
-### Set up
+### Set up with build-in workspace
 
 1. Create Epsilion Interim workspace on the folder mde/mde_workspace
 2. Import > General > Existing Projects into Workspace, select Maze
 3. Import > General > Existing Projects into Workspace, select MazeT
 4. Right-click on Maze/metamodel/Maze.ecore > Register EPackages
 5. Right-click on Maze/metamodel/Maze.ecore > Eugenia > Generate GMF editor
+
+### Set up into a separate workspace
+
+Import > General > Archive File > Select mde/archive/mde_project.zip
