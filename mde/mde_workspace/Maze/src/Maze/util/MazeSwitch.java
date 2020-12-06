@@ -72,6 +72,12 @@ public class MazeSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case MazePackage.POINT: {
+				Point point = (Point)theEObject;
+				T result = casePoint(point);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case MazePackage.COUNT: {
 				Count count = (Count)theEObject;
 				T result = caseCount(count);
@@ -81,6 +87,20 @@ public class MazeSwitch<T> extends Switch<T> {
 			case MazePackage.RATE: {
 				Rate rate = (Rate)theEObject;
 				T result = caseRate(rate);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MazePackage.START_POINT: {
+				StartPoint startPoint = (StartPoint)theEObject;
+				T result = caseStartPoint(startPoint);
+				if (result == null) result = casePoint(startPoint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MazePackage.END_POINT: {
+				EndPoint endPoint = (EndPoint)theEObject;
+				T result = caseEndPoint(endPoint);
+				if (result == null) result = casePoint(endPoint);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -178,6 +198,21 @@ public class MazeSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Point</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePoint(Point object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Count</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -204,6 +239,36 @@ public class MazeSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRate(Rate object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Start Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Start Point</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStartPoint(StartPoint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>End Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>End Point</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEndPoint(EndPoint object) {
 		return null;
 	}
 

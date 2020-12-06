@@ -31,6 +31,15 @@ public interface MazeFactory extends EFactory {
 	MazeDiagram createMazeDiagram();
 
 	/**
+	 * Returns a new object of class '<em>Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Point</em>'.
+	 * @generated
+	 */
+	Point createPoint();
+
+	/**
 	 * Returns a new object of class '<em>Count</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -47,6 +56,24 @@ public interface MazeFactory extends EFactory {
 	 * @generated
 	 */
 	Rate createRate();
+
+	/**
+	 * Returns a new object of class '<em>Start Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Start Point</em>'.
+	 * @generated
+	 */
+	StartPoint createStartPoint();
+
+	/**
+	 * Returns a new object of class '<em>End Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>End Point</em>'.
+	 * @generated
+	 */
+	EndPoint createEndPoint();
 
 	/**
 	 * Returns a new object of class '<em>Rectangle Generator</em>'.

@@ -9,12 +9,27 @@ class MazeDiagram {
 	val MazeBodyGenerator[1] mazeBodyGen;
 }
 
+class Point {
+	attr int x;
+	attr int y;
+}
+
 class Count {
 	attr int value;
 }
 
 class Rate {
 	attr int value;
+}
+
+@gmf.node(color="245,197,66", figure="rounded", label.icon="false", label="name", size="40,40")
+class StartPoint extends Point {
+	readonly id attr String name = "SP";
+}
+
+@gmf.node(color="245,197,66", figure="rounded", label.icon="false", label="name", size="40,40")
+class EndPoint extends Point {
+	readonly id attr String name = "EP";
 }
 
 @gmf.node(color="255,102,102", figure="rounded", label.icon="false", label="name", size="40,40")
@@ -55,6 +70,12 @@ class SolutionPathGenerator {
 
 	@gmf.compartment
 	val DecisionsRate[1] dr;
+	
+	@gmf.compartment
+	val StartPoint[1] sp;
+
+	@gmf.compartment
+	val EndPoint[1] ep;
 	readonly id attr String name = "SPGen";
 }
 

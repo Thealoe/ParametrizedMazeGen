@@ -57,8 +57,11 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case MazePackage.MAZE_DIAGRAM: return createMazeDiagram();
+			case MazePackage.POINT: return createPoint();
 			case MazePackage.COUNT: return createCount();
 			case MazePackage.RATE: return createRate();
+			case MazePackage.START_POINT: return createStartPoint();
+			case MazePackage.END_POINT: return createEndPoint();
 			case MazePackage.COLUMN_COUNT: return createColumnCount();
 			case MazePackage.ROW_COUNT: return createRowCount();
 			case MazePackage.RECTANGLE_GENERATOR: return createRectangleGenerator();
@@ -91,6 +94,17 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 	 * @generated
 	 */
 	@Override
+	public Point createPoint() {
+		PointImpl point = new PointImpl();
+		return point;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Count createCount() {
 		CountImpl count = new CountImpl();
 		return count;
@@ -105,6 +119,28 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 	public Rate createRate() {
 		RateImpl rate = new RateImpl();
 		return rate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StartPoint createStartPoint() {
+		StartPointImpl startPoint = new StartPointImpl();
+		return startPoint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EndPoint createEndPoint() {
+		EndPointImpl endPoint = new EndPointImpl();
+		return endPoint;
 	}
 
 	/**

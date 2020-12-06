@@ -3,9 +3,11 @@
 package Maze.impl;
 
 import Maze.DecisionsRate;
+import Maze.EndPoint;
 import Maze.MazeBodyGenerator;
 import Maze.MazePackage;
 import Maze.SolutionPathGenerator;
+import Maze.StartPoint;
 import Maze.StraightRate;
 import Maze.TurnRate;
 
@@ -30,6 +32,8 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link Maze.impl.SolutionPathGeneratorImpl#getTr <em>Tr</em>}</li>
  *   <li>{@link Maze.impl.SolutionPathGeneratorImpl#getSr <em>Sr</em>}</li>
  *   <li>{@link Maze.impl.SolutionPathGeneratorImpl#getDr <em>Dr</em>}</li>
+ *   <li>{@link Maze.impl.SolutionPathGeneratorImpl#getSp <em>Sp</em>}</li>
+ *   <li>{@link Maze.impl.SolutionPathGeneratorImpl#getEp <em>Ep</em>}</li>
  *   <li>{@link Maze.impl.SolutionPathGeneratorImpl#getName <em>Name</em>}</li>
  * </ul>
  *
@@ -75,6 +79,26 @@ public class SolutionPathGeneratorImpl extends EObjectImpl implements SolutionPa
 	 * @ordered
 	 */
 	protected DecisionsRate dr;
+
+	/**
+	 * The cached value of the '{@link #getSp() <em>Sp</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSp()
+	 * @generated
+	 * @ordered
+	 */
+	protected StartPoint sp;
+
+	/**
+	 * The cached value of the '{@link #getEp() <em>Ep</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEp()
+	 * @generated
+	 * @ordered
+	 */
+	protected EndPoint ep;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -296,6 +320,96 @@ public class SolutionPathGeneratorImpl extends EObjectImpl implements SolutionPa
 	 * @generated
 	 */
 	@Override
+	public StartPoint getSp() {
+		return sp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSp(StartPoint newSp, NotificationChain msgs) {
+		StartPoint oldSp = sp;
+		sp = newSp;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MazePackage.SOLUTION_PATH_GENERATOR__SP, oldSp, newSp);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSp(StartPoint newSp) {
+		if (newSp != sp) {
+			NotificationChain msgs = null;
+			if (sp != null)
+				msgs = ((InternalEObject)sp).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MazePackage.SOLUTION_PATH_GENERATOR__SP, null, msgs);
+			if (newSp != null)
+				msgs = ((InternalEObject)newSp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MazePackage.SOLUTION_PATH_GENERATOR__SP, null, msgs);
+			msgs = basicSetSp(newSp, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MazePackage.SOLUTION_PATH_GENERATOR__SP, newSp, newSp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EndPoint getEp() {
+		return ep;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetEp(EndPoint newEp, NotificationChain msgs) {
+		EndPoint oldEp = ep;
+		ep = newEp;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MazePackage.SOLUTION_PATH_GENERATOR__EP, oldEp, newEp);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEp(EndPoint newEp) {
+		if (newEp != ep) {
+			NotificationChain msgs = null;
+			if (ep != null)
+				msgs = ((InternalEObject)ep).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MazePackage.SOLUTION_PATH_GENERATOR__EP, null, msgs);
+			if (newEp != null)
+				msgs = ((InternalEObject)newEp).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MazePackage.SOLUTION_PATH_GENERATOR__EP, null, msgs);
+			msgs = basicSetEp(newEp, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MazePackage.SOLUTION_PATH_GENERATOR__EP, newEp, newEp));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -314,6 +428,10 @@ public class SolutionPathGeneratorImpl extends EObjectImpl implements SolutionPa
 				return basicSetSr(null, msgs);
 			case MazePackage.SOLUTION_PATH_GENERATOR__DR:
 				return basicSetDr(null, msgs);
+			case MazePackage.SOLUTION_PATH_GENERATOR__SP:
+				return basicSetSp(null, msgs);
+			case MazePackage.SOLUTION_PATH_GENERATOR__EP:
+				return basicSetEp(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -335,6 +453,10 @@ public class SolutionPathGeneratorImpl extends EObjectImpl implements SolutionPa
 				return getSr();
 			case MazePackage.SOLUTION_PATH_GENERATOR__DR:
 				return getDr();
+			case MazePackage.SOLUTION_PATH_GENERATOR__SP:
+				return getSp();
+			case MazePackage.SOLUTION_PATH_GENERATOR__EP:
+				return getEp();
 			case MazePackage.SOLUTION_PATH_GENERATOR__NAME:
 				return getName();
 		}
@@ -361,6 +483,12 @@ public class SolutionPathGeneratorImpl extends EObjectImpl implements SolutionPa
 			case MazePackage.SOLUTION_PATH_GENERATOR__DR:
 				setDr((DecisionsRate)newValue);
 				return;
+			case MazePackage.SOLUTION_PATH_GENERATOR__SP:
+				setSp((StartPoint)newValue);
+				return;
+			case MazePackage.SOLUTION_PATH_GENERATOR__EP:
+				setEp((EndPoint)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -385,6 +513,12 @@ public class SolutionPathGeneratorImpl extends EObjectImpl implements SolutionPa
 			case MazePackage.SOLUTION_PATH_GENERATOR__DR:
 				setDr((DecisionsRate)null);
 				return;
+			case MazePackage.SOLUTION_PATH_GENERATOR__SP:
+				setSp((StartPoint)null);
+				return;
+			case MazePackage.SOLUTION_PATH_GENERATOR__EP:
+				setEp((EndPoint)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -405,6 +539,10 @@ public class SolutionPathGeneratorImpl extends EObjectImpl implements SolutionPa
 				return sr != null;
 			case MazePackage.SOLUTION_PATH_GENERATOR__DR:
 				return dr != null;
+			case MazePackage.SOLUTION_PATH_GENERATOR__SP:
+				return sp != null;
+			case MazePackage.SOLUTION_PATH_GENERATOR__EP:
+				return ep != null;
 			case MazePackage.SOLUTION_PATH_GENERATOR__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}

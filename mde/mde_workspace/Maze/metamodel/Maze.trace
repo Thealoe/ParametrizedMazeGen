@@ -31,6 +31,12 @@
     <compartmentTraces
         visualID="7011"
         queryText="true"/>
+    <compartmentTraces
+        visualID="7020"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7021"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2005"
@@ -131,6 +137,20 @@
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'EndRate') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'MazeBodyGenerator') and _containmentMF_.name = 'er')">
     <nodeLabelTraces
         visualID="5015"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3010"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'StartPoint') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'SolutionPathGenerator') and _containmentMF_.name = 'sp')">
+    <nodeLabelTraces
+        visualID="5016"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3011"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'EndPoint') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'SolutionPathGenerator') and _containmentMF_.name = 'ep')">
+    <nodeLabelTraces
+        visualID="5017"
         queryText="true"/>
   </childNodeTraces>
   <linkTraces

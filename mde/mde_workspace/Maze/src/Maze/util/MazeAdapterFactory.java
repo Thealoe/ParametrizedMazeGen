@@ -72,12 +72,24 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 				return createMazeDiagramAdapter();
 			}
 			@Override
+			public Adapter casePoint(Point object) {
+				return createPointAdapter();
+			}
+			@Override
 			public Adapter caseCount(Count object) {
 				return createCountAdapter();
 			}
 			@Override
 			public Adapter caseRate(Rate object) {
 				return createRateAdapter();
+			}
+			@Override
+			public Adapter caseStartPoint(StartPoint object) {
+				return createStartPointAdapter();
+			}
+			@Override
+			public Adapter caseEndPoint(EndPoint object) {
+				return createEndPointAdapter();
 			}
 			@Override
 			public Adapter caseColumnCount(ColumnCount object) {
@@ -158,6 +170,20 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Maze.Point <em>Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Maze.Point
+	 * @generated
+	 */
+	public Adapter createPointAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Maze.Count <em>Count</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -182,6 +208,34 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRateAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Maze.StartPoint <em>Start Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Maze.StartPoint
+	 * @generated
+	 */
+	public Adapter createStartPointAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Maze.EndPoint <em>End Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Maze.EndPoint
+	 * @generated
+	 */
+	public Adapter createEndPointAdapter() {
 		return null;
 	}
 

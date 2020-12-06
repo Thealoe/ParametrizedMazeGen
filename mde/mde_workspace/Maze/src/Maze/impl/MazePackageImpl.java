@@ -5,11 +5,13 @@ package Maze.impl;
 import Maze.ColumnCount;
 import Maze.Count;
 import Maze.DecisionsRate;
+import Maze.EndPoint;
 import Maze.EndRate;
 import Maze.MazeBodyGenerator;
 import Maze.MazeDiagram;
 import Maze.MazeFactory;
 import Maze.MazePackage;
+import Maze.Point;
 import Maze.RandomMazeBodyGenerator;
 import Maze.Rate;
 import Maze.RectangleGenerator;
@@ -17,6 +19,7 @@ import Maze.RectangleGenerator;
 import Maze.RowCount;
 import Maze.SolutionPathGenerator;
 import Maze.StackMazeBodyGenerator;
+import Maze.StartPoint;
 import Maze.StraightRate;
 import Maze.TurnRate;
 import org.eclipse.emf.ecore.EAttribute;
@@ -45,6 +48,13 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass pointEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass countEClass = null;
 
 	/**
@@ -53,6 +63,20 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	 * @generated
 	 */
 	private EClass rateEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass startPointEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass endPointEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,6 +272,36 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getPoint() {
+		return pointEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPoint_X() {
+		return (EAttribute)pointEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPoint_Y() {
+		return (EAttribute)pointEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCount() {
 		return countEClass;
 	}
@@ -280,6 +334,46 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	@Override
 	public EAttribute getRate_Value() {
 		return (EAttribute)rateEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getStartPoint() {
+		return startPointEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStartPoint_Name() {
+		return (EAttribute)startPointEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getEndPoint() {
+		return endPointEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEndPoint_Name() {
+		return (EAttribute)endPointEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -378,8 +472,28 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getSolutionPathGenerator_Sp() {
+		return (EReference)solutionPathGeneratorEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSolutionPathGenerator_Ep() {
+		return (EReference)solutionPathGeneratorEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getSolutionPathGenerator_Name() {
-		return (EAttribute)solutionPathGeneratorEClass.getEStructuralFeatures().get(4);
+		return (EAttribute)solutionPathGeneratorEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -647,11 +761,21 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		createEReference(mazeDiagramEClass, MAZE_DIAGRAM__SOLUTION_PATH_GEN);
 		createEReference(mazeDiagramEClass, MAZE_DIAGRAM__MAZE_BODY_GEN);
 
+		pointEClass = createEClass(POINT);
+		createEAttribute(pointEClass, POINT__X);
+		createEAttribute(pointEClass, POINT__Y);
+
 		countEClass = createEClass(COUNT);
 		createEAttribute(countEClass, COUNT__VALUE);
 
 		rateEClass = createEClass(RATE);
 		createEAttribute(rateEClass, RATE__VALUE);
+
+		startPointEClass = createEClass(START_POINT);
+		createEAttribute(startPointEClass, START_POINT__NAME);
+
+		endPointEClass = createEClass(END_POINT);
+		createEAttribute(endPointEClass, END_POINT__NAME);
 
 		columnCountEClass = createEClass(COLUMN_COUNT);
 		createEAttribute(columnCountEClass, COLUMN_COUNT__NAME);
@@ -670,6 +794,8 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		createEReference(solutionPathGeneratorEClass, SOLUTION_PATH_GENERATOR__TR);
 		createEReference(solutionPathGeneratorEClass, SOLUTION_PATH_GENERATOR__SR);
 		createEReference(solutionPathGeneratorEClass, SOLUTION_PATH_GENERATOR__DR);
+		createEReference(solutionPathGeneratorEClass, SOLUTION_PATH_GENERATOR__SP);
+		createEReference(solutionPathGeneratorEClass, SOLUTION_PATH_GENERATOR__EP);
 		createEAttribute(solutionPathGeneratorEClass, SOLUTION_PATH_GENERATOR__NAME);
 
 		mazeBodyGeneratorEClass = createEClass(MAZE_BODY_GENERATOR);
@@ -726,6 +852,8 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		startPointEClass.getESuperTypes().add(this.getPoint());
+		endPointEClass.getESuperTypes().add(this.getPoint());
 		columnCountEClass.getESuperTypes().add(this.getCount());
 		rowCountEClass.getESuperTypes().add(this.getCount());
 		stackMazeBodyGeneratorEClass.getESuperTypes().add(this.getMazeBodyGenerator());
@@ -742,11 +870,21 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		initEReference(getMazeDiagram_SolutionPathGen(), this.getSolutionPathGenerator(), null, "solutionPathGen", null, 1, 1, MazeDiagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMazeDiagram_MazeBodyGen(), this.getMazeBodyGenerator(), null, "mazeBodyGen", null, 1, 1, MazeDiagram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(pointEClass, Point.class, "Point", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPoint_X(), ecorePackage.getEInt(), "x", null, 0, 1, Point.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPoint_Y(), ecorePackage.getEInt(), "y", null, 0, 1, Point.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(countEClass, Count.class, "Count", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCount_Value(), ecorePackage.getEInt(), "value", null, 0, 1, Count.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(rateEClass, Rate.class, "Rate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRate_Value(), ecorePackage.getEInt(), "value", null, 0, 1, Rate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(startPointEClass, StartPoint.class, "StartPoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getStartPoint_Name(), ecorePackage.getEString(), "name", "SP", 0, 1, StartPoint.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(endPointEClass, EndPoint.class, "EndPoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEndPoint_Name(), ecorePackage.getEString(), "name", "EP", 0, 1, EndPoint.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(columnCountEClass, ColumnCount.class, "ColumnCount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getColumnCount_Name(), ecorePackage.getEString(), "name", "CC", 0, 1, ColumnCount.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -765,6 +903,8 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		initEReference(getSolutionPathGenerator_Tr(), this.getTurnRate(), null, "tr", null, 1, 1, SolutionPathGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSolutionPathGenerator_Sr(), this.getStraightRate(), null, "sr", null, 1, 1, SolutionPathGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSolutionPathGenerator_Dr(), this.getDecisionsRate(), null, "dr", null, 1, 1, SolutionPathGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSolutionPathGenerator_Sp(), this.getStartPoint(), null, "sp", null, 1, 1, SolutionPathGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSolutionPathGenerator_Ep(), this.getEndPoint(), null, "ep", null, 1, 1, SolutionPathGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSolutionPathGenerator_Name(), ecorePackage.getEString(), "name", "SPGen", 0, 1, SolutionPathGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(mazeBodyGeneratorEClass, MazeBodyGenerator.class, "MazeBodyGenerator", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -830,6 +970,26 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	 */
 	protected void createGmf_1Annotations() {
 		String source = "gmf.node";
+		addAnnotation
+		  (startPointEClass,
+		   source,
+		   new String[] {
+			   "color", "245,197,66",
+			   "figure", "rounded",
+			   "label.icon", "false",
+			   "label", "name",
+			   "size", "40,40"
+		   });
+		addAnnotation
+		  (endPointEClass,
+		   source,
+		   new String[] {
+			   "color", "245,197,66",
+			   "figure", "rounded",
+			   "label.icon", "false",
+			   "label", "name",
+			   "size", "40,40"
+		   });
 		addAnnotation
 		  (columnCountEClass,
 		   source,
@@ -1000,6 +1160,16 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		   });
 		addAnnotation
 		  (getSolutionPathGenerator_Dr(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
+		  (getSolutionPathGenerator_Sp(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
+		  (getSolutionPathGenerator_Ep(),
 		   source,
 		   new String[] {
 		   });

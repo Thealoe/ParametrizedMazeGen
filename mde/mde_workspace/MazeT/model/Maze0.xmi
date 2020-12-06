@@ -8,6 +8,8 @@
     <tr/>
     <sr/>
     <dr value="90"/>
+    <sp/>
+    <ep x="9" y="9"/>
   </solutionPathGen>
   <mazeBodyGen xsi:type="mz:RandomMazeBodyGenerator">
     <dr value="80"/>

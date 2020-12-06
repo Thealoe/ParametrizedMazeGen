@@ -17,6 +17,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Maze.SolutionPathGenerator#getTr <em>Tr</em>}</li>
  *   <li>{@link Maze.SolutionPathGenerator#getSr <em>Sr</em>}</li>
  *   <li>{@link Maze.SolutionPathGenerator#getDr <em>Dr</em>}</li>
+ *   <li>{@link Maze.SolutionPathGenerator#getSp <em>Sp</em>}</li>
+ *   <li>{@link Maze.SolutionPathGenerator#getEp <em>Ep</em>}</li>
  *   <li>{@link Maze.SolutionPathGenerator#getName <em>Name</em>}</li>
  * </ul>
  *
@@ -116,6 +118,52 @@ public interface SolutionPathGenerator extends EObject {
 	 * @generated
 	 */
 	void setDr(DecisionsRate value);
+
+	/**
+	 * Returns the value of the '<em><b>Sp</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sp</em>' containment reference.
+	 * @see #setSp(StartPoint)
+	 * @see Maze.MazePackage#getSolutionPathGenerator_Sp()
+	 * @model containment="true" required="true"
+	 *        annotation="gmf.compartment"
+	 * @generated
+	 */
+	StartPoint getSp();
+
+	/**
+	 * Sets the value of the '{@link Maze.SolutionPathGenerator#getSp <em>Sp</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Sp</em>' containment reference.
+	 * @see #getSp()
+	 * @generated
+	 */
+	void setSp(StartPoint value);
+
+	/**
+	 * Returns the value of the '<em><b>Ep</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Ep</em>' containment reference.
+	 * @see #setEp(EndPoint)
+	 * @see Maze.MazePackage#getSolutionPathGenerator_Ep()
+	 * @model containment="true" required="true"
+	 *        annotation="gmf.compartment"
+	 * @generated
+	 */
+	EndPoint getEp();
+
+	/**
+	 * Sets the value of the '{@link Maze.SolutionPathGenerator#getEp <em>Ep</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Ep</em>' containment reference.
+	 * @see #getEp()
+	 * @generated
+	 */
+	void setEp(EndPoint value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

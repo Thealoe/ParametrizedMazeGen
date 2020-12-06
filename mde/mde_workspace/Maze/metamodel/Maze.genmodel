@@ -11,11 +11,21 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeDiagram/solutionPathGen"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeDiagram/mazeBodyGen"/>
     </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//Point">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//Point/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//Point/y"/>
+    </genClasses>
     <genClasses ecoreClass="Maze.ecore#//Count">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//Count/value"/>
     </genClasses>
     <genClasses ecoreClass="Maze.ecore#//Rate">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//Rate/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//StartPoint">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//StartPoint/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//EndPoint">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//EndPoint/name"/>
     </genClasses>
     <genClasses ecoreClass="Maze.ecore#//ColumnCount">
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//ColumnCount/name"/>
@@ -34,6 +44,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/tr"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/sr"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/dr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/sp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//SolutionPathGenerator/ep"/>
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//SolutionPathGenerator/name"/>
     </genClasses>
     <genClasses image="false" ecoreClass="Maze.ecore#//MazeBodyGenerator">
