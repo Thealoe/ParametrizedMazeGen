@@ -2,11 +2,15 @@
 
 A tool to generate parametrized maze.
 
-## Version
+## MazeGeneration
+
+This section contains details on the Python maze generator.
+
+### Version
 
 Python 3.8.6
 
-## Create virtualenv
+### Create virtualenv
 
 OS X:
 
@@ -21,7 +25,7 @@ virtualenv --python "<path/to/python>" maze-env
 where python # Get python path
 ```
 
-## Activate virtualenv
+### Activate virtualenv
 
 OS X:
 
@@ -37,14 +41,14 @@ set-executionpolicy RemoteSigned # For Powershell (step 1)
 .\maze-env\Scripts\activate.ps1 # For Powershell (step 2)
 ```
 
-## Install requirements
+### Install requirements
 
 ```bash
 pip3 install -r requirements.txt
 pip install -r requirements.txt
 ```
 
-## Generate
+### Generate
 
 Note you need to support Unicode 12.0 on your command line tool to use pretty=True option
 
@@ -54,11 +58,11 @@ python src/generate.py pretty=True
 python src/generate.py pretty=False
 ```
 
-## Pretty Output Example
+### Pretty Output Example
 
 ![alt text](doc/pretty_output.png "Output")
 
-## Implementation Details
+### Implementation Details
 
 ### Types of maze cells
 
