@@ -23,14 +23,23 @@ where python # Get python path
 
 ## Activate virtualenv
 
+OS X:
+
 ```bash
 source maze-env/bin/activate
+```
+
+Windows:
+
+```bash
+.\maze-env\Scripts\activate
 ```
 
 ## Install requirements
 
 ```bash
 pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Generate
