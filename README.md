@@ -62,9 +62,7 @@ python src/generate.py pretty=False
 
 ![alt text](doc/pretty_output.png "Output")
 
-### Implementation Details
-
-### Types of maze cells
+### Types of Maze Cells
 
 Here an image of all 16 possible maze types that are used during generation.
 
