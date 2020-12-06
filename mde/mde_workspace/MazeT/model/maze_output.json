@@ -1,17 +1,17 @@
 { 
 	"RGen": {
-		"CC" : 100,
-		"RC" : 100
+		"CC" : 10,
+		"RC" : 10
 	},
 	"SPGen": {
-		"SR" : 50,
-		"TR" : 20,
-		"DR" : 30
+		"SR" : 0,
+		"TR" : 0,
+		"DR" : 90
 	},
 	"MBGen": {
-		"under_type" : RMBGen,
+		"under_type" : "RMBGen",
 		"SR" : 0,
-		"TR" : 50,
-		"DR" : 20
+		"TR" : 20,
+		"DR" : 80
 	}
 }
