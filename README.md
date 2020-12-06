@@ -52,7 +52,7 @@ python src/generate.py pretty=False # For Windows
 
 ## Model-driven Engineering
 
-This makes reference to the _mde_ folder.s
+This makes reference to the _mde_ folder.
 
 ### Set up
 
