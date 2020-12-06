@@ -52,9 +52,11 @@ python src/generate.py pretty=False # For Windows
 
 ## Model-driven Engineering
 
-This makes reference to the _mde_ folder.
+This makes reference to the _mde_ folder. MDE part works only on Windows.
 
 ### Set up with build-in workspace
+
+Make sure you have installed all required tools:
 
 1. Create Epsilion Interim workspace on the folder mde/mde_workspace
 2. Import > General > Existing Projects into Workspace, select Maze
