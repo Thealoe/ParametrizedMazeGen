@@ -52,9 +52,12 @@ python src/generate.py pretty=False # For Windows
 
 ## Model-driven Engineering
 
-TODO
+This makes reference to the _mde_ folder.s
 
 ### Set up
 
-Open Projects from File System... > ParametrizedMazeGen\mde\maze
-Use Epsilon and required tools to generate GMF Model
+1. Create Epsilion Interim workspace on the folder mde/mde_workspace
+2. Import > General > Existing Projects into Workspace, select Maze
+3. Import > General > Existing Projects into Workspace, select MazeT
+4. Right-click on Maze/metamodel/Maze.ecore > Register EPackages
+5. Right-click on Maze/metamodel/Maze.ecore > Eugenia > Generate GMF editor
