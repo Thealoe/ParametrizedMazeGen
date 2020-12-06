@@ -9,7 +9,7 @@
 		"[%= self.solutionPathGen.dr.name %]" : [%= self.solutionPathGen.dr.value %]
 	},
 	"[%= self.mazeBodyGen.name %]": {
-		"under_type" : [%= self.mazeBodyGen.type_name %],
+		"under_type" : "[%= self.mazeBodyGen.type_name %]",
 		"[%= self.mazeBodyGen.sr.name %]" : [%= self.mazeBodyGen.sr.value %],
 		"[%= self.mazeBodyGen.tr.name %]" : [%= self.mazeBodyGen.tr.value %],
 		"[%= self.mazeBodyGen.dr.name %]" : [%= self.mazeBodyGen.dr.value %]
