@@ -9,10 +9,6 @@ class MazeGrid():
         self.cell_feeder = cell_feeder
         self.mb_rates = ['e', 's', 't', 'd']
         self.sp_rates = ['s', 't', 'd']
-
-        print("Row count: {}".format(self.row_count))
-        print("Col count: {}".format(self.col_count))
-
         self.grid = self.__build_start_grid()
 
     def at(self, x, y):
@@ -99,8 +95,9 @@ class MazeGrid():
 
             prev_direction = self.__convert_next_to_prev_direction(next_direction)
             current_cell = next_cell
-        
+
         # Mark as visited
+        # TODO: This should be able to be done in the first loop, why i doesn't work if so ? Propably a bug..
         for c in visited_cells:
             c.visited = True
 

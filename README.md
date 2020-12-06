@@ -8,8 +8,15 @@ Python 3.8.6
 
 ## Create virtualenv
 
+OS X:
 ```bash
 python3 -m venv maze-env
+```
+
+Windows:
+```bash
+virtualenv --python "<path/to/python>" maze-env
+where python //Get python path
 ```
 
 ## Activate virtualenv
