@@ -57,59 +57,73 @@ class MazeGrid():
         weights = np.array(weights / np.sum(weights))
         rate_dict = self.__build_weight_dict(weights, self.sp_rates)
 
-        print("====================================")
-        print("Start cell: {} (x) - {} (y)".format(start_cell.x, start_cell.y))
-        print("End cell: {} (x) - {} (y)".format(end_cell.x, end_cell.y))
-        print("====================================")
+        # print("====================================")
+        # print("Start cell: {} (x) - {} (y)".format(start_cell.x, start_cell.y))
+        # print("End cell: {} (x) - {} (y)".format(end_cell.x, end_cell.y))
+        # print("====================================")
 
         current_cell = start_cell
+        prev_direction = None
+        visited_cells = []
         while True:
-            next_cell = self.__get_manhattan_next_cell(current_cell, end_cell)
-            print("====================================")
-            print("Current cell: {} (x) - {} (y)".format(current_cell.x, current_cell.y))
-            print("Next cell: {} (x) - {} (y)".format(next_cell.x, next_cell.y))
-            print("====================================")
+            # Get next cell on solution path
+            next_direction, next_cell = self.__get_manhattan_next_cell(current_cell, end_cell)
+
+            # Get allowed direction types
+            direction_types = self.cell_feeder.allowed_cell_type_feeder.get_allowed_types_on_solution_path(prev_direction, next_direction)
+
+            # Get possible types based on neighbors
             cell_types = self.__get_next_possible_cell_types(current_cell)
-            current_cell.info.type = 15  # int(random.choice(cell_types)) # TODO: It needs to be a path.. (not w/p toggle)
-            current_cell.visited = True
+
+            # Get cell type based on rate probability
+            cell_types = self.__get_intersect_values_list(cell_types, direction_types)
+            cell_type = int(self.__get_weighted_cell_type(rate_dict, cell_types))
+
+            # print("====================================")
+            # print("Current cell: {} (x) - {} (y)".format(current_cell.x, current_cell.y))
+            # print("Next cell: {} (x) - {} (y)".format(next_cell.x, next_cell.y))
+            # print("Prev direction: {}".format(prev_direction))
+            # print("Next direction: {}".format(next_direction))
+            # print("Direction types: {}".format(direction_types))
+            # print("Possible cell types: {}".format(cell_types))
+            # print("Assigned cell type: {}".format(cell_type))
+            # print("====================================")
+
+            # Assign random in the remaining types
+            current_cell.info.type = int(random.choice(cell_types))
 
             # Simulate do-while
+            visited_cells.append(current_cell)
             if (current_cell.x == end_cell.x and current_cell.y == end_cell.y):
                 break
 
+            prev_direction = self.__convert_next_to_prev_direction(next_direction)
             current_cell = next_cell
+        
+        # Mark as visited
+        for c in visited_cells:
+            c.visited = True
 
     def __get_manhattan_next_cell(self, current, goal):
         distances = {}
-        if current.left.is_open(): distances[current.left] = abs(current.left.x - goal.x) + abs(current.left.y - goal.y)
-        if current.up.is_open(): distances[current.up] = abs(current.up.x - goal.x) + abs(current.up.y - goal.y)
-        if current.right.is_open(): distances[current.right] = abs(current.right.x - goal.x) + abs(current.right.y - goal.y)
-        if current.down.is_open(): distances[current.down] = abs(current.down.x - goal.x) + abs(current.down.y - goal.y)
+        cells = {'l': current.left, 'u': current.up, 'r': current.right, 'd': current.down}
+
+        # Calculate manhattan
+        if cells['l'].is_open(): distances['l'] = abs(current.left.x - goal.x) + abs(current.left.y - goal.y)
+        if cells['u'].is_open(): distances['u'] = abs(current.up.x - goal.x) + abs(current.up.y - goal.y)
+        if cells['r'].is_open(): distances['r'] = abs(current.right.x - goal.x) + abs(current.right.y - goal.y)
+        if cells['d'].is_open(): distances['d'] = abs(current.down.x - goal.x) + abs(current.down.y - goal.y)
 
         # Shuffle in case of equality
         l = list(distances.items())
         random.shuffle(l)
         distances = dict(l)
 
-        return min(distances, key=distances.get)
+        min_key = min(distances, key=distances.get)
+        return min_key, cells[min_key]
 
     def generate_forced_pattern(self):
         # TODO: Generated forced pattern based on params
-        # cell = self.grid[4][4]
-        # cell.info.type = 15
-        # cell.visited = True
-        # cell = self.grid[5][4]
-        # cell.info.type = 15
-        # cell.visited = True
-        # cell = self.grid[3][4]
-        # cell.info.type = 15
-        # cell.visited = True
-        # cell = self.grid[4][5]
-        # cell.info.type = 15
-        # cell.visited = True
-        # cell = self.grid[4][3]
-        # cell.info.type = 15
-        # cell.visited = True
         pass
 
     def generate_sequential_body(self, end, straight, turn, decision):
@@ -176,9 +190,10 @@ class MazeGrid():
         res = []
         attempts = 0
         while not res:
-            if attempts == 10000:
+            if attempts == 1000:
                 res = available_type_integers
-                continue
+                print("Attempts maxed: ".format(res)) # TODO: Remove
+                break
             res = self.__get_weighted_cell_type_internal(rate_dict, available_type_integers)
             attempts += 1
         return random.choice(res)
@@ -199,3 +214,11 @@ class MazeGrid():
 
     def __get_intersect_values_list(self, l1, l2):
         return list(set(l1) & set(l2))
+
+    def __convert_next_to_prev_direction(self, direction):
+        res = None
+        if direction == "l": res = "r"
+        if direction == "r": res = "l"
+        if direction == "u": res = "d"
+        if direction == "d": res = "u"
+        return res
