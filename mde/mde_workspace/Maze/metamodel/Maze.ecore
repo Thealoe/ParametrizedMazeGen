@@ -120,6 +120,10 @@
         containment="true">
       <eAnnotations source="gmf.compartment"/>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="er" lowerBound="1" eType="#//EndRate"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" defaultValueLiteral="MBGen" iD="true"/>
   </eClassifiers>
@@ -177,5 +181,16 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" defaultValueLiteral="DR" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EndRate" eSuperTypes="#//Rate">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="33,224,133"/>
+      <details key="figure" value="ellipse"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="50,50"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="ER" iD="true"/>
   </eClassifiers>
 </ecore:EPackage>

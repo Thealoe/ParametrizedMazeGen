@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Maze.MazeBodyGenerator#getDr <em>Dr</em>}</li>
  *   <li>{@link Maze.MazeBodyGenerator#getSr <em>Sr</em>}</li>
  *   <li>{@link Maze.MazeBodyGenerator#getTr <em>Tr</em>}</li>
+ *   <li>{@link Maze.MazeBodyGenerator#getEr <em>Er</em>}</li>
  *   <li>{@link Maze.MazeBodyGenerator#getName <em>Name</em>}</li>
  * </ul>
  *
@@ -93,6 +94,29 @@ public interface MazeBodyGenerator extends EObject {
 	 * @generated
 	 */
 	void setTr(TurnRate value);
+
+	/**
+	 * Returns the value of the '<em><b>Er</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Er</em>' containment reference.
+	 * @see #setEr(EndRate)
+	 * @see Maze.MazePackage#getMazeBodyGenerator_Er()
+	 * @model containment="true" required="true"
+	 *        annotation="gmf.compartment"
+	 * @generated
+	 */
+	EndRate getEr();
+
+	/**
+	 * Sets the value of the '{@link Maze.MazeBodyGenerator#getEr <em>Er</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Er</em>' containment reference.
+	 * @see #getEr()
+	 * @generated
+	 */
+	void setEr(EndRate value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

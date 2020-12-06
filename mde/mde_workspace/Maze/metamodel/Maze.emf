@@ -69,6 +69,9 @@ abstract class MazeBodyGenerator {
 
 	@gmf.compartment
 	val TurnRate[1] tr;
+	
+	@gmf.compartment
+	val EndRate[1] er;
 	readonly id attr String name = "MBGen";
 }
 
@@ -95,5 +98,10 @@ class StraightRate extends Rate {
 @gmf.node(color="33,224,133", figure="ellipse", label.icon="false", label="name", size="50,50")
 class DecisionsRate extends Rate {
 	readonly id attr String name = "DR";
+}
+
+@gmf.node(color="33,224,133", figure="ellipse", label.icon="false", label="name", size="50,50")
+class EndRate extends Rate {
+	readonly id attr String name = "ER";
 }
 

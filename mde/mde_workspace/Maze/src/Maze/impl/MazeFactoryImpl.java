@@ -68,6 +68,7 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 			case MazePackage.TURN_RATE: return createTurnRate();
 			case MazePackage.STRAIGHT_RATE: return createStraightRate();
 			case MazePackage.DECISIONS_RATE: return createDecisionsRate();
+			case MazePackage.END_RATE: return createEndRate();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -181,6 +182,17 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 	public DecisionsRate createDecisionsRate() {
 		DecisionsRateImpl decisionsRate = new DecisionsRateImpl();
 		return decisionsRate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EndRate createEndRate() {
+		EndRateImpl endRate = new EndRateImpl();
+		return endRate;
 	}
 
 	/**

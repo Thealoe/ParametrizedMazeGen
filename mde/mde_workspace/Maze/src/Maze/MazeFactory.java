@@ -112,6 +112,15 @@ public interface MazeFactory extends EFactory {
 	DecisionsRate createDecisionsRate();
 
 	/**
+	 * Returns a new object of class '<em>End Rate</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>End Rate</em>'.
+	 * @generated
+	 */
+	EndRate createEndRate();
+
+	/**
 	 * Returns a new object of class '<em>Column Count</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

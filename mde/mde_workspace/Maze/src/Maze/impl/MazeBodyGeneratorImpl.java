@@ -3,6 +3,7 @@
 package Maze.impl;
 
 import Maze.DecisionsRate;
+import Maze.EndRate;
 import Maze.MazeBodyGenerator;
 import Maze.MazePackage;
 import Maze.StraightRate;
@@ -28,6 +29,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link Maze.impl.MazeBodyGeneratorImpl#getDr <em>Dr</em>}</li>
  *   <li>{@link Maze.impl.MazeBodyGeneratorImpl#getSr <em>Sr</em>}</li>
  *   <li>{@link Maze.impl.MazeBodyGeneratorImpl#getTr <em>Tr</em>}</li>
+ *   <li>{@link Maze.impl.MazeBodyGeneratorImpl#getEr <em>Er</em>}</li>
  *   <li>{@link Maze.impl.MazeBodyGeneratorImpl#getName <em>Name</em>}</li>
  * </ul>
  *
@@ -63,6 +65,16 @@ public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeB
 	 * @ordered
 	 */
 	protected TurnRate tr;
+
+	/**
+	 * The cached value of the '{@link #getEr() <em>Er</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEr()
+	 * @generated
+	 * @ordered
+	 */
+	protected EndRate er;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -244,6 +256,51 @@ public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeB
 	 * @generated
 	 */
 	@Override
+	public EndRate getEr() {
+		return er;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetEr(EndRate newEr, NotificationChain msgs) {
+		EndRate oldEr = er;
+		er = newEr;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MazePackage.MAZE_BODY_GENERATOR__ER, oldEr, newEr);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEr(EndRate newEr) {
+		if (newEr != er) {
+			NotificationChain msgs = null;
+			if (er != null)
+				msgs = ((InternalEObject)er).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MazePackage.MAZE_BODY_GENERATOR__ER, null, msgs);
+			if (newEr != null)
+				msgs = ((InternalEObject)newEr).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MazePackage.MAZE_BODY_GENERATOR__ER, null, msgs);
+			msgs = basicSetEr(newEr, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MazePackage.MAZE_BODY_GENERATOR__ER, newEr, newEr));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -262,6 +319,8 @@ public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeB
 				return basicSetSr(null, msgs);
 			case MazePackage.MAZE_BODY_GENERATOR__TR:
 				return basicSetTr(null, msgs);
+			case MazePackage.MAZE_BODY_GENERATOR__ER:
+				return basicSetEr(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -280,6 +339,8 @@ public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeB
 				return getSr();
 			case MazePackage.MAZE_BODY_GENERATOR__TR:
 				return getTr();
+			case MazePackage.MAZE_BODY_GENERATOR__ER:
+				return getEr();
 			case MazePackage.MAZE_BODY_GENERATOR__NAME:
 				return getName();
 		}
@@ -303,6 +364,9 @@ public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeB
 			case MazePackage.MAZE_BODY_GENERATOR__TR:
 				setTr((TurnRate)newValue);
 				return;
+			case MazePackage.MAZE_BODY_GENERATOR__ER:
+				setEr((EndRate)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -324,6 +388,9 @@ public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeB
 			case MazePackage.MAZE_BODY_GENERATOR__TR:
 				setTr((TurnRate)null);
 				return;
+			case MazePackage.MAZE_BODY_GENERATOR__ER:
+				setEr((EndRate)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -342,6 +409,8 @@ public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeB
 				return sr != null;
 			case MazePackage.MAZE_BODY_GENERATOR__TR:
 				return tr != null;
+			case MazePackage.MAZE_BODY_GENERATOR__ER:
+				return er != null;
 			case MazePackage.MAZE_BODY_GENERATOR__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}

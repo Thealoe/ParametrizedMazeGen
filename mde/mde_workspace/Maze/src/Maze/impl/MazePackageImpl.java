@@ -5,6 +5,7 @@ package Maze.impl;
 import Maze.ColumnCount;
 import Maze.Count;
 import Maze.DecisionsRate;
+import Maze.EndRate;
 import Maze.MazeBodyGenerator;
 import Maze.MazeDiagram;
 import Maze.MazeFactory;
@@ -108,6 +109,13 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	 * @generated
 	 */
 	private EClass decisionsRateEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass endRateEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -420,8 +428,18 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getMazeBodyGenerator_Er() {
+		return (EReference)mazeBodyGeneratorEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getMazeBodyGenerator_Name() {
-		return (EAttribute)mazeBodyGeneratorEClass.getEStructuralFeatures().get(3);
+		return (EAttribute)mazeBodyGeneratorEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -522,6 +540,26 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 	@Override
 	public EAttribute getDecisionsRate_Name() {
 		return (EAttribute)decisionsRateEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getEndRate() {
+		return endRateEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEndRate_Name() {
+		return (EAttribute)endRateEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -638,6 +676,7 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		createEReference(mazeBodyGeneratorEClass, MAZE_BODY_GENERATOR__DR);
 		createEReference(mazeBodyGeneratorEClass, MAZE_BODY_GENERATOR__SR);
 		createEReference(mazeBodyGeneratorEClass, MAZE_BODY_GENERATOR__TR);
+		createEReference(mazeBodyGeneratorEClass, MAZE_BODY_GENERATOR__ER);
 		createEAttribute(mazeBodyGeneratorEClass, MAZE_BODY_GENERATOR__NAME);
 
 		stackMazeBodyGeneratorEClass = createEClass(STACK_MAZE_BODY_GENERATOR);
@@ -654,6 +693,9 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 
 		decisionsRateEClass = createEClass(DECISIONS_RATE);
 		createEAttribute(decisionsRateEClass, DECISIONS_RATE__NAME);
+
+		endRateEClass = createEClass(END_RATE);
+		createEAttribute(endRateEClass, END_RATE__NAME);
 	}
 
 	/**
@@ -691,6 +733,7 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		turnRateEClass.getESuperTypes().add(this.getRate());
 		straightRateEClass.getESuperTypes().add(this.getRate());
 		decisionsRateEClass.getESuperTypes().add(this.getRate());
+		endRateEClass.getESuperTypes().add(this.getRate());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(mazeDiagramEClass, MazeDiagram.class, "MazeDiagram", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -728,6 +771,7 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		initEReference(getMazeBodyGenerator_Dr(), this.getDecisionsRate(), null, "dr", null, 1, 1, MazeBodyGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMazeBodyGenerator_Sr(), this.getStraightRate(), null, "sr", null, 1, 1, MazeBodyGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMazeBodyGenerator_Tr(), this.getTurnRate(), null, "tr", null, 1, 1, MazeBodyGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMazeBodyGenerator_Er(), this.getEndRate(), null, "er", null, 1, 1, MazeBodyGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMazeBodyGenerator_Name(), ecorePackage.getEString(), "name", "MBGen", 0, 1, MazeBodyGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(stackMazeBodyGeneratorEClass, StackMazeBodyGenerator.class, "StackMazeBodyGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -744,6 +788,9 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 
 		initEClass(decisionsRateEClass, DecisionsRate.class, "DecisionsRate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDecisionsRate_Name(), ecorePackage.getEString(), "name", "DR", 0, 1, DecisionsRate.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(endRateEClass, EndRate.class, "EndRate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEndRate_Name(), ecorePackage.getEString(), "name", "ER", 0, 1, EndRate.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -883,6 +930,16 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 			   "label", "name",
 			   "size", "50,50"
 		   });
+		addAnnotation
+		  (endRateEClass,
+		   source,
+		   new String[] {
+			   "color", "33,224,133",
+			   "figure", "ellipse",
+			   "label.icon", "false",
+			   "label", "name",
+			   "size", "50,50"
+		   });
 	}
 
 	/**
@@ -958,6 +1015,11 @@ public class MazePackageImpl extends EPackageImpl implements MazePackage {
 		   });
 		addAnnotation
 		  (getMazeBodyGenerator_Tr(),
+		   source,
+		   new String[] {
+		   });
+		addAnnotation
+		  (getMazeBodyGenerator_Er(),
 		   source,
 		   new String[] {
 		   });

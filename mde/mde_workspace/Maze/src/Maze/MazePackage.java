@@ -448,13 +448,22 @@ public interface MazePackage extends EPackage {
 	int MAZE_BODY_GENERATOR__TR = 2;
 
 	/**
+	 * The feature id for the '<em><b>Er</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAZE_BODY_GENERATOR__ER = 3;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MAZE_BODY_GENERATOR__NAME = 3;
+	int MAZE_BODY_GENERATOR__NAME = 4;
 
 	/**
 	 * The number of structural features of the '<em>Body Generator</em>' class.
@@ -463,7 +472,7 @@ public interface MazePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MAZE_BODY_GENERATOR_FEATURE_COUNT = 4;
+	int MAZE_BODY_GENERATOR_FEATURE_COUNT = 5;
 
 	/**
 	 * The feature id for the '<em><b>Dr</b></em>' containment reference.
@@ -491,6 +500,15 @@ public interface MazePackage extends EPackage {
 	 * @ordered
 	 */
 	int STACK_MAZE_BODY_GENERATOR__TR = MAZE_BODY_GENERATOR__TR;
+
+	/**
+	 * The feature id for the '<em><b>Er</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STACK_MAZE_BODY_GENERATOR__ER = MAZE_BODY_GENERATOR__ER;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -545,6 +563,15 @@ public interface MazePackage extends EPackage {
 	 * @ordered
 	 */
 	int RANDOM_MAZE_BODY_GENERATOR__TR = MAZE_BODY_GENERATOR__TR;
+
+	/**
+	 * The feature id for the '<em><b>Er</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RANDOM_MAZE_BODY_GENERATOR__ER = MAZE_BODY_GENERATOR__ER;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -653,6 +680,44 @@ public interface MazePackage extends EPackage {
 	 * @ordered
 	 */
 	int DECISIONS_RATE_FEATURE_COUNT = RATE_FEATURE_COUNT + 1;
+
+
+	/**
+	 * The meta object id for the '{@link Maze.impl.EndRateImpl <em>End Rate</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Maze.impl.EndRateImpl
+	 * @see Maze.impl.MazePackageImpl#getEndRate()
+	 * @generated
+	 */
+	int END_RATE = 13;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_RATE__VALUE = RATE__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_RATE__NAME = RATE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>End Rate</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int END_RATE_FEATURE_COUNT = RATE_FEATURE_COUNT + 1;
 
 
 	/**
@@ -903,6 +968,17 @@ public interface MazePackage extends EPackage {
 	EReference getMazeBodyGenerator_Tr();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link Maze.MazeBodyGenerator#getEr <em>Er</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Er</em>'.
+	 * @see Maze.MazeBodyGenerator#getEr()
+	 * @see #getMazeBodyGenerator()
+	 * @generated
+	 */
+	EReference getMazeBodyGenerator_Er();
+
+	/**
 	 * Returns the meta object for the attribute '{@link Maze.MazeBodyGenerator#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1017,6 +1093,27 @@ public interface MazePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getDecisionsRate_Name();
+
+	/**
+	 * Returns the meta object for class '{@link Maze.EndRate <em>End Rate</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>End Rate</em>'.
+	 * @see Maze.EndRate
+	 * @generated
+	 */
+	EClass getEndRate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Maze.EndRate#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Maze.EndRate#getName()
+	 * @see #getEndRate()
+	 * @generated
+	 */
+	EAttribute getEndRate_Name();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link Maze.RectangleGenerator#getCc <em>Cc</em>}'.
@@ -1290,6 +1387,14 @@ public interface MazePackage extends EPackage {
 		EReference MAZE_BODY_GENERATOR__TR = eINSTANCE.getMazeBodyGenerator_Tr();
 
 		/**
+		 * The meta object literal for the '<em><b>Er</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MAZE_BODY_GENERATOR__ER = eINSTANCE.getMazeBodyGenerator_Er();
+
+		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1386,6 +1491,24 @@ public interface MazePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DECISIONS_RATE__NAME = eINSTANCE.getDecisionsRate_Name();
+
+		/**
+		 * The meta object literal for the '{@link Maze.impl.EndRateImpl <em>End Rate</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Maze.impl.EndRateImpl
+		 * @see Maze.impl.MazePackageImpl#getEndRate()
+		 * @generated
+		 */
+		EClass END_RATE = eINSTANCE.getEndRate();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute END_RATE__NAME = eINSTANCE.getEndRate_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Cc</b></em>' containment reference feature.

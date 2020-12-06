@@ -74,11 +74,13 @@
         <children xsi:type="gmfgraph:Rectangle" name="StackMazeBodyGeneratorDrCompartmentFigure" outline="false"/>
         <children xsi:type="gmfgraph:Rectangle" name="StackMazeBodyGeneratorSrCompartmentFigure" outline="false"/>
         <children xsi:type="gmfgraph:Rectangle" name="StackMazeBodyGeneratorTrCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="StackMazeBodyGeneratorErCompartmentFigure" outline="false"/>
       </actualFigure>
       <accessors accessor="getFigureStackMazeBodyGeneratorLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
       <accessors accessor="getStackMazeBodyGeneratorDrCompartmentFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.1"/>
       <accessors accessor="getStackMazeBodyGeneratorSrCompartmentFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.2"/>
       <accessors accessor="getStackMazeBodyGeneratorTrCompartmentFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.3"/>
+      <accessors accessor="getStackMazeBodyGeneratorErCompartmentFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.4"/>
     </descriptors>
     <descriptors name="RandomMazeBodyGeneratorFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="RandomMazeBodyGeneratorFigure">
@@ -93,11 +95,13 @@
         <children xsi:type="gmfgraph:Rectangle" name="RandomMazeBodyGeneratorDrCompartmentFigure" outline="false"/>
         <children xsi:type="gmfgraph:Rectangle" name="RandomMazeBodyGeneratorSrCompartmentFigure" outline="false"/>
         <children xsi:type="gmfgraph:Rectangle" name="RandomMazeBodyGeneratorTrCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="RandomMazeBodyGeneratorErCompartmentFigure" outline="false"/>
       </actualFigure>
       <accessors accessor="getFigureRandomMazeBodyGeneratorLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
       <accessors accessor="getRandomMazeBodyGeneratorDrCompartmentFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.1"/>
       <accessors accessor="getRandomMazeBodyGeneratorSrCompartmentFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.2"/>
       <accessors accessor="getRandomMazeBodyGeneratorTrCompartmentFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.3"/>
+      <accessors accessor="getRandomMazeBodyGeneratorErCompartmentFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.4"/>
     </descriptors>
     <descriptors name="TurnRateFigure">
       <actualFigure xsi:type="gmfgraph:Ellipse" name="TurnRateFigure">
@@ -131,6 +135,17 @@
         <children xsi:type="gmfgraph:Label" name="DecisionsRateLabelFigure" text="DecisionsRate"/>
       </actualFigure>
       <accessors accessor="getFigureDecisionsRateLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EndRateFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="EndRateFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="33" green="224" blue="133"/>
+        <preferredSize dx="50" dy="50"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="EndRateLabelFigure" text="EndRate"/>
+      </actualFigure>
+      <accessors accessor="getFigureEndRateLabelFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="RectangleGeneratorSpgFigure">
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RectangleGeneratorSpgFigure" targetDecoration="//@figures.0/@figures.0">
@@ -194,6 +209,11 @@
       <defaultSize dx="50" dy="50"/>
     </facets>
   </nodes>
+  <nodes name="EndRate" figure="EndRateFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="50" dy="50"/>
+    </facets>
+  </nodes>
   <connections name="RectangleGeneratorSpg" figure="RectangleGeneratorSpgFigure"/>
   <connections name="SolutionPathGeneratorMbg" figure="SolutionPathGeneratorMbgFigure"/>
   <compartments name="RectangleGeneratorRcCompartment" figure="RectangleGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.2/@accessors.1"/>
@@ -204,9 +224,11 @@
   <compartments name="StackMazeBodyGeneratorDrCompartment" figure="StackMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.4/@accessors.1"/>
   <compartments name="StackMazeBodyGeneratorSrCompartment" figure="StackMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.4/@accessors.2"/>
   <compartments name="StackMazeBodyGeneratorTrCompartment" figure="StackMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.4/@accessors.3"/>
+  <compartments name="StackMazeBodyGeneratorErCompartment" figure="StackMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.4/@accessors.4"/>
   <compartments name="RandomMazeBodyGeneratorDrCompartment" figure="RandomMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.5/@accessors.1"/>
   <compartments name="RandomMazeBodyGeneratorSrCompartment" figure="RandomMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.5/@accessors.2"/>
   <compartments name="RandomMazeBodyGeneratorTrCompartment" figure="RandomMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.5/@accessors.3"/>
+  <compartments name="RandomMazeBodyGeneratorErCompartment" figure="RandomMazeBodyGeneratorFigure" collapsible="true" accessor="//@figures.0/@descriptors.5/@accessors.4"/>
   <labels name="ColumnCountLabel" figure="ColumnCountFigure" elementIcon="false" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
   <labels name="RowCountLabel" figure="RowCountFigure" elementIcon="false" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
   <labels name="RectangleGeneratorLabel" figure="RectangleGeneratorFigure" elementIcon="false" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
@@ -216,6 +238,7 @@
   <labels name="TurnRateLabel" figure="TurnRateFigure" elementIcon="false" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
   <labels name="StraightRateLabel" figure="StraightRateFigure" elementIcon="false" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
   <labels name="DecisionsRateLabel" figure="DecisionsRateFigure" elementIcon="false" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels name="EndRateLabel" figure="EndRateFigure" elementIcon="false" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
   <labels name="RectangleGeneratorSpgExternalLabel" figure="RectangleGeneratorSpgExternalLabelFigure" elementIcon="false"/>
   <labels name="SolutionPathGeneratorMbgExternalLabel" figure="SolutionPathGeneratorMbgExternalLabelFigure" elementIcon="false"/>
 </gmfgraph:Canvas>

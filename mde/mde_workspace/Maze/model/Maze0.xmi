@@ -6,19 +6,20 @@
     xmlns:mz="geodes.sms.maze">
   <rectangleGen
       spg="//@solutionPathGen">
-    <rc value="100"/>
-    <cc value="100"/>
+    <rc value="10"/>
+    <cc value="10"/>
   </rectangleGen>
   <solutionPathGen
       mbg="//@mazeBodyGen">
-    <tr value="20"/>
-    <sr value="50"/>
-    <dr value="30"/>
+    <tr/>
+    <sr/>
+    <dr value="90"/>
   </solutionPathGen>
   <mazeBodyGen
       xsi:type="mz:RandomMazeBodyGenerator">
-    <dr value="20"/>
+    <dr value="80"/>
     <sr/>
-    <tr value="50"/>
+    <tr value="20"/>
+    <er/>
   </mazeBodyGen>
 </mz:MazeDiagram>

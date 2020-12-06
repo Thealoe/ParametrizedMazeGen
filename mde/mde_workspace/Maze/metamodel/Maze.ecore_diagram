@@ -265,6 +265,27 @@
     <element xmi:type="ecore:EClass" href="Maze.ecore#//RandomMazeBodyGenerator"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t3FoMTTlEeuvu5Xjlj1-mA" x="1170" y="255" width="151" height="106"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_yii7YDf-EeuVxslAUARW-w" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yijicDf-EeuVxslAUARW-w" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yijicTf-EeuVxslAUARW-w" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_yilXoDf-EeuVxslAUARW-w" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Maze.ecore#//EndRate/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yilXoTf-EeuVxslAUARW-w"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yijicjf-EeuVxslAUARW-w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yijiczf-EeuVxslAUARW-w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yijidDf-EeuVxslAUARW-w" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yijidTf-EeuVxslAUARW-w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yijidjf-EeuVxslAUARW-w"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_yijidzf-EeuVxslAUARW-w" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_yijieDf-EeuVxslAUARW-w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_yijieTf-EeuVxslAUARW-w"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Maze.ecore#//EndRate"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yii7YTf-EeuVxslAUARW-w" x="1140" y="600"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_c8e8gTTKEeuvu5Xjlj1-mA"/>
   <element xmi:type="ecore:EPackage" href="Maze.ecore#/"/>
   <edges xmi:type="notation:Connector" xmi:id="_r7vX0DTPEeuvu5Xjlj1-mA" type="4004" source="_GcwqUDTOEeuvu5Xjlj1-mA" target="_ddGkADTPEeuvu5Xjlj1-mA">
@@ -436,5 +457,32 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_rct-GDUSEeuR-NmLJeVBGA" fontName="Segoe UI"/>
     <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeDiagram/solutionPathGen"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rct-GTUSEeuR-NmLJeVBGA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_o0apMDf-EeuVxslAUARW-w" type="4003" source="_wL_sEDTPEeuvu5Xjlj1-mA" target="_RdU_UDTPEeuvu5Xjlj1-mA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_o0bQQDf-EeuVxslAUARW-w" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_o0bQQTf-EeuVxslAUARW-w" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_o0bQQjf-EeuVxslAUARW-w" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_o0b3UDf-EeuVxslAUARW-w" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_o0apMTf-EeuVxslAUARW-w" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeDiagram/mazeBodyGen"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_o0apMjf-EeuVxslAUARW-w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yippEDf-EeuVxslAUARW-w" type="4003" source="_RdU_UDTPEeuvu5Xjlj1-mA" target="_yii7YDf-EeuVxslAUARW-w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_yiqQIDf-EeuVxslAUARW-w" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yiqQITf-EeuVxslAUARW-w" x="92" y="-37"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_yiqQIjf-EeuVxslAUARW-w" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yiqQIzf-EeuVxslAUARW-w" x="6" y="28"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yippETf-EeuVxslAUARW-w" fontName="Segoe UI"/>
+    <element xmi:type="ecore:EReference" href="Maze.ecore#//MazeBodyGenerator/er"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yippEjf-EeuVxslAUARW-w" points="[83, 43, -106, -343]$[127, 67, -62, -319]$[127, 292, -62, -94]$[156, 337, -33, -49]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_yitTcDf-EeuVxslAUARW-w" type="4004" source="_yii7YDf-EeuVxslAUARW-w" target="_jyIW8DTQEeuvu5Xjlj1-mA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yitTcTf-EeuVxslAUARW-w" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yitTcjf-EeuVxslAUARW-w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
   </edges>
 </notation:Diagram>

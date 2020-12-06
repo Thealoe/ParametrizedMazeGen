@@ -47,6 +47,9 @@
     <compartmentTraces
         visualID="7014"
         queryText="true"/>
+    <compartmentTraces
+        visualID="7018"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2006"
@@ -62,6 +65,9 @@
         queryText="true"/>
     <compartmentTraces
         visualID="7017"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7019"
         queryText="true"/>
   </nodeTraces>
   <childNodeTraces
@@ -118,6 +124,13 @@
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'DecisionsRate') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'SolutionPathGenerator') and _containmentMF_.name = 'dr')">
     <nodeLabelTraces
         visualID="5011"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3009"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'EndRate') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'geodes.sms.maze' and _eClass_.name = 'MazeBodyGenerator') and _containmentMF_.name = 'er')">
+    <nodeLabelTraces
+        visualID="5015"
         queryText="true"/>
   </childNodeTraces>
   <linkTraces

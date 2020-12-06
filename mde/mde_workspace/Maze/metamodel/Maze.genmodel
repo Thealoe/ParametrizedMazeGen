@@ -40,6 +40,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeBodyGenerator/dr"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeBodyGenerator/sr"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeBodyGenerator/tr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Maze.ecore#//MazeBodyGenerator/er"/>
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//MazeBodyGenerator/name"/>
     </genClasses>
     <genClasses ecoreClass="Maze.ecore#//StackMazeBodyGenerator">
@@ -56,6 +57,9 @@
     </genClasses>
     <genClasses ecoreClass="Maze.ecore#//DecisionsRate">
       <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//DecisionsRate/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Maze.ecore#//EndRate">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Maze.ecore#//EndRate/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
