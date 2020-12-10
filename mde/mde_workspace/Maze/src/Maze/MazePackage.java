@@ -75,13 +75,13 @@ public interface MazePackage extends EPackage {
 	int MAZE_DIAGRAM__RECTANGLE_GEN = 0;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Force Pattern Gen</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MAZE_DIAGRAM__NAME = 1;
+	int MAZE_DIAGRAM__FORCE_PATTERN_GEN = 1;
 
 	/**
 	 * The feature id for the '<em><b>Solution Path Gen</b></em>' containment reference.
@@ -102,13 +102,22 @@ public interface MazePackage extends EPackage {
 	int MAZE_DIAGRAM__MAZE_BODY_GEN = 3;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAZE_DIAGRAM__NAME = 4;
+
+	/**
 	 * The number of structural features of the '<em>Diagram</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MAZE_DIAGRAM_FEATURE_COUNT = 4;
+	int MAZE_DIAGRAM_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link Maze.impl.PointImpl <em>Point</em>}' class.
@@ -204,6 +213,52 @@ public interface MazePackage extends EPackage {
 	int RATE_FEATURE_COUNT = 1;
 
 	/**
+	 * The meta object id for the '{@link Maze.impl.MazeCellImpl <em>Cell</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Maze.impl.MazeCellImpl
+	 * @see Maze.impl.MazePackageImpl#getMazeCell()
+	 * @generated
+	 */
+	int MAZE_CELL = 4;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAZE_CELL__TYPE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAZE_CELL__NAME = 1;
+
+	/**
+	 * The feature id for the '<em><b>Point</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAZE_CELL__POINT = 2;
+
+	/**
+	 * The number of structural features of the '<em>Cell</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAZE_CELL_FEATURE_COUNT = 3;
+
+	/**
 	 * The meta object id for the '{@link Maze.impl.StartPointImpl <em>Start Point</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -211,7 +266,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getStartPoint()
 	 * @generated
 	 */
-	int START_POINT = 4;
+	int START_POINT = 5;
 
 	/**
 	 * The feature id for the '<em><b>X</b></em>' attribute.
@@ -257,7 +312,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getEndPoint()
 	 * @generated
 	 */
-	int END_POINT = 5;
+	int END_POINT = 6;
 
 	/**
 	 * The feature id for the '<em><b>X</b></em>' attribute.
@@ -296,6 +351,52 @@ public interface MazePackage extends EPackage {
 	int END_POINT_FEATURE_COUNT = POINT_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link Maze.impl.CellPointImpl <em>Cell Point</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Maze.impl.CellPointImpl
+	 * @see Maze.impl.MazePackageImpl#getCellPoint()
+	 * @generated
+	 */
+	int CELL_POINT = 7;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL_POINT__X = POINT__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL_POINT__Y = POINT__Y;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL_POINT__NAME = POINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Cell Point</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL_POINT_FEATURE_COUNT = POINT_FEATURE_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link Maze.impl.RectangleGeneratorImpl <em>Rectangle Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -303,7 +404,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getRectangleGenerator()
 	 * @generated
 	 */
-	int RECTANGLE_GENERATOR = 8;
+	int RECTANGLE_GENERATOR = 10;
 
 	/**
 	 * The meta object id for the '{@link Maze.impl.SolutionPathGeneratorImpl <em>Solution Path Generator</em>}' class.
@@ -313,7 +414,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getSolutionPathGenerator()
 	 * @generated
 	 */
-	int SOLUTION_PATH_GENERATOR = 9;
+	int SOLUTION_PATH_GENERATOR = 12;
 
 	/**
 	 * The meta object id for the '{@link Maze.impl.MazeBodyGeneratorImpl <em>Body Generator</em>}' class.
@@ -323,27 +424,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getMazeBodyGenerator()
 	 * @generated
 	 */
-	int MAZE_BODY_GENERATOR = 10;
-
-	/**
-	 * The meta object id for the '{@link Maze.impl.StackMazeBodyGeneratorImpl <em>Stack Maze Body Generator</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Maze.impl.StackMazeBodyGeneratorImpl
-	 * @see Maze.impl.MazePackageImpl#getStackMazeBodyGenerator()
-	 * @generated
-	 */
-	int STACK_MAZE_BODY_GENERATOR = 11;
-
-	/**
-	 * The meta object id for the '{@link Maze.impl.RandomMazeBodyGeneratorImpl <em>Random Maze Body Generator</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Maze.impl.RandomMazeBodyGeneratorImpl
-	 * @see Maze.impl.MazePackageImpl#getRandomMazeBodyGenerator()
-	 * @generated
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR = 12;
+	int MAZE_BODY_GENERATOR = 13;
 
 	/**
 	 * The meta object id for the '{@link Maze.impl.TurnRateImpl <em>Turn Rate</em>}' class.
@@ -353,7 +434,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getTurnRate()
 	 * @generated
 	 */
-	int TURN_RATE = 13;
+	int TURN_RATE = 14;
 
 	/**
 	 * The meta object id for the '{@link Maze.impl.StraightRateImpl <em>Straight Rate</em>}' class.
@@ -363,7 +444,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getStraightRate()
 	 * @generated
 	 */
-	int STRAIGHT_RATE = 14;
+	int STRAIGHT_RATE = 15;
 
 	/**
 	 * The meta object id for the '{@link Maze.impl.DecisionsRateImpl <em>Decisions Rate</em>}' class.
@@ -373,7 +454,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getDecisionsRate()
 	 * @generated
 	 */
-	int DECISIONS_RATE = 15;
+	int DECISIONS_RATE = 16;
 
 	/**
 	 * The meta object id for the '{@link Maze.impl.ColumnCountImpl <em>Column Count</em>}' class.
@@ -383,7 +464,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getColumnCount()
 	 * @generated
 	 */
-	int COLUMN_COUNT = 6;
+	int COLUMN_COUNT = 8;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -421,7 +502,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getRowCount()
 	 * @generated
 	 */
-	int ROW_COUNT = 7;
+	int ROW_COUNT = 9;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -451,13 +532,13 @@ public interface MazePackage extends EPackage {
 	int ROW_COUNT_FEATURE_COUNT = COUNT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Spg</b></em>' reference.
+	 * The feature id for the '<em><b>Fpg</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RECTANGLE_GENERATOR__SPG = 0;
+	int RECTANGLE_GENERATOR__FPG = 0;
 
 	/**
 	 * The feature id for the '<em><b>Rc</b></em>' containment reference.
@@ -494,6 +575,52 @@ public interface MazePackage extends EPackage {
 	 * @ordered
 	 */
 	int RECTANGLE_GENERATOR_FEATURE_COUNT = 4;
+
+	/**
+	 * The meta object id for the '{@link Maze.impl.ForcePatternGeneratorImpl <em>Force Pattern Generator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Maze.impl.ForcePatternGeneratorImpl
+	 * @see Maze.impl.MazePackageImpl#getForcePatternGenerator()
+	 * @generated
+	 */
+	int FORCE_PATTERN_GENERATOR = 11;
+
+	/**
+	 * The feature id for the '<em><b>Spg</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORCE_PATTERN_GENERATOR__SPG = 0;
+
+	/**
+	 * The feature id for the '<em><b>Maze Cells</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORCE_PATTERN_GENERATOR__MAZE_CELLS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORCE_PATTERN_GENERATOR__NAME = 2;
+
+	/**
+	 * The number of structural features of the '<em>Force Pattern Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORCE_PATTERN_GENERATOR_FEATURE_COUNT = 3;
 
 	/**
 	 * The feature id for the '<em><b>Mbg</b></em>' reference.
@@ -622,132 +749,6 @@ public interface MazePackage extends EPackage {
 	int MAZE_BODY_GENERATOR_FEATURE_COUNT = 5;
 
 	/**
-	 * The feature id for the '<em><b>Dr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_MAZE_BODY_GENERATOR__DR = MAZE_BODY_GENERATOR__DR;
-
-	/**
-	 * The feature id for the '<em><b>Sr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_MAZE_BODY_GENERATOR__SR = MAZE_BODY_GENERATOR__SR;
-
-	/**
-	 * The feature id for the '<em><b>Tr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_MAZE_BODY_GENERATOR__TR = MAZE_BODY_GENERATOR__TR;
-
-	/**
-	 * The feature id for the '<em><b>Er</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_MAZE_BODY_GENERATOR__ER = MAZE_BODY_GENERATOR__ER;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_MAZE_BODY_GENERATOR__NAME = MAZE_BODY_GENERATOR__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Type name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_MAZE_BODY_GENERATOR__TYPE_NAME = MAZE_BODY_GENERATOR_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Stack Maze Body Generator</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_MAZE_BODY_GENERATOR_FEATURE_COUNT = MAZE_BODY_GENERATOR_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Dr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR__DR = MAZE_BODY_GENERATOR__DR;
-
-	/**
-	 * The feature id for the '<em><b>Sr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR__SR = MAZE_BODY_GENERATOR__SR;
-
-	/**
-	 * The feature id for the '<em><b>Tr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR__TR = MAZE_BODY_GENERATOR__TR;
-
-	/**
-	 * The feature id for the '<em><b>Er</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR__ER = MAZE_BODY_GENERATOR__ER;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR__NAME = MAZE_BODY_GENERATOR__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Type name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR__TYPE_NAME = MAZE_BODY_GENERATOR_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Random Maze Body Generator</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RANDOM_MAZE_BODY_GENERATOR_FEATURE_COUNT = MAZE_BODY_GENERATOR_FEATURE_COUNT + 1;
-
-	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -837,7 +838,7 @@ public interface MazePackage extends EPackage {
 	 * @see Maze.impl.MazePackageImpl#getEndRate()
 	 * @generated
 	 */
-	int END_RATE = 16;
+	int END_RATE = 17;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -887,6 +888,17 @@ public interface MazePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getMazeDiagram_RectangleGen();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link Maze.MazeDiagram#getForcePatternGen <em>Force Pattern Gen</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Force Pattern Gen</em>'.
+	 * @see Maze.MazeDiagram#getForcePatternGen()
+	 * @see #getMazeDiagram()
+	 * @generated
+	 */
+	EReference getMazeDiagram_ForcePatternGen();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Maze.MazeDiagram#getName <em>Name</em>}'.
@@ -996,6 +1008,49 @@ public interface MazePackage extends EPackage {
 	EAttribute getRate_Value();
 
 	/**
+	 * Returns the meta object for class '{@link Maze.MazeCell <em>Cell</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cell</em>'.
+	 * @see Maze.MazeCell
+	 * @generated
+	 */
+	EClass getMazeCell();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Maze.MazeCell#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see Maze.MazeCell#getType()
+	 * @see #getMazeCell()
+	 * @generated
+	 */
+	EAttribute getMazeCell_Type();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Maze.MazeCell#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Maze.MazeCell#getName()
+	 * @see #getMazeCell()
+	 * @generated
+	 */
+	EAttribute getMazeCell_Name();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link Maze.MazeCell#getPoint <em>Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Point</em>'.
+	 * @see Maze.MazeCell#getPoint()
+	 * @see #getMazeCell()
+	 * @generated
+	 */
+	EReference getMazeCell_Point();
+
+	/**
 	 * Returns the meta object for class '{@link Maze.StartPoint <em>Start Point</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1038,6 +1093,27 @@ public interface MazePackage extends EPackage {
 	EAttribute getEndPoint_Name();
 
 	/**
+	 * Returns the meta object for class '{@link Maze.CellPoint <em>Cell Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cell Point</em>'.
+	 * @see Maze.CellPoint
+	 * @generated
+	 */
+	EClass getCellPoint();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Maze.CellPoint#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Maze.CellPoint#getName()
+	 * @see #getCellPoint()
+	 * @generated
+	 */
+	EAttribute getCellPoint_Name();
+
+	/**
 	 * Returns the meta object for class '{@link Maze.RectangleGenerator <em>Rectangle Generator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1048,15 +1124,15 @@ public interface MazePackage extends EPackage {
 	EClass getRectangleGenerator();
 
 	/**
-	 * Returns the meta object for the reference '{@link Maze.RectangleGenerator#getSpg <em>Spg</em>}'.
+	 * Returns the meta object for the reference '{@link Maze.RectangleGenerator#getFpg <em>Fpg</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Spg</em>'.
-	 * @see Maze.RectangleGenerator#getSpg()
+	 * @return the meta object for the reference '<em>Fpg</em>'.
+	 * @see Maze.RectangleGenerator#getFpg()
 	 * @see #getRectangleGenerator()
 	 * @generated
 	 */
-	EReference getRectangleGenerator_Spg();
+	EReference getRectangleGenerator_Fpg();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link Maze.RectangleGenerator#getRc <em>Rc</em>}'.
@@ -1079,6 +1155,49 @@ public interface MazePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getRectangleGenerator_Name();
+
+	/**
+	 * Returns the meta object for class '{@link Maze.ForcePatternGenerator <em>Force Pattern Generator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Force Pattern Generator</em>'.
+	 * @see Maze.ForcePatternGenerator
+	 * @generated
+	 */
+	EClass getForcePatternGenerator();
+
+	/**
+	 * Returns the meta object for the reference '{@link Maze.ForcePatternGenerator#getSpg <em>Spg</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Spg</em>'.
+	 * @see Maze.ForcePatternGenerator#getSpg()
+	 * @see #getForcePatternGenerator()
+	 * @generated
+	 */
+	EReference getForcePatternGenerator_Spg();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link Maze.ForcePatternGenerator#getMazeCells <em>Maze Cells</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Maze Cells</em>'.
+	 * @see Maze.ForcePatternGenerator#getMazeCells()
+	 * @see #getForcePatternGenerator()
+	 * @generated
+	 */
+	EReference getForcePatternGenerator_MazeCells();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Maze.ForcePatternGenerator#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see Maze.ForcePatternGenerator#getName()
+	 * @see #getForcePatternGenerator()
+	 * @generated
+	 */
+	EAttribute getForcePatternGenerator_Name();
 
 	/**
 	 * Returns the meta object for class '{@link Maze.SolutionPathGenerator <em>Solution Path Generator</em>}'.
@@ -1231,48 +1350,6 @@ public interface MazePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getMazeBodyGenerator_Name();
-
-	/**
-	 * Returns the meta object for class '{@link Maze.StackMazeBodyGenerator <em>Stack Maze Body Generator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Stack Maze Body Generator</em>'.
-	 * @see Maze.StackMazeBodyGenerator
-	 * @generated
-	 */
-	EClass getStackMazeBodyGenerator();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Maze.StackMazeBodyGenerator#getType_name <em>Type name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Type name</em>'.
-	 * @see Maze.StackMazeBodyGenerator#getType_name()
-	 * @see #getStackMazeBodyGenerator()
-	 * @generated
-	 */
-	EAttribute getStackMazeBodyGenerator_Type_name();
-
-	/**
-	 * Returns the meta object for class '{@link Maze.RandomMazeBodyGenerator <em>Random Maze Body Generator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Random Maze Body Generator</em>'.
-	 * @see Maze.RandomMazeBodyGenerator
-	 * @generated
-	 */
-	EClass getRandomMazeBodyGenerator();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Maze.RandomMazeBodyGenerator#getType_name <em>Type name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Type name</em>'.
-	 * @see Maze.RandomMazeBodyGenerator#getType_name()
-	 * @see #getRandomMazeBodyGenerator()
-	 * @generated
-	 */
-	EAttribute getRandomMazeBodyGenerator_Type_name();
 
 	/**
 	 * Returns the meta object for class '{@link Maze.TurnRate <em>Turn Rate</em>}'.
@@ -1452,6 +1529,14 @@ public interface MazePackage extends EPackage {
 		EReference MAZE_DIAGRAM__RECTANGLE_GEN = eINSTANCE.getMazeDiagram_RectangleGen();
 
 		/**
+		 * The meta object literal for the '<em><b>Force Pattern Gen</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MAZE_DIAGRAM__FORCE_PATTERN_GEN = eINSTANCE.getMazeDiagram_ForcePatternGen();
+
+		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1538,6 +1623,40 @@ public interface MazePackage extends EPackage {
 		EAttribute RATE__VALUE = eINSTANCE.getRate_Value();
 
 		/**
+		 * The meta object literal for the '{@link Maze.impl.MazeCellImpl <em>Cell</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Maze.impl.MazeCellImpl
+		 * @see Maze.impl.MazePackageImpl#getMazeCell()
+		 * @generated
+		 */
+		EClass MAZE_CELL = eINSTANCE.getMazeCell();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MAZE_CELL__TYPE = eINSTANCE.getMazeCell_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MAZE_CELL__NAME = eINSTANCE.getMazeCell_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Point</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MAZE_CELL__POINT = eINSTANCE.getMazeCell_Point();
+
+		/**
 		 * The meta object literal for the '{@link Maze.impl.StartPointImpl <em>Start Point</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1574,6 +1693,24 @@ public interface MazePackage extends EPackage {
 		EAttribute END_POINT__NAME = eINSTANCE.getEndPoint_Name();
 
 		/**
+		 * The meta object literal for the '{@link Maze.impl.CellPointImpl <em>Cell Point</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Maze.impl.CellPointImpl
+		 * @see Maze.impl.MazePackageImpl#getCellPoint()
+		 * @generated
+		 */
+		EClass CELL_POINT = eINSTANCE.getCellPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CELL_POINT__NAME = eINSTANCE.getCellPoint_Name();
+
+		/**
 		 * The meta object literal for the '{@link Maze.impl.RectangleGeneratorImpl <em>Rectangle Generator</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1584,12 +1721,12 @@ public interface MazePackage extends EPackage {
 		EClass RECTANGLE_GENERATOR = eINSTANCE.getRectangleGenerator();
 
 		/**
-		 * The meta object literal for the '<em><b>Spg</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fpg</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RECTANGLE_GENERATOR__SPG = eINSTANCE.getRectangleGenerator_Spg();
+		EReference RECTANGLE_GENERATOR__FPG = eINSTANCE.getRectangleGenerator_Fpg();
 
 		/**
 		 * The meta object literal for the '<em><b>Rc</b></em>' containment reference feature.
@@ -1606,6 +1743,40 @@ public interface MazePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute RECTANGLE_GENERATOR__NAME = eINSTANCE.getRectangleGenerator_Name();
+
+		/**
+		 * The meta object literal for the '{@link Maze.impl.ForcePatternGeneratorImpl <em>Force Pattern Generator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Maze.impl.ForcePatternGeneratorImpl
+		 * @see Maze.impl.MazePackageImpl#getForcePatternGenerator()
+		 * @generated
+		 */
+		EClass FORCE_PATTERN_GENERATOR = eINSTANCE.getForcePatternGenerator();
+
+		/**
+		 * The meta object literal for the '<em><b>Spg</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FORCE_PATTERN_GENERATOR__SPG = eINSTANCE.getForcePatternGenerator_Spg();
+
+		/**
+		 * The meta object literal for the '<em><b>Maze Cells</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FORCE_PATTERN_GENERATOR__MAZE_CELLS = eINSTANCE.getForcePatternGenerator_MazeCells();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FORCE_PATTERN_GENERATOR__NAME = eINSTANCE.getForcePatternGenerator_Name();
 
 		/**
 		 * The meta object literal for the '{@link Maze.impl.SolutionPathGeneratorImpl <em>Solution Path Generator</em>}' class.
@@ -1722,42 +1893,6 @@ public interface MazePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MAZE_BODY_GENERATOR__NAME = eINSTANCE.getMazeBodyGenerator_Name();
-
-		/**
-		 * The meta object literal for the '{@link Maze.impl.StackMazeBodyGeneratorImpl <em>Stack Maze Body Generator</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Maze.impl.StackMazeBodyGeneratorImpl
-		 * @see Maze.impl.MazePackageImpl#getStackMazeBodyGenerator()
-		 * @generated
-		 */
-		EClass STACK_MAZE_BODY_GENERATOR = eINSTANCE.getStackMazeBodyGenerator();
-
-		/**
-		 * The meta object literal for the '<em><b>Type name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute STACK_MAZE_BODY_GENERATOR__TYPE_NAME = eINSTANCE.getStackMazeBodyGenerator_Type_name();
-
-		/**
-		 * The meta object literal for the '{@link Maze.impl.RandomMazeBodyGeneratorImpl <em>Random Maze Body Generator</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Maze.impl.RandomMazeBodyGeneratorImpl
-		 * @see Maze.impl.MazePackageImpl#getRandomMazeBodyGenerator()
-		 * @generated
-		 */
-		EClass RANDOM_MAZE_BODY_GENERATOR = eINSTANCE.getRandomMazeBodyGenerator();
-
-		/**
-		 * The meta object literal for the '<em><b>Type name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute RANDOM_MAZE_BODY_GENERATOR__TYPE_NAME = eINSTANCE.getRandomMazeBodyGenerator_Type_name();
 
 		/**
 		 * The meta object literal for the '{@link Maze.impl.TurnRateImpl <em>Turn Rate</em>}' class.

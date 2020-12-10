@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public abstract class MazeBodyGeneratorImpl extends EObjectImpl implements MazeBodyGenerator {
+public class MazeBodyGeneratorImpl extends EObjectImpl implements MazeBodyGenerator {
 	/**
 	 * The cached value of the '{@link #getDr() <em>Dr</em>}' containment reference.
 	 * <!-- begin-user-doc -->

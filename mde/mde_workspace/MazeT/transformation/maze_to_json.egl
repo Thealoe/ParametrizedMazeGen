@@ -3,6 +3,9 @@
 		"[%= self.rectangleGen.cc.name %]" : [%= self.rectangleGen.cc.value %],
 		"[%= self.rectangleGen.rc.name %]" : [%= self.rectangleGen.rc.value %]
 	},
+		"[%= self.forcePatternGen.name %]": {
+		"Hello" : "World!"
+	},
 	"[%= self.solutionPathGen.name %]": {
 		"[%= self.solutionPathGen.sp.name %]" : [[%= self.solutionPathGen.sp.x %], [%= self.solutionPathGen.sp.y %]],
 		"[%= self.solutionPathGen.ep.name %]" : [[%= self.solutionPathGen.ep.x %], [%= self.solutionPathGen.ep.y %]],
@@ -11,7 +14,6 @@
 		"[%= self.solutionPathGen.dr.name %]" : [%= self.solutionPathGen.dr.value %]
 	},
 	"[%= self.mazeBodyGen.name %]": {
-		"under_type" : "[%= self.mazeBodyGen.type_name %]",
 		"[%= self.mazeBodyGen.sr.name %]" : [%= self.mazeBodyGen.sr.value %],
 		"[%= self.mazeBodyGen.tr.name %]" : [%= self.mazeBodyGen.tr.value %],
 		"[%= self.mazeBodyGen.dr.name %]" : [%= self.mazeBodyGen.dr.value %],

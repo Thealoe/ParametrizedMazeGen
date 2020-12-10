@@ -3,6 +3,7 @@
 package Maze.impl;
 
 import Maze.ColumnCount;
+import Maze.ForcePatternGenerator;
 import Maze.MazePackage;
 import Maze.RectangleGenerator;
 
@@ -25,7 +26,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Maze.impl.RectangleGeneratorImpl#getSpg <em>Spg</em>}</li>
+ *   <li>{@link Maze.impl.RectangleGeneratorImpl#getFpg <em>Fpg</em>}</li>
  *   <li>{@link Maze.impl.RectangleGeneratorImpl#getRc <em>Rc</em>}</li>
  *   <li>{@link Maze.impl.RectangleGeneratorImpl#getCc <em>Cc</em>}</li>
  *   <li>{@link Maze.impl.RectangleGeneratorImpl#getName <em>Name</em>}</li>
@@ -35,14 +36,14 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  */
 public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGenerator {
 	/**
-	 * The cached value of the '{@link #getSpg() <em>Spg</em>}' reference.
+	 * The cached value of the '{@link #getFpg() <em>Fpg</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSpg()
+	 * @see #getFpg()
 	 * @generated
 	 * @ordered
 	 */
-	protected SolutionPathGenerator spg;
+	protected ForcePatternGenerator fpg;
 
 	/**
 	 * The cached value of the '{@link #getRc() <em>Rc</em>}' containment reference.
@@ -109,16 +110,16 @@ public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGene
 	 * @generated
 	 */
 	@Override
-	public SolutionPathGenerator getSpg() {
-		if (spg != null && spg.eIsProxy()) {
-			InternalEObject oldSpg = (InternalEObject)spg;
-			spg = (SolutionPathGenerator)eResolveProxy(oldSpg);
-			if (spg != oldSpg) {
+	public ForcePatternGenerator getFpg() {
+		if (fpg != null && fpg.eIsProxy()) {
+			InternalEObject oldFpg = (InternalEObject)fpg;
+			fpg = (ForcePatternGenerator)eResolveProxy(oldFpg);
+			if (fpg != oldFpg) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MazePackage.RECTANGLE_GENERATOR__SPG, oldSpg, spg));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MazePackage.RECTANGLE_GENERATOR__FPG, oldFpg, fpg));
 			}
 		}
-		return spg;
+		return fpg;
 	}
 
 	/**
@@ -126,8 +127,8 @@ public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGene
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SolutionPathGenerator basicGetSpg() {
-		return spg;
+	public ForcePatternGenerator basicGetFpg() {
+		return fpg;
 	}
 
 	/**
@@ -136,11 +137,11 @@ public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGene
 	 * @generated
 	 */
 	@Override
-	public void setSpg(SolutionPathGenerator newSpg) {
-		SolutionPathGenerator oldSpg = spg;
-		spg = newSpg;
+	public void setFpg(ForcePatternGenerator newFpg) {
+		ForcePatternGenerator oldFpg = fpg;
+		fpg = newFpg;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, MazePackage.RECTANGLE_GENERATOR__SPG, oldSpg, spg));
+			eNotify(new ENotificationImpl(this, Notification.SET, MazePackage.RECTANGLE_GENERATOR__FPG, oldFpg, fpg));
 	}
 
 	/**
@@ -267,9 +268,9 @@ public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGene
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MazePackage.RECTANGLE_GENERATOR__SPG:
-				if (resolve) return getSpg();
-				return basicGetSpg();
+			case MazePackage.RECTANGLE_GENERATOR__FPG:
+				if (resolve) return getFpg();
+				return basicGetFpg();
 			case MazePackage.RECTANGLE_GENERATOR__RC:
 				return getRc();
 			case MazePackage.RECTANGLE_GENERATOR__CC:
@@ -288,8 +289,8 @@ public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGene
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MazePackage.RECTANGLE_GENERATOR__SPG:
-				setSpg((SolutionPathGenerator)newValue);
+			case MazePackage.RECTANGLE_GENERATOR__FPG:
+				setFpg((ForcePatternGenerator)newValue);
 				return;
 			case MazePackage.RECTANGLE_GENERATOR__RC:
 				setRc((RowCount)newValue);
@@ -309,8 +310,8 @@ public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGene
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MazePackage.RECTANGLE_GENERATOR__SPG:
-				setSpg((SolutionPathGenerator)null);
+			case MazePackage.RECTANGLE_GENERATOR__FPG:
+				setFpg((ForcePatternGenerator)null);
 				return;
 			case MazePackage.RECTANGLE_GENERATOR__RC:
 				setRc((RowCount)null);
@@ -330,8 +331,8 @@ public class RectangleGeneratorImpl extends EObjectImpl implements RectangleGene
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MazePackage.RECTANGLE_GENERATOR__SPG:
-				return spg != null;
+			case MazePackage.RECTANGLE_GENERATOR__FPG:
+				return fpg != null;
 			case MazePackage.RECTANGLE_GENERATOR__RC:
 				return rc != null;
 			case MazePackage.RECTANGLE_GENERATOR__CC:

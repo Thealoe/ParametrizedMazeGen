@@ -7,12 +7,14 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rectangleGen" lowerBound="1"
         eType="#//RectangleGenerator" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        changeable="false" defaultValueLiteral="MDiagram" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="forcePatternGen" lowerBound="1"
+        eType="#//ForcePatternGenerator" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="solutionPathGen" lowerBound="1"
         eType="#//SolutionPathGenerator" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="mazeBodyGen" lowerBound="1"
         eType="#//MazeBodyGenerator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="MDiagram" iD="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Point">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="x" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -25,8 +27,17 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MazeCell">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="245,197,66"/>
+      <details key="figure" value="rounded"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="type"/>
+      <details key="size" value="40,40"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="point" lowerBound="1" eType="#//Point"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="MC" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="point" lowerBound="1" eType="#//CellPoint"
         containment="true">
       <eAnnotations source="gmf.compartment"/>
     </eStructuralFeatures>
@@ -52,6 +63,17 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" defaultValueLiteral="EP" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CellPoint" eSuperTypes="#//Point">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="245,197,66"/>
+      <details key="figure" value="rounded"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="40,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="CP" iD="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ColumnCount" eSuperTypes="#//Count">
     <eAnnotations source="gmf.node">
@@ -164,7 +186,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" defaultValueLiteral="SPGen" iD="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MazeBodyGenerator" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="MazeBodyGenerator">
     <eAnnotations source="gmf.node">
       <details key="color" value="128,159,255"/>
       <details key="figure" value="rectangle"/>
@@ -190,28 +212,6 @@
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" defaultValueLiteral="MBGen" iD="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StackMazeBodyGenerator" eSuperTypes="#//MazeBodyGenerator">
-    <eAnnotations source="gmf.node">
-      <details key="color" value="128,159,255"/>
-      <details key="figure" value="rectangle"/>
-      <details key="label.icon" value="false"/>
-      <details key="label" value="type_name"/>
-      <details key="size" value="100,40"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        changeable="false" defaultValueLiteral="SMBGen"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RandomMazeBodyGenerator" eSuperTypes="#//MazeBodyGenerator">
-    <eAnnotations source="gmf.node">
-      <details key="color" value="128,159,255"/>
-      <details key="figure" value="rectangle"/>
-      <details key="label.icon" value="false"/>
-      <details key="label" value="type_name"/>
-      <details key="size" value="100,40"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        changeable="false" defaultValueLiteral="RMBGen"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TurnRate" eSuperTypes="#//Rate">
     <eAnnotations source="gmf.node">

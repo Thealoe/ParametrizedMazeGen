@@ -21,8 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Maze.MazePackage#getMazeBodyGenerator()
- * @model abstract="true"
- *        annotation="gmf.node color='128,159,255' figure='rectangle' label.icon='false' label='name' size='100,40'"
+ * @model annotation="gmf.node color='128,159,255' figure='rectangle' label.icon='false' label='name' size='100,40'"
  * @generated
  */
 public interface MazeBodyGenerator extends EObject {

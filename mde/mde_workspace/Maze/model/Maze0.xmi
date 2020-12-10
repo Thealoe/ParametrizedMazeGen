@@ -2,27 +2,55 @@
 <mz:MazeDiagram
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:mz="geodes.sms.maze">
-  <rectangleGen
-      spg="//@solutionPathGen">
-    <rc value="10"/>
-    <cc value="10"/>
+  <rectangleGen>
+    <rc value="11"/>
+    <cc value="11"/>
   </rectangleGen>
-  <solutionPathGen
-      mbg="//@mazeBodyGen">
-    <tr/>
-    <sr/>
+  <forcePatternGen>
+    <mazeCells
+        type="15">
+      <point
+          x="5"
+          y="5"/>
+    </mazeCells>
+    <mazeCells
+        type="15">
+      <point
+          x="4"
+          y="5"/>
+    </mazeCells>
+    <mazeCells
+        type="15">
+      <point
+          x="6"
+          y="5"/>
+    </mazeCells>
+    <mazeCells
+        type="15">
+      <point
+          x="5"
+          y="4"/>
+    </mazeCells>
+    <mazeCells
+        type="15">
+      <point
+          x="5"
+          y="6"/>
+    </mazeCells>
+  </forcePatternGen>
+  <solutionPathGen>
+    <tr value="5"/>
+    <sr value="5"/>
     <dr value="90"/>
     <sp/>
-    <ep x="8"
-        y="8"/>
+    <ep x="10"
+        y="10"/>
   </solutionPathGen>
-  <mazeBodyGen
-      xsi:type="mz:RandomMazeBodyGenerator">
-    <dr value="75"/>
+  <mazeBodyGen>
+    <dr value="5"/>
     <sr value="5"/>
-    <tr value="15"/>
-    <er value="5"/>
+    <tr value="90"/>
+    <er/>
   </mazeBodyGen>
 </mz:MazeDiagram>

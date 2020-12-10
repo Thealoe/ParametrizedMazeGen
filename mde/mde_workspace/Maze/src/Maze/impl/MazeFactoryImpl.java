@@ -60,14 +60,16 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 			case MazePackage.POINT: return createPoint();
 			case MazePackage.COUNT: return createCount();
 			case MazePackage.RATE: return createRate();
+			case MazePackage.MAZE_CELL: return createMazeCell();
 			case MazePackage.START_POINT: return createStartPoint();
 			case MazePackage.END_POINT: return createEndPoint();
+			case MazePackage.CELL_POINT: return createCellPoint();
 			case MazePackage.COLUMN_COUNT: return createColumnCount();
 			case MazePackage.ROW_COUNT: return createRowCount();
 			case MazePackage.RECTANGLE_GENERATOR: return createRectangleGenerator();
+			case MazePackage.FORCE_PATTERN_GENERATOR: return createForcePatternGenerator();
 			case MazePackage.SOLUTION_PATH_GENERATOR: return createSolutionPathGenerator();
-			case MazePackage.STACK_MAZE_BODY_GENERATOR: return createStackMazeBodyGenerator();
-			case MazePackage.RANDOM_MAZE_BODY_GENERATOR: return createRandomMazeBodyGenerator();
+			case MazePackage.MAZE_BODY_GENERATOR: return createMazeBodyGenerator();
 			case MazePackage.TURN_RATE: return createTurnRate();
 			case MazePackage.STRAIGHT_RATE: return createStraightRate();
 			case MazePackage.DECISIONS_RATE: return createDecisionsRate();
@@ -127,6 +129,17 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 	 * @generated
 	 */
 	@Override
+	public MazeCell createMazeCell() {
+		MazeCellImpl mazeCell = new MazeCellImpl();
+		return mazeCell;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public StartPoint createStartPoint() {
 		StartPointImpl startPoint = new StartPointImpl();
 		return startPoint;
@@ -149,9 +162,31 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 	 * @generated
 	 */
 	@Override
+	public CellPoint createCellPoint() {
+		CellPointImpl cellPoint = new CellPointImpl();
+		return cellPoint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public RectangleGenerator createRectangleGenerator() {
 		RectangleGeneratorImpl rectangleGenerator = new RectangleGeneratorImpl();
 		return rectangleGenerator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ForcePatternGenerator createForcePatternGenerator() {
+		ForcePatternGeneratorImpl forcePatternGenerator = new ForcePatternGeneratorImpl();
+		return forcePatternGenerator;
 	}
 
 	/**
@@ -171,20 +206,9 @@ public class MazeFactoryImpl extends EFactoryImpl implements MazeFactory {
 	 * @generated
 	 */
 	@Override
-	public StackMazeBodyGenerator createStackMazeBodyGenerator() {
-		StackMazeBodyGeneratorImpl stackMazeBodyGenerator = new StackMazeBodyGeneratorImpl();
-		return stackMazeBodyGenerator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RandomMazeBodyGenerator createRandomMazeBodyGenerator() {
-		RandomMazeBodyGeneratorImpl randomMazeBodyGenerator = new RandomMazeBodyGeneratorImpl();
-		return randomMazeBodyGenerator;
+	public MazeBodyGenerator createMazeBodyGenerator() {
+		MazeBodyGeneratorImpl mazeBodyGenerator = new MazeBodyGeneratorImpl();
+		return mazeBodyGenerator;
 	}
 
 	/**

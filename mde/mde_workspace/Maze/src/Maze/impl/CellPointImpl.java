@@ -2,55 +2,51 @@
  */
 package Maze.impl;
 
+import Maze.CellPoint;
 import Maze.MazePackage;
-import Maze.RandomMazeBodyGenerator;
-
-import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Random Maze Body Generator</b></em>'.
+ * An implementation of the model object '<em><b>Cell Point</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Maze.impl.RandomMazeBodyGeneratorImpl#getType_name <em>Type name</em>}</li>
+ *   <li>{@link Maze.impl.CellPointImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class RandomMazeBodyGeneratorImpl extends MazeBodyGeneratorImpl implements RandomMazeBodyGenerator {
+public class CellPointImpl extends PointImpl implements CellPoint {
 	/**
-	 * The default value of the '{@link #getType_name() <em>Type name</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getType_name()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TYPE_NAME_EDEFAULT = "RMBGen";
+	protected static final String NAME_EDEFAULT = "CP";
 
 	/**
-	 * The cached value of the '{@link #getType_name() <em>Type name</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getType_name()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String type_name = TYPE_NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected RandomMazeBodyGeneratorImpl() {
+	protected CellPointImpl() {
 		super();
 	}
 
@@ -61,7 +57,7 @@ public class RandomMazeBodyGeneratorImpl extends MazeBodyGeneratorImpl implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return MazePackage.Literals.RANDOM_MAZE_BODY_GENERATOR;
+		return MazePackage.Literals.CELL_POINT;
 	}
 
 	/**
@@ -70,8 +66,8 @@ public class RandomMazeBodyGeneratorImpl extends MazeBodyGeneratorImpl implement
 	 * @generated
 	 */
 	@Override
-	public String getType_name() {
-		return type_name;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -82,8 +78,8 @@ public class RandomMazeBodyGeneratorImpl extends MazeBodyGeneratorImpl implement
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MazePackage.RANDOM_MAZE_BODY_GENERATOR__TYPE_NAME:
-				return getType_name();
+			case MazePackage.CELL_POINT__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -96,8 +92,8 @@ public class RandomMazeBodyGeneratorImpl extends MazeBodyGeneratorImpl implement
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MazePackage.RANDOM_MAZE_BODY_GENERATOR__TYPE_NAME:
-				return TYPE_NAME_EDEFAULT == null ? type_name != null : !TYPE_NAME_EDEFAULT.equals(type_name);
+			case MazePackage.CELL_POINT__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -112,10 +108,10 @@ public class RandomMazeBodyGeneratorImpl extends MazeBodyGeneratorImpl implement
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (type_name: ");
-		result.append(type_name);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}
 
-} //RandomMazeBodyGeneratorImpl
+} //CellPointImpl

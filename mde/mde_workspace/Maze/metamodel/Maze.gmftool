@@ -12,6 +12,15 @@
         collapsible="true">
       <tools
           xsi:type="gmftool:CreationTool"
+          title="CellPoint"
+          description="Create new CellPoint">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="ColumnCount"
           description="Create new ColumnCount">
         <smallIcon
@@ -48,8 +57,26 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="RandomMazeBodyGenerator"
-          description="Create new RandomMazeBodyGenerator">
+          title="ForcePatternGenerator"
+          description="Create new ForcePatternGenerator">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="MazeBodyGenerator"
+          description="Create new MazeBodyGenerator">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="MazeCell"
+          description="Create new MazeCell">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -77,15 +104,6 @@
           xsi:type="gmftool:CreationTool"
           title="SolutionPathGenerator"
           description="Create new SolutionPathGenerator">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="StackMazeBodyGenerator"
-          description="Create new StackMazeBodyGenerator">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -123,6 +141,15 @@
         xsi:type="gmftool:ToolGroup"
         title="Connections"
         collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Fpg"
+          description="Create new Fpg">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
       <tools
           xsi:type="gmftool:CreationTool"
           title="Mbg"

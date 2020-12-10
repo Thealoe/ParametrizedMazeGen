@@ -4,6 +4,7 @@ package Maze.impl;
 
 import Maze.ColumnCount;
 import Maze.DecisionsRate;
+import Maze.ForcePatternGenerator;
 import Maze.MazeBodyGenerator;
 import Maze.MazeDiagram;
 import Maze.MazePackage;
@@ -35,9 +36,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link Maze.impl.MazeDiagramImpl#getRectangleGen <em>Rectangle Gen</em>}</li>
- *   <li>{@link Maze.impl.MazeDiagramImpl#getName <em>Name</em>}</li>
+ *   <li>{@link Maze.impl.MazeDiagramImpl#getForcePatternGen <em>Force Pattern Gen</em>}</li>
  *   <li>{@link Maze.impl.MazeDiagramImpl#getSolutionPathGen <em>Solution Path Gen</em>}</li>
  *   <li>{@link Maze.impl.MazeDiagramImpl#getMazeBodyGen <em>Maze Body Gen</em>}</li>
+ *   <li>{@link Maze.impl.MazeDiagramImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,24 +56,14 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 	protected RectangleGenerator rectangleGen;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getForcePatternGen() <em>Force Pattern Gen</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getForcePatternGen()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = "MDiagram";
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
+	protected ForcePatternGenerator forcePatternGen;
 
 	/**
 	 * The cached value of the '{@link #getSolutionPathGen() <em>Solution Path Gen</em>}' containment reference.
@@ -92,6 +84,26 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 	 * @ordered
 	 */
 	protected MazeBodyGenerator mazeBodyGen;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = "MDiagram";
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,6 +167,51 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, MazePackage.MAZE_DIAGRAM__RECTANGLE_GEN, newRectangleGen, newRectangleGen));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ForcePatternGenerator getForcePatternGen() {
+		return forcePatternGen;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetForcePatternGen(ForcePatternGenerator newForcePatternGen, NotificationChain msgs) {
+		ForcePatternGenerator oldForcePatternGen = forcePatternGen;
+		forcePatternGen = newForcePatternGen;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN, oldForcePatternGen, newForcePatternGen);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setForcePatternGen(ForcePatternGenerator newForcePatternGen) {
+		if (newForcePatternGen != forcePatternGen) {
+			NotificationChain msgs = null;
+			if (forcePatternGen != null)
+				msgs = ((InternalEObject)forcePatternGen).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN, null, msgs);
+			if (newForcePatternGen != null)
+				msgs = ((InternalEObject)newForcePatternGen).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN, null, msgs);
+			msgs = basicSetForcePatternGen(newForcePatternGen, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN, newForcePatternGen, newForcePatternGen));
 	}
 
 	/**
@@ -267,6 +324,8 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 		switch (featureID) {
 			case MazePackage.MAZE_DIAGRAM__RECTANGLE_GEN:
 				return basicSetRectangleGen(null, msgs);
+			case MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN:
+				return basicSetForcePatternGen(null, msgs);
 			case MazePackage.MAZE_DIAGRAM__SOLUTION_PATH_GEN:
 				return basicSetSolutionPathGen(null, msgs);
 			case MazePackage.MAZE_DIAGRAM__MAZE_BODY_GEN:
@@ -285,12 +344,14 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 		switch (featureID) {
 			case MazePackage.MAZE_DIAGRAM__RECTANGLE_GEN:
 				return getRectangleGen();
-			case MazePackage.MAZE_DIAGRAM__NAME:
-				return getName();
+			case MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN:
+				return getForcePatternGen();
 			case MazePackage.MAZE_DIAGRAM__SOLUTION_PATH_GEN:
 				return getSolutionPathGen();
 			case MazePackage.MAZE_DIAGRAM__MAZE_BODY_GEN:
 				return getMazeBodyGen();
+			case MazePackage.MAZE_DIAGRAM__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -306,6 +367,9 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 		switch (featureID) {
 			case MazePackage.MAZE_DIAGRAM__RECTANGLE_GEN:
 				setRectangleGen((RectangleGenerator)newValue);
+				return;
+			case MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN:
+				setForcePatternGen((ForcePatternGenerator)newValue);
 				return;
 			case MazePackage.MAZE_DIAGRAM__SOLUTION_PATH_GEN:
 				setSolutionPathGen((SolutionPathGenerator)newValue);
@@ -328,6 +392,9 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 			case MazePackage.MAZE_DIAGRAM__RECTANGLE_GEN:
 				setRectangleGen((RectangleGenerator)null);
 				return;
+			case MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN:
+				setForcePatternGen((ForcePatternGenerator)null);
+				return;
 			case MazePackage.MAZE_DIAGRAM__SOLUTION_PATH_GEN:
 				setSolutionPathGen((SolutionPathGenerator)null);
 				return;
@@ -348,12 +415,14 @@ public class MazeDiagramImpl extends EObjectImpl implements MazeDiagram {
 		switch (featureID) {
 			case MazePackage.MAZE_DIAGRAM__RECTANGLE_GEN:
 				return rectangleGen != null;
-			case MazePackage.MAZE_DIAGRAM__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case MazePackage.MAZE_DIAGRAM__FORCE_PATTERN_GEN:
+				return forcePatternGen != null;
 			case MazePackage.MAZE_DIAGRAM__SOLUTION_PATH_GEN:
 				return solutionPathGen != null;
 			case MazePackage.MAZE_DIAGRAM__MAZE_BODY_GEN:
 				return mazeBodyGen != null;
+			case MazePackage.MAZE_DIAGRAM__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}

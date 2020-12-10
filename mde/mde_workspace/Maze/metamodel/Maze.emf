@@ -4,9 +4,10 @@ package Maze;
 @gmf.diagram(model.extension="mz")
 class MazeDiagram {
 	val RectangleGenerator[1] rectangleGen;
-	readonly id attr String name = "MDiagram";
+	val ForcePatternGenerator[1] forcePatternGen;
 	val SolutionPathGenerator[1] solutionPathGen;
 	val MazeBodyGenerator[1] mazeBodyGen;
+	readonly id attr String name = "MDiagram";
 }
 
 class Point {
@@ -22,11 +23,13 @@ class Rate {
 	attr int value;
 }
 
+@gmf.node(color="245,197,66", figure="rounded", label.icon="false", label="type", size="40,40")
 class MazeCell {
 	attr int type;
+	readonly id attr String name = "MC";
 
 	@gmf.compartment
-	val Point[1] point;
+	val CellPoint[1] point;
 }
 
 @gmf.node(color="245,197,66", figure="rounded", label.icon="false", label="name", size="40,40")
@@ -37,6 +40,11 @@ class StartPoint extends Point {
 @gmf.node(color="245,197,66", figure="rounded", label.icon="false", label="name", size="40,40")
 class EndPoint extends Point {
 	readonly id attr String name = "EP";
+}
+
+@gmf.node(color="245,197,66", figure="rounded", label.icon="false", label="name", size="40,40")
+class CellPoint extends Point {
+	readonly id attr String name = "CP";
 }
 
 @gmf.node(color="255,102,102", figure="rounded", label.icon="false", label="name", size="40,40")
@@ -98,7 +106,7 @@ class SolutionPathGenerator {
 }
 
 @gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="name", size="100,40")
-abstract class MazeBodyGenerator {
+class MazeBodyGenerator {
 
 	@gmf.compartment
 	val DecisionsRate[1] dr;
@@ -112,16 +120,6 @@ abstract class MazeBodyGenerator {
 	@gmf.compartment
 	val EndRate[1] er;
 	readonly id attr String name = "MBGen";
-}
-
-@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="type_name", size="100,40")
-class StackMazeBodyGenerator extends MazeBodyGenerator {
-	readonly attr String type_name = "SMBGen";
-}
-
-@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="type_name", size="100,40")
-class RandomMazeBodyGenerator extends MazeBodyGenerator {
-	readonly attr String type_name = "RMBGen";
 }
 
 @gmf.node(color="33,224,133", figure="ellipse", label.icon="false", label="name", size="50,50")

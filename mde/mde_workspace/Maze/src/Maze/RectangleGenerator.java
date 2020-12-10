@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Maze.RectangleGenerator#getSpg <em>Spg</em>}</li>
+ *   <li>{@link Maze.RectangleGenerator#getFpg <em>Fpg</em>}</li>
  *   <li>{@link Maze.RectangleGenerator#getRc <em>Rc</em>}</li>
  *   <li>{@link Maze.RectangleGenerator#getCc <em>Cc</em>}</li>
  *   <li>{@link Maze.RectangleGenerator#getName <em>Name</em>}</li>
@@ -25,27 +25,27 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface RectangleGenerator extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Spg</b></em>' reference.
+	 * Returns the value of the '<em><b>Fpg</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Spg</em>' reference.
-	 * @see #setSpg(SolutionPathGenerator)
-	 * @see Maze.MazePackage#getRectangleGenerator_Spg()
+	 * @return the value of the '<em>Fpg</em>' reference.
+	 * @see #setFpg(ForcePatternGenerator)
+	 * @see Maze.MazePackage#getRectangleGenerator_Fpg()
 	 * @model required="true"
 	 *        annotation="gmf.link target.decoration='arrow' source.decoration='none' style='solid' color='0,0,0'"
 	 * @generated
 	 */
-	SolutionPathGenerator getSpg();
+	ForcePatternGenerator getFpg();
 
 	/**
-	 * Sets the value of the '{@link Maze.RectangleGenerator#getSpg <em>Spg</em>}' reference.
+	 * Sets the value of the '{@link Maze.RectangleGenerator#getFpg <em>Fpg</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Spg</em>' reference.
-	 * @see #getSpg()
+	 * @param value the new value of the '<em>Fpg</em>' reference.
+	 * @see #getFpg()
 	 * @generated
 	 */
-	void setSpg(SolutionPathGenerator value);
+	void setFpg(ForcePatternGenerator value);
 
 	/**
 	 * Returns the value of the '<em><b>Rc</b></em>' containment reference.

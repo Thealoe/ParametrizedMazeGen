@@ -1,20 +1,22 @@
 { 
 	"RGen": {
-		"CC" : 10,
-		"RC" : 10
+		"CC" : 11,
+		"RC" : 11
+	},
+		"FPGen": {
+		"Hello" : "World!"
 	},
 	"SPGen": {
 		"SP" : [0, 0],
-		"EP" : [8, 8],
-		"SR" : 90,
-		"TR" : 0,
-		"DR" : 0
+		"EP" : [10, 10],
+		"SR" : 5,
+		"TR" : 5,
+		"DR" : 90
 	},
 	"MBGen": {
-		"under_type" : "RMBGen",
 		"SR" : 5,
-		"TR" : 15,
-		"DR" : 75,
-		"ER" : 5
+		"TR" : 90,
+		"DR" : 5,
+		"ER" : 0
 	}
 }

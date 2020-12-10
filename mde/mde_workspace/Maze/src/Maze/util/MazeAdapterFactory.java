@@ -84,12 +84,20 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 				return createRateAdapter();
 			}
 			@Override
+			public Adapter caseMazeCell(MazeCell object) {
+				return createMazeCellAdapter();
+			}
+			@Override
 			public Adapter caseStartPoint(StartPoint object) {
 				return createStartPointAdapter();
 			}
 			@Override
 			public Adapter caseEndPoint(EndPoint object) {
 				return createEndPointAdapter();
+			}
+			@Override
+			public Adapter caseCellPoint(CellPoint object) {
+				return createCellPointAdapter();
 			}
 			@Override
 			public Adapter caseColumnCount(ColumnCount object) {
@@ -104,20 +112,16 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 				return createRectangleGeneratorAdapter();
 			}
 			@Override
+			public Adapter caseForcePatternGenerator(ForcePatternGenerator object) {
+				return createForcePatternGeneratorAdapter();
+			}
+			@Override
 			public Adapter caseSolutionPathGenerator(SolutionPathGenerator object) {
 				return createSolutionPathGeneratorAdapter();
 			}
 			@Override
 			public Adapter caseMazeBodyGenerator(MazeBodyGenerator object) {
 				return createMazeBodyGeneratorAdapter();
-			}
-			@Override
-			public Adapter caseStackMazeBodyGenerator(StackMazeBodyGenerator object) {
-				return createStackMazeBodyGeneratorAdapter();
-			}
-			@Override
-			public Adapter caseRandomMazeBodyGenerator(RandomMazeBodyGenerator object) {
-				return createRandomMazeBodyGeneratorAdapter();
 			}
 			@Override
 			public Adapter caseTurnRate(TurnRate object) {
@@ -212,6 +216,20 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Maze.MazeCell <em>Cell</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Maze.MazeCell
+	 * @generated
+	 */
+	public Adapter createMazeCellAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Maze.StartPoint <em>Start Point</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -240,6 +258,20 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Maze.CellPoint <em>Cell Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Maze.CellPoint
+	 * @generated
+	 */
+	public Adapter createCellPointAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Maze.RectangleGenerator <em>Rectangle Generator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -250,6 +282,20 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRectangleGeneratorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Maze.ForcePatternGenerator <em>Force Pattern Generator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Maze.ForcePatternGenerator
+	 * @generated
+	 */
+	public Adapter createForcePatternGeneratorAdapter() {
 		return null;
 	}
 
@@ -278,34 +324,6 @@ public class MazeAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createMazeBodyGeneratorAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Maze.StackMazeBodyGenerator <em>Stack Maze Body Generator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Maze.StackMazeBodyGenerator
-	 * @generated
-	 */
-	public Adapter createStackMazeBodyGeneratorAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Maze.RandomMazeBodyGenerator <em>Random Maze Body Generator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Maze.RandomMazeBodyGenerator
-	 * @generated
-	 */
-	public Adapter createRandomMazeBodyGeneratorAdapter() {
 		return null;
 	}
 

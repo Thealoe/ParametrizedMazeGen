@@ -8,151 +8,6 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="Maze.ecore#//MazeDiagram/mazeBodyGen"/>
-    <ownedChild
-        relatedDiagrams="//@diagram">
-      <domainMetaElement
-          href="Maze.ecore#//StackMazeBodyGenerator"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="Maze.gmfgraph#StackMazeBodyGeneratorLabel"/>
-        <features
-            href="Maze.ecore#//StackMazeBodyGenerator/type_name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="Maze.gmftool#//@palette/@tools.0/@tools.8"/>
-      <diagramNode
-          href="Maze.gmfgraph#StackMazeBodyGenerator"/>
-      <children
-          compartment="//@nodes.0/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.3/@ownedChild/@children.2/@ownedChild">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/dr"/>
-      </children>
-      <children
-          compartment="//@nodes.0/@ownedChild/@compartments.1"
-          referencedChild="//@nodes.3/@ownedChild/@children.1/@ownedChild">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/sr"/>
-      </children>
-      <children
-          compartment="//@nodes.0/@ownedChild/@compartments.2"
-          referencedChild="//@nodes.3/@ownedChild/@children.0/@ownedChild">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/tr"/>
-      </children>
-      <children
-          compartment="//@nodes.0/@ownedChild/@compartments.3">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/er"/>
-        <ownedChild>
-          <domainMetaElement
-              href="Maze.ecore#//EndRate"/>
-          <labelMappings
-              xsi:type="gmfmap:FeatureLabelMapping">
-            <diagramLabel
-                href="Maze.gmfgraph#EndRateLabel"/>
-            <features
-                href="Maze.ecore#//EndRate/name"/>
-          </labelMappings>
-          <tool
-              xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.3"/>
-          <diagramNode
-              href="Maze.gmfgraph#EndRate"/>
-        </ownedChild>
-      </children>
-      <compartments
-          children="//@nodes.0/@ownedChild/@children.0">
-        <compartment
-            href="Maze.gmfgraph#StackMazeBodyGeneratorDrCompartment"/>
-      </compartments>
-      <compartments
-          children="//@nodes.0/@ownedChild/@children.1">
-        <compartment
-            href="Maze.gmfgraph#StackMazeBodyGeneratorSrCompartment"/>
-      </compartments>
-      <compartments
-          children="//@nodes.0/@ownedChild/@children.2">
-        <compartment
-            href="Maze.gmfgraph#StackMazeBodyGeneratorTrCompartment"/>
-      </compartments>
-      <compartments
-          children="//@nodes.0/@ownedChild/@children.3">
-        <compartment
-            href="Maze.gmfgraph#StackMazeBodyGeneratorErCompartment"/>
-      </compartments>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="Maze.ecore#//MazeDiagram/mazeBodyGen"/>
-    <ownedChild
-        relatedDiagrams="//@diagram">
-      <domainMetaElement
-          href="Maze.ecore#//RandomMazeBodyGenerator"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="Maze.gmfgraph#RandomMazeBodyGeneratorLabel"/>
-        <features
-            href="Maze.ecore#//RandomMazeBodyGenerator/type_name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="Maze.gmftool#//@palette/@tools.0/@tools.4"/>
-      <diagramNode
-          href="Maze.gmfgraph#RandomMazeBodyGenerator"/>
-      <children
-          compartment="//@nodes.1/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.3/@ownedChild/@children.2/@ownedChild">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/dr"/>
-      </children>
-      <children
-          compartment="//@nodes.1/@ownedChild/@compartments.1"
-          referencedChild="//@nodes.3/@ownedChild/@children.1/@ownedChild">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/sr"/>
-      </children>
-      <children
-          compartment="//@nodes.1/@ownedChild/@compartments.2"
-          referencedChild="//@nodes.3/@ownedChild/@children.0/@ownedChild">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/tr"/>
-      </children>
-      <children
-          compartment="//@nodes.1/@ownedChild/@compartments.3"
-          referencedChild="//@nodes.0/@ownedChild/@children.3/@ownedChild">
-        <containmentFeature
-            href="Maze.ecore#//MazeBodyGenerator/er"/>
-      </children>
-      <compartments
-          children="//@nodes.1/@ownedChild/@children.0">
-        <compartment
-            href="Maze.gmfgraph#RandomMazeBodyGeneratorDrCompartment"/>
-      </compartments>
-      <compartments
-          children="//@nodes.1/@ownedChild/@children.1">
-        <compartment
-            href="Maze.gmfgraph#RandomMazeBodyGeneratorSrCompartment"/>
-      </compartments>
-      <compartments
-          children="//@nodes.1/@ownedChild/@children.2">
-        <compartment
-            href="Maze.gmfgraph#RandomMazeBodyGeneratorTrCompartment"/>
-      </compartments>
-      <compartments
-          children="//@nodes.1/@ownedChild/@children.3">
-        <compartment
-            href="Maze.gmfgraph#RandomMazeBodyGeneratorErCompartment"/>
-      </compartments>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
         href="Maze.ecore#//MazeDiagram/rectangleGen"/>
     <ownedChild
         relatedDiagrams="//@diagram">
@@ -167,11 +22,11 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="Maze.gmftool#//@palette/@tools.0/@tools.5"/>
+          href="Maze.gmftool#//@palette/@tools.0/@tools.8"/>
       <diagramNode
           href="Maze.gmfgraph#RectangleGenerator"/>
       <children
-          compartment="//@nodes.2/@ownedChild/@compartments.0">
+          compartment="//@nodes.0/@ownedChild/@compartments.0">
         <containmentFeature
             href="Maze.ecore#//RectangleGenerator/rc"/>
         <ownedChild>
@@ -186,13 +41,13 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.6"/>
+              href="Maze.gmftool#//@palette/@tools.0/@tools.9"/>
           <diagramNode
               href="Maze.gmfgraph#RowCount"/>
         </ownedChild>
       </children>
       <children
-          compartment="//@nodes.2/@ownedChild/@compartments.1">
+          compartment="//@nodes.0/@ownedChild/@compartments.1">
         <containmentFeature
             href="Maze.ecore#//RectangleGenerator/cc"/>
         <ownedChild>
@@ -207,20 +62,94 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.0"/>
+              href="Maze.gmftool#//@palette/@tools.0/@tools.1"/>
           <diagramNode
               href="Maze.gmfgraph#ColumnCount"/>
         </ownedChild>
       </children>
       <compartments
-          children="//@nodes.2/@ownedChild/@children.0">
+          children="//@nodes.0/@ownedChild/@children.0">
         <compartment
             href="Maze.gmfgraph#RectangleGeneratorRcCompartment"/>
       </compartments>
       <compartments
-          children="//@nodes.2/@ownedChild/@children.1">
+          children="//@nodes.0/@ownedChild/@children.1">
         <compartment
             href="Maze.gmfgraph#RectangleGeneratorCcCompartment"/>
+      </compartments>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="Maze.ecore#//MazeDiagram/forcePatternGen"/>
+    <ownedChild
+        relatedDiagrams="//@diagram">
+      <domainMetaElement
+          href="Maze.ecore#//ForcePatternGenerator"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="Maze.gmfgraph#ForcePatternGeneratorLabel"/>
+        <features
+            href="Maze.ecore#//ForcePatternGenerator/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="Maze.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="Maze.gmfgraph#ForcePatternGenerator"/>
+      <children
+          compartment="//@nodes.1/@ownedChild/@compartments.0">
+        <containmentFeature
+            href="Maze.ecore#//ForcePatternGenerator/mazeCells"/>
+        <ownedChild
+            relatedDiagrams="//@diagram">
+          <domainMetaElement
+              href="Maze.ecore#//MazeCell"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel
+                href="Maze.gmfgraph#MazeCellLabel"/>
+            <features
+                href="Maze.ecore#//MazeCell/type"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="Maze.gmftool#//@palette/@tools.0/@tools.7"/>
+          <diagramNode
+              href="Maze.gmfgraph#MazeCell"/>
+          <children
+              compartment="//@nodes.1/@ownedChild/@children.0/@ownedChild/@compartments.0">
+            <containmentFeature
+                href="Maze.ecore#//MazeCell/point"/>
+            <ownedChild>
+              <domainMetaElement
+                  href="Maze.ecore#//CellPoint"/>
+              <labelMappings
+                  xsi:type="gmfmap:FeatureLabelMapping">
+                <diagramLabel
+                    href="Maze.gmfgraph#CellPointLabel"/>
+                <features
+                    href="Maze.ecore#//CellPoint/name"/>
+              </labelMappings>
+              <tool
+                  xsi:type="gmftool:CreationTool"
+                  href="Maze.gmftool#//@palette/@tools.0/@tools.0"/>
+              <diagramNode
+                  href="Maze.gmfgraph#CellPoint"/>
+            </ownedChild>
+          </children>
+          <compartments
+              children="//@nodes.1/@ownedChild/@children.0/@ownedChild/@children.0">
+            <compartment
+                href="Maze.gmfgraph#MazeCellPointCompartment"/>
+          </compartments>
+        </ownedChild>
+      </children>
+      <compartments
+          children="//@nodes.1/@ownedChild/@children.0">
+        <compartment
+            href="Maze.gmfgraph#ForcePatternGeneratorMazeCellsCompartment"/>
       </compartments>
     </ownedChild>
   </nodes>
@@ -240,11 +169,11 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="Maze.gmftool#//@palette/@tools.0/@tools.7"/>
+          href="Maze.gmftool#//@palette/@tools.0/@tools.10"/>
       <diagramNode
           href="Maze.gmfgraph#SolutionPathGenerator"/>
       <children
-          compartment="//@nodes.3/@ownedChild/@compartments.0">
+          compartment="//@nodes.2/@ownedChild/@compartments.0">
         <containmentFeature
             href="Maze.ecore#//SolutionPathGenerator/tr"/>
         <ownedChild>
@@ -259,13 +188,13 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.11"/>
+              href="Maze.gmftool#//@palette/@tools.0/@tools.13"/>
           <diagramNode
               href="Maze.gmfgraph#TurnRate"/>
         </ownedChild>
       </children>
       <children
-          compartment="//@nodes.3/@ownedChild/@compartments.1">
+          compartment="//@nodes.2/@ownedChild/@compartments.1">
         <containmentFeature
             href="Maze.ecore#//SolutionPathGenerator/sr"/>
         <ownedChild>
@@ -280,13 +209,13 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.10"/>
+              href="Maze.gmftool#//@palette/@tools.0/@tools.12"/>
           <diagramNode
               href="Maze.gmfgraph#StraightRate"/>
         </ownedChild>
       </children>
       <children
-          compartment="//@nodes.3/@ownedChild/@compartments.2">
+          compartment="//@nodes.2/@ownedChild/@compartments.2">
         <containmentFeature
             href="Maze.ecore#//SolutionPathGenerator/dr"/>
         <ownedChild>
@@ -301,13 +230,13 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.1"/>
+              href="Maze.gmftool#//@palette/@tools.0/@tools.2"/>
           <diagramNode
               href="Maze.gmfgraph#DecisionsRate"/>
         </ownedChild>
       </children>
       <children
-          compartment="//@nodes.3/@ownedChild/@compartments.3">
+          compartment="//@nodes.2/@ownedChild/@compartments.3">
         <containmentFeature
             href="Maze.ecore#//SolutionPathGenerator/sp"/>
         <ownedChild>
@@ -322,13 +251,13 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.9"/>
+              href="Maze.gmftool#//@palette/@tools.0/@tools.11"/>
           <diagramNode
               href="Maze.gmfgraph#StartPoint"/>
         </ownedChild>
       </children>
       <children
-          compartment="//@nodes.3/@ownedChild/@compartments.4">
+          compartment="//@nodes.2/@ownedChild/@compartments.4">
         <containmentFeature
             href="Maze.ecore#//SolutionPathGenerator/ep"/>
         <ownedChild>
@@ -343,35 +272,115 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="Maze.gmftool#//@palette/@tools.0/@tools.2"/>
+              href="Maze.gmftool#//@palette/@tools.0/@tools.3"/>
           <diagramNode
               href="Maze.gmfgraph#EndPoint"/>
         </ownedChild>
       </children>
       <compartments
-          children="//@nodes.3/@ownedChild/@children.0">
+          children="//@nodes.2/@ownedChild/@children.0">
         <compartment
             href="Maze.gmfgraph#SolutionPathGeneratorTrCompartment"/>
       </compartments>
       <compartments
-          children="//@nodes.3/@ownedChild/@children.1">
+          children="//@nodes.2/@ownedChild/@children.1">
         <compartment
             href="Maze.gmfgraph#SolutionPathGeneratorSrCompartment"/>
       </compartments>
       <compartments
-          children="//@nodes.3/@ownedChild/@children.2">
+          children="//@nodes.2/@ownedChild/@children.2">
         <compartment
             href="Maze.gmfgraph#SolutionPathGeneratorDrCompartment"/>
       </compartments>
       <compartments
-          children="//@nodes.3/@ownedChild/@children.3">
+          children="//@nodes.2/@ownedChild/@children.3">
         <compartment
             href="Maze.gmfgraph#SolutionPathGeneratorSpCompartment"/>
       </compartments>
       <compartments
-          children="//@nodes.3/@ownedChild/@children.4">
+          children="//@nodes.2/@ownedChild/@children.4">
         <compartment
             href="Maze.gmfgraph#SolutionPathGeneratorEpCompartment"/>
+      </compartments>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="Maze.ecore#//MazeDiagram/mazeBodyGen"/>
+    <ownedChild
+        relatedDiagrams="//@diagram">
+      <domainMetaElement
+          href="Maze.ecore#//MazeBodyGenerator"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="Maze.gmfgraph#MazeBodyGeneratorLabel"/>
+        <features
+            href="Maze.ecore#//MazeBodyGenerator/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="Maze.gmftool#//@palette/@tools.0/@tools.6"/>
+      <diagramNode
+          href="Maze.gmfgraph#MazeBodyGenerator"/>
+      <children
+          compartment="//@nodes.3/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.2/@ownedChild/@children.2/@ownedChild">
+        <containmentFeature
+            href="Maze.ecore#//MazeBodyGenerator/dr"/>
+      </children>
+      <children
+          compartment="//@nodes.3/@ownedChild/@compartments.1"
+          referencedChild="//@nodes.2/@ownedChild/@children.1/@ownedChild">
+        <containmentFeature
+            href="Maze.ecore#//MazeBodyGenerator/sr"/>
+      </children>
+      <children
+          compartment="//@nodes.3/@ownedChild/@compartments.2"
+          referencedChild="//@nodes.2/@ownedChild/@children.0/@ownedChild">
+        <containmentFeature
+            href="Maze.ecore#//MazeBodyGenerator/tr"/>
+      </children>
+      <children
+          compartment="//@nodes.3/@ownedChild/@compartments.3">
+        <containmentFeature
+            href="Maze.ecore#//MazeBodyGenerator/er"/>
+        <ownedChild>
+          <domainMetaElement
+              href="Maze.ecore#//EndRate"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel
+                href="Maze.gmfgraph#EndRateLabel"/>
+            <features
+                href="Maze.ecore#//EndRate/name"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="Maze.gmftool#//@palette/@tools.0/@tools.4"/>
+          <diagramNode
+              href="Maze.gmfgraph#EndRate"/>
+        </ownedChild>
+      </children>
+      <compartments
+          children="//@nodes.3/@ownedChild/@children.0">
+        <compartment
+            href="Maze.gmfgraph#MazeBodyGeneratorDrCompartment"/>
+      </compartments>
+      <compartments
+          children="//@nodes.3/@ownedChild/@children.1">
+        <compartment
+            href="Maze.gmfgraph#MazeBodyGeneratorSrCompartment"/>
+      </compartments>
+      <compartments
+          children="//@nodes.3/@ownedChild/@children.2">
+        <compartment
+            href="Maze.gmfgraph#MazeBodyGeneratorTrCompartment"/>
+      </compartments>
+      <compartments
+          children="//@nodes.3/@ownedChild/@children.3">
+        <compartment
+            href="Maze.gmfgraph#MazeBodyGeneratorErCompartment"/>
       </compartments>
     </ownedChild>
   </nodes>
@@ -380,16 +389,32 @@
         xsi:type="gmfmap:DesignLabelMapping"
         readOnly="true">
       <diagramLabel
-          href="Maze.gmfgraph#RectangleGeneratorSpgExternalLabel"/>
+          href="Maze.gmfgraph#RectangleGeneratorFpgExternalLabel"/>
     </labelMappings>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="Maze.gmftool#//@palette/@tools.1/@tools.1"/>
+        href="Maze.gmftool#//@palette/@tools.1/@tools.0"/>
     <diagramLink
-        href="Maze.gmfgraph#RectangleGeneratorSpg"/>
+        href="Maze.gmfgraph#RectangleGeneratorFpg"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
-        href="Maze.ecore#//RectangleGenerator/spg"/>
+        href="Maze.ecore#//RectangleGenerator/fpg"/>
+  </links>
+  <links>
+    <labelMappings
+        xsi:type="gmfmap:DesignLabelMapping"
+        readOnly="true">
+      <diagramLabel
+          href="Maze.gmfgraph#ForcePatternGeneratorSpgExternalLabel"/>
+    </labelMappings>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="Maze.gmftool#//@palette/@tools.1/@tools.2"/>
+    <diagramLink
+        href="Maze.gmfgraph#ForcePatternGeneratorSpg"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="Maze.ecore#//ForcePatternGenerator/spg"/>
   </links>
   <links>
     <labelMappings
@@ -400,7 +425,7 @@
     </labelMappings>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="Maze.gmftool#//@palette/@tools.1/@tools.0"/>
+        href="Maze.gmftool#//@palette/@tools.1/@tools.1"/>
     <diagramLink
         href="Maze.gmfgraph#SolutionPathGeneratorMbg"/>
     <linkMetaFeature

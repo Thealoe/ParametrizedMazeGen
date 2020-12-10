@@ -58,6 +58,15 @@ public interface MazeFactory extends EFactory {
 	Rate createRate();
 
 	/**
+	 * Returns a new object of class '<em>Cell</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cell</em>'.
+	 * @generated
+	 */
+	MazeCell createMazeCell();
+
+	/**
 	 * Returns a new object of class '<em>Start Point</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,6 +85,15 @@ public interface MazeFactory extends EFactory {
 	EndPoint createEndPoint();
 
 	/**
+	 * Returns a new object of class '<em>Cell Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cell Point</em>'.
+	 * @generated
+	 */
+	CellPoint createCellPoint();
+
+	/**
 	 * Returns a new object of class '<em>Rectangle Generator</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -83,6 +101,15 @@ public interface MazeFactory extends EFactory {
 	 * @generated
 	 */
 	RectangleGenerator createRectangleGenerator();
+
+	/**
+	 * Returns a new object of class '<em>Force Pattern Generator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Force Pattern Generator</em>'.
+	 * @generated
+	 */
+	ForcePatternGenerator createForcePatternGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Solution Path Generator</em>'.
@@ -94,22 +121,13 @@ public interface MazeFactory extends EFactory {
 	SolutionPathGenerator createSolutionPathGenerator();
 
 	/**
-	 * Returns a new object of class '<em>Stack Maze Body Generator</em>'.
+	 * Returns a new object of class '<em>Body Generator</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Stack Maze Body Generator</em>'.
+	 * @return a new object of class '<em>Body Generator</em>'.
 	 * @generated
 	 */
-	StackMazeBodyGenerator createStackMazeBodyGenerator();
-
-	/**
-	 * Returns a new object of class '<em>Random Maze Body Generator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Random Maze Body Generator</em>'.
-	 * @generated
-	 */
-	RandomMazeBodyGenerator createRandomMazeBodyGenerator();
+	MazeBodyGenerator createMazeBodyGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Turn Rate</em>'.

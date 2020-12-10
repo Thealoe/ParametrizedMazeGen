@@ -15,9 +15,10 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link Maze.MazeDiagram#getRectangleGen <em>Rectangle Gen</em>}</li>
- *   <li>{@link Maze.MazeDiagram#getName <em>Name</em>}</li>
+ *   <li>{@link Maze.MazeDiagram#getForcePatternGen <em>Force Pattern Gen</em>}</li>
  *   <li>{@link Maze.MazeDiagram#getSolutionPathGen <em>Solution Path Gen</em>}</li>
  *   <li>{@link Maze.MazeDiagram#getMazeBodyGen <em>Maze Body Gen</em>}</li>
+ *   <li>{@link Maze.MazeDiagram#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see Maze.MazePackage#getMazeDiagram()
@@ -46,6 +47,28 @@ public interface MazeDiagram extends EObject {
 	 * @generated
 	 */
 	void setRectangleGen(RectangleGenerator value);
+
+	/**
+	 * Returns the value of the '<em><b>Force Pattern Gen</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Force Pattern Gen</em>' containment reference.
+	 * @see #setForcePatternGen(ForcePatternGenerator)
+	 * @see Maze.MazePackage#getMazeDiagram_ForcePatternGen()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	ForcePatternGenerator getForcePatternGen();
+
+	/**
+	 * Sets the value of the '{@link Maze.MazeDiagram#getForcePatternGen <em>Force Pattern Gen</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Force Pattern Gen</em>' containment reference.
+	 * @see #getForcePatternGen()
+	 * @generated
+	 */
+	void setForcePatternGen(ForcePatternGenerator value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

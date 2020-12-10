@@ -90,6 +90,12 @@ public class MazeSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case MazePackage.MAZE_CELL: {
+				MazeCell mazeCell = (MazeCell)theEObject;
+				T result = caseMazeCell(mazeCell);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case MazePackage.START_POINT: {
 				StartPoint startPoint = (StartPoint)theEObject;
 				T result = caseStartPoint(startPoint);
@@ -101,6 +107,13 @@ public class MazeSwitch<T> extends Switch<T> {
 				EndPoint endPoint = (EndPoint)theEObject;
 				T result = caseEndPoint(endPoint);
 				if (result == null) result = casePoint(endPoint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case MazePackage.CELL_POINT: {
+				CellPoint cellPoint = (CellPoint)theEObject;
+				T result = caseCellPoint(cellPoint);
+				if (result == null) result = casePoint(cellPoint);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -124,6 +137,12 @@ public class MazeSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case MazePackage.FORCE_PATTERN_GENERATOR: {
+				ForcePatternGenerator forcePatternGenerator = (ForcePatternGenerator)theEObject;
+				T result = caseForcePatternGenerator(forcePatternGenerator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case MazePackage.SOLUTION_PATH_GENERATOR: {
 				SolutionPathGenerator solutionPathGenerator = (SolutionPathGenerator)theEObject;
 				T result = caseSolutionPathGenerator(solutionPathGenerator);
@@ -133,20 +152,6 @@ public class MazeSwitch<T> extends Switch<T> {
 			case MazePackage.MAZE_BODY_GENERATOR: {
 				MazeBodyGenerator mazeBodyGenerator = (MazeBodyGenerator)theEObject;
 				T result = caseMazeBodyGenerator(mazeBodyGenerator);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case MazePackage.STACK_MAZE_BODY_GENERATOR: {
-				StackMazeBodyGenerator stackMazeBodyGenerator = (StackMazeBodyGenerator)theEObject;
-				T result = caseStackMazeBodyGenerator(stackMazeBodyGenerator);
-				if (result == null) result = caseMazeBodyGenerator(stackMazeBodyGenerator);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case MazePackage.RANDOM_MAZE_BODY_GENERATOR: {
-				RandomMazeBodyGenerator randomMazeBodyGenerator = (RandomMazeBodyGenerator)theEObject;
-				T result = caseRandomMazeBodyGenerator(randomMazeBodyGenerator);
-				if (result == null) result = caseMazeBodyGenerator(randomMazeBodyGenerator);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -243,6 +248,21 @@ public class MazeSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cell</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cell</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMazeCell(MazeCell object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Start Point</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -273,6 +293,21 @@ public class MazeSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cell Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cell Point</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCellPoint(CellPoint object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Rectangle Generator</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -284,6 +319,21 @@ public class MazeSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRectangleGenerator(RectangleGenerator object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Force Pattern Generator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Force Pattern Generator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseForcePatternGenerator(ForcePatternGenerator object) {
 		return null;
 	}
 
@@ -314,36 +364,6 @@ public class MazeSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseMazeBodyGenerator(MazeBodyGenerator object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Stack Maze Body Generator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Stack Maze Body Generator</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStackMazeBodyGenerator(StackMazeBodyGenerator object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Random Maze Body Generator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Random Maze Body Generator</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseRandomMazeBodyGenerator(RandomMazeBodyGenerator object) {
 		return null;
 	}
 
