@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mz:MazeDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mz="geodes.sms.maze">
+  <rectangleGen fpg="//@forcePatternGen">
+    <rc/>
+    <cc/>
+  </rectangleGen>
+  <forcePatternGen spg="//@solutionPathGen">
+    <mazeCells type="15">
+      <point x="5" y="5"/>
+    </mazeCells>
+  </forcePatternGen>
+  <solutionPathGen mbg="//@mazeBodyGen">
+    <tr/>
+    <sr/>
+    <dr/>
+    <sp/>
+    <ep/>
+  </solutionPathGen>
+  <mazeBodyGen>
+    <dr/>
+    <sr/>
+    <tr/>
+  </mazeBodyGen>
+</mz:MazeDiagram>
