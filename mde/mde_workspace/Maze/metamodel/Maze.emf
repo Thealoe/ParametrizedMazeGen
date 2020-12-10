@@ -22,6 +22,13 @@ class Rate {
 	attr int value;
 }
 
+class MazeCell {
+	attr int type;
+
+	@gmf.compartment
+	val Point[1] point;
+}
+
 @gmf.node(color="245,197,66", figure="rounded", label.icon="false", label="name", size="40,40")
 class StartPoint extends Point {
 	readonly id attr String name = "SP";
@@ -46,7 +53,7 @@ class RowCount extends Count {
 class RectangleGenerator {
 
 	@gmf.link(target.decoration="arrow", source.decoration="none", style="solid", color="0,0,0")
-	ref SolutionPathGenerator[1] spg;
+	ref ForcePatternGenerator[1] fpg;
 
 	@gmf.compartment
 	val RowCount[1] rc;
@@ -54,6 +61,17 @@ class RectangleGenerator {
 	@gmf.compartment
 	val ColumnCount[1] cc;
 	readonly id attr String name = "RGen";
+}
+
+@gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="name", size="100,40")
+class ForcePatternGenerator {
+
+	@gmf.link(target.decoration="arrow", source.decoration="none", style="solid", color="0,0,0")
+	ref SolutionPathGenerator[1] spg;
+
+	@gmf.compartment
+	val MazeCell[*] mazeCells;
+	readonly id attr String name = "FPGen";
 }
 
 @gmf.node(color="128,159,255", figure="rectangle", label.icon="false", label="name", size="100,40")
@@ -70,7 +88,7 @@ class SolutionPathGenerator {
 
 	@gmf.compartment
 	val DecisionsRate[1] dr;
-	
+
 	@gmf.compartment
 	val StartPoint[1] sp;
 
@@ -90,7 +108,7 @@ abstract class MazeBodyGenerator {
 
 	@gmf.compartment
 	val TurnRate[1] tr;
-	
+
 	@gmf.compartment
 	val EndRate[1] er;
 	readonly id attr String name = "MBGen";

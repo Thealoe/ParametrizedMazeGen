@@ -24,6 +24,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="Rate">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MazeCell">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="point" lowerBound="1" eType="#//Point"
+        containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StartPoint" eSuperTypes="#//Point">
     <eAnnotations source="gmf.node">
       <details key="color" value="245,197,66"/>
@@ -76,7 +83,7 @@
       <details key="label" value="name"/>
       <details key="size" value="100,40"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="spg" lowerBound="1" eType="#//SolutionPathGenerator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fpg" lowerBound="1" eType="#//ForcePatternGenerator">
       <eAnnotations source="gmf.link">
         <details key="target.decoration" value="arrow"/>
         <details key="source.decoration" value="none"/>
@@ -94,6 +101,29 @@
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         changeable="false" defaultValueLiteral="RGen" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ForcePatternGenerator">
+    <eAnnotations source="gmf.node">
+      <details key="color" value="128,159,255"/>
+      <details key="figure" value="rectangle"/>
+      <details key="label.icon" value="false"/>
+      <details key="label" value="name"/>
+      <details key="size" value="100,40"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="spg" lowerBound="1" eType="#//SolutionPathGenerator">
+      <eAnnotations source="gmf.link">
+        <details key="target.decoration" value="arrow"/>
+        <details key="source.decoration" value="none"/>
+        <details key="style" value="solid"/>
+        <details key="color" value="0,0,0"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mazeCells" upperBound="-1"
+        eType="#//MazeCell" containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="FPGen" iD="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SolutionPathGenerator">
     <eAnnotations source="gmf.node">

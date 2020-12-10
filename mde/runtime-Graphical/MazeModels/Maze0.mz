@@ -5,16 +5,16 @@
     <cc value="10"/>
   </rectangleGen>
   <solutionPathGen mbg="//@mazeBodyGen">
-    <tr/>
+    <tr value="10"/>
     <sr/>
-    <dr value="90"/>
+    <dr/>
     <sp/>
-    <ep x="8" y="8"/>
+    <ep/>
   </solutionPathGen>
   <mazeBodyGen xsi:type="mz:RandomMazeBodyGenerator">
-    <dr value="75"/>
-    <sr value="5"/>
-    <tr value="15"/>
-    <er value="5"/>
+    <dr/>
+    <sr/>
+    <tr value="10"/>
+    <er/>
   </mazeBodyGen>
 </mz:MazeDiagram>

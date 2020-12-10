@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 ## Generate
 
-Note you need to support Unicode 12.0 on your command line tool to use pretty=True option
+Make sure you support Unicode 12.0 on your command line tool to use pretty=True option
 
 ```bash
 python src/generate.py # Default pretty=True
