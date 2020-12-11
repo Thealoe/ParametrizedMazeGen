@@ -3,11 +3,13 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:mz="geodes.sms.maze">
-  <rectangleGen>
+  <rectangleGen
+      fpg="//@forcePatternGen">
     <rc value="11"/>
     <cc value="11"/>
   </rectangleGen>
-  <forcePatternGen>
+  <forcePatternGen
+      spg="//@solutionPathGen">
     <mazeCells
         type="15">
       <point
@@ -39,7 +41,8 @@
           y="6"/>
     </mazeCells>
   </forcePatternGen>
-  <solutionPathGen>
+  <solutionPathGen
+      mbg="//@mazeBodyGen">
     <tr value="5"/>
     <sr value="5"/>
     <dr value="90"/>
