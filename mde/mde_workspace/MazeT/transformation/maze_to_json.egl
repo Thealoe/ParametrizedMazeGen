@@ -3,8 +3,19 @@
 		"[%= self.rectangleGen.cc.name %]" : [%= self.rectangleGen.cc.value %],
 		"[%= self.rectangleGen.rc.name %]" : [%= self.rectangleGen.rc.value %]
 	},
-		"[%= self.forcePatternGen.name %]": {
-		"Hello" : "World!"
+	"[%= self.forcePatternGen.name %]": {
+		"mazeCells" : [
+		[% for (i in Sequence{0.. (self.forcePatternGen.mazeCells.size() - 1)}) { %]
+			{ 
+				"type" : "[%= self.forcePatternGen.mazeCells[i].type %]",
+				"point": [[%= self.forcePatternGen.mazeCells[i].point.x %], [%= self.forcePatternGen.mazeCells[i].point.y %]]
+			[% if (i != (self.forcePatternGen.mazeCells.size() - 1) ) { %]
+			},
+			[% } else { %]
+			}
+			[% } %]
+		[% } %]
+		]
 	},
 	"[%= self.solutionPathGen.name %]": {
 		"[%= self.solutionPathGen.sp.name %]" : [[%= self.solutionPathGen.sp.x %], [%= self.solutionPathGen.sp.y %]],
