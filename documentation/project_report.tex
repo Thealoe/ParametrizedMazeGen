@@ -70,8 +70,33 @@ MDE \sep Maze \sep Generator \sep Parametric \sep Python \sep Epsilon \sep DSL \
 
 \section{Introduction}
 
-\paragraph
-Ang Lorem Ipsum ay ginagamit na modelo ng industriya ng pagpriprint at pagtytypeset. Ang Lorem Ipsum ang naging regular na modelo simula pa noong 1500s, noong may isang di kilalang manlilimbag and kumuha ng galley ng type at ginulo ang pagkaka-ayos nito upang makagawa ng libro ng mga type specimen. Nalagpasan nito hindi lang limang siglo, kundi nalagpasan din nito ang paglaganap ng electronic typesetting at nanatiling parehas. Sumikat ito noong 1960s kasabay ng pag labas ng Letraset sheets na mayroong mga talata ng Lorem Ipsum, at kamakailan lang sa mga desktop publishing software tulad ng Aldus Pagemaker ginamit ang mga bersyon ng Lorem Ipsum. \cite{kim_design-centric_2019}.
+\paragraph{A}
+In the context of our Model-driven Engineering project assignment, I was charged to design a visual DSL to generate parametric mazes using a external Python program that I have also implemented. The goal of this project is to empower parameters understanding with the DSL and than produce probabilistic mazes. With this approach, anyone could generate maze with minimal or no engineering knowledge. Parametric maze generation is not a new concept, our approach was highly inspired by Design-Centric Maze Generation by Paul Hyunjin Kim and al\cite{kim_design-centric_2019}. From this paper we used the maze cells concept where each one of them represent a 3x3 tiles on the maze. We also used the same of types of rates (and more) as in the paper and used them with a probabilist approach. 
+
+\paragraph{B}
+(TODO) - Details of the sections presented
+
+\section{Solution}
+
+In this section, I give details on the solution choices used and the purposes behind theses.
+
+\subsection{DSL}
+
+The domain specific language represent the parameters used to generate the maze. Presented as a visual syntax in Figure \ref{fig:model}, it contains four types of generator. From left to right, generators are represented as blue rectangles: (1) \textit{RGen} is the first step of the maze generation, it gives the initial borders of the maze using a row count (\textit{RC}) and a column count (\textit{CC}) represented as red squares. (2) \textit{FPGen} inject maze cells in this initial shape to force pattern, it allows users to create drawing in the maze. It is represented as orangish square (\textit{Marked 15 with a CP}) where a point is defined inside of it. In this case we only force a single cell. (3) ... (TODO)
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{model.png}
+	\caption{A model instance from the DSL}
+	\label{fig:model}
+\end{figure}
+
+\subsection{Generator}
+
+\section{Evaluation}
+
+\section{Related Work}
+
+\section{Conclusion}
 
 \bibliography{mybibfile}
 
