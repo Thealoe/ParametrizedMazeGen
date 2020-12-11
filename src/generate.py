@@ -16,7 +16,8 @@ def generate(parameters, pretty):
     maze_grid = MazeGrid(cell_feeder, parameters.get_rectangle_row_count(), parameters.get_rectangle_column_count())
 
     # Generate forced pattern
-    maze_grid.generate_forced_pattern()
+    fp_cells = parameters.get_force_pattern_cells()
+    maze_grid.generate_forced_pattern(fp_cells)
 
     # Generate solution path
     sp_sr = parameters.get_solution_path_straight_rate()

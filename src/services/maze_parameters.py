@@ -1,3 +1,5 @@
+from services.cell_param import CellParam
+
 class MazeParameters():
     def __init__(self, params):
         self.parameters = params
@@ -9,6 +11,15 @@ class MazeParameters():
 
     def get_rectangle_column_count(self):
         return self.parameters['RGen']['CC']
+
+    # Force pattern generator
+
+    def get_force_pattern_cells(self):
+        ret = []
+        for c in self.parameters['FPGen']['mazeCells']:
+            ret.append(CellParam(c['type'], c['point'][0], c['point'][1]))
+        return ret
+
 
     # Solution path generator
 

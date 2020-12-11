@@ -73,7 +73,13 @@ class MazeGrid():
 
             # Get cell type based on rate probability
             cell_types = self.__get_intersect_values_list(cell_types, direction_types)
-            cell_type = int(self.__get_weighted_cell_type(rate_dict, cell_types))
+
+            cell_types = self.__get_weighted_cell_type(rate_dict, cell_types)
+
+            if len(cell_types) == 0:
+                cell_types = [int(random.choice(direction_types))]
+
+            cell_type = int(random.choice(cell_types))
 
             # print("====================================")
             # print("Current cell: {} (x) - {} (y)".format(current_cell.x, current_cell.y))
@@ -119,9 +125,11 @@ class MazeGrid():
         min_key = min(distances, key=distances.get)
         return min_key, cells[min_key]
 
-    def generate_forced_pattern(self):
-        # TODO: Generated forced pattern based on params
-        pass
+    def generate_forced_pattern(self, forced_cells):
+        for c in forced_cells:
+            cell = self.at(c.x, c.y)
+            cell.info.type = int(c.cell_type)
+            cell.visited = True
 
     def generate_sequential_body(self, end, straight, turn, decision):
         # Build rate dictionary
@@ -134,7 +142,8 @@ class MazeGrid():
                 cell = self.at(x, y)
                 if (cell.visited == False):
                     cell_types = self.__get_next_possible_cell_types(cell)
-                    cell_type = int(self.__get_weighted_cell_type(rate_dict, cell_types))
+                    cell_types = self.__get_weighted_cell_type(rate_dict, cell_types)
+                    cell_type = int(random.choice(cell_types))
                     cell.info.type = cell_type
 
                     # print("=========================================================")
@@ -184,6 +193,8 @@ class MazeGrid():
 
     # Return a cell type based on available type and a rate random decision based on weights
     def __get_weighted_cell_type(self, rate_dict, available_type_integers):
+        print("================")
+        print(available_type_integers)
         res = []
         attempts = 0
         while not res:
@@ -191,8 +202,11 @@ class MazeGrid():
                 res = available_type_integers
                 break
             res = self.__get_weighted_cell_type_internal(rate_dict, available_type_integers)
+            if res:
+                if len(res) > 0:
+                    break
             attempts += 1
-        return random.choice(res)
+        return res
 
     def __get_weighted_cell_type_internal(self, rate_dict, available_type_integers):
         sorted_rate_dict = {k: v for k, v in sorted(rate_dict.items(), key=lambda item: item[1])}
