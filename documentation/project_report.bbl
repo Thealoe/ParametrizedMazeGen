@@ -5,16 +5,14 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
-\bibitem{Feynman1963118}
-R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting
-  with a linear dissipative system, Annals of Physics 24 (1963) 118--173.
-\newblock \href {http://dx.doi.org/10.1016/0003-4916(63)90068-X}
-  {\path{doi:10.1016/0003-4916(63)90068-X}}.
-
-\bibitem{Dirac1953888}
-P.~Dirac, The lorentz transformation and absolute time, Physica 19~(1-–12)
-  (1953) 888--896.
-\newblock \href {http://dx.doi.org/10.1016/S0031-8914(53)80099-6}
-  {\path{doi:10.1016/S0031-8914(53)80099-6}}.
+\bibitem{kim_design-centric_2019}
+P.~H. Kim, J.~Grove, S.~Wurster, R.~Crawfis,
+  \href{https://doi.org/10.1145/3337722.3341854}{Design-centric maze
+  generation}, in: Proceedings of the 14th International Conference on the
+  Foundations of Digital Games, {FDG} '19, Association for Computing Machinery,
+  pp. 1--9.
+\newblock \href {http://dx.doi.org/10.1145/3337722.3341854}
+  {\path{doi:10.1145/3337722.3341854}}.
+\newline\urlprefix\url{https://doi.org/10.1145/3337722.3341854}
 
 \end{thebibliography}
