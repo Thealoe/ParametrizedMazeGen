@@ -60,13 +60,13 @@ python src/generate.py pretty=False
 
 ### Pretty Output Example
 
-![alt text](doc/pretty_output.png "Output")
+![alt text](documentation/pretty_output.png "Output")
 
 ### Types of Maze Cells
 
 Here an image of all 16 possible maze types that are used during generation.
 
-![alt text](doc/cells.jpg "Maze cell types")
+![alt text](documentation/cells.jpg "Maze cell types")
 
 ## Model-driven Engineering
 
