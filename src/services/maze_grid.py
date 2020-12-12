@@ -141,20 +141,20 @@ class MazeGrid():
             for y in range(0, self.col_count):
                 cell = self.at(x, y)
                 if (cell.visited == False):
-                    cell_types = self.__get_next_possible_cell_types(cell)
-                    cell_types = self.__get_weighted_cell_type(rate_dict, cell_types)
-                    cell_type = int(random.choice(cell_types))
-                    cell.info.type = cell_type
-
                     # print("=========================================================")
                     # print("Iteration --> x: {} | y: {} ".format(x, y))
                     # print("Cell --> x: {} | y: {} ".format(cell.x, cell.y))
-                    # print("Cell.info.allowed.left --> type: {}".format(left_of_cell))
-                    # print("Cell.info.allowed.up --> type: {}".format(up_of_cell))
-                    # print("Cell.info.allowed.right --> type: {}".format(right_of_cell))
-                    # print("Cell.info.allowed.down --> type: {}".format(down_of_cell))
-                    # print("Weight dict: {}".format(rate_dict))
-                    # print("Allowed type list: {}".format(available_type_integers))
+
+                    cell_types = self.__get_next_possible_cell_types(cell)
+                    # print("Possible cells types list: {}".format(cell_types))
+
+                    cell_types = self.__get_weighted_cell_type(rate_dict, cell_types)
+                    # print("Rated cells types list: {}".format(cell_types))
+
+                    cell_type = int(random.choice(cell_types))
+                    cell.info.type = cell_type
+
+                    # print("Final cell types list: {}".format(cell_types))
                     # print("=========================================================")
 
     # Gives all the cell types possibilities of a given cell validating with neighbor cells
@@ -193,8 +193,6 @@ class MazeGrid():
 
     # Return a cell type based on available type and a rate random decision based on weights
     def __get_weighted_cell_type(self, rate_dict, available_type_integers):
-        print("================")
-        print(available_type_integers)
         res = []
         attempts = 0
         while not res:

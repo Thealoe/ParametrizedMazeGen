@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: project_report.aux
+The style file: elsarticle-num.bst
+Database file #1: mybibfile.bib
+Warning--empty year in kim_design-centric_2019
+You've used 1 entry,
+            2937 wiz_defined-function locations,
+            677 strings with 5412 characters,
+and the built_in function-call counts, 508 in all, are:
+= -- 46
+> -- 13
+< -- 1
++ -- 5
+- -- 4
+* -- 37
+:= -- 82
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 19
+empty$ -- 56
+format.name$ -- 5
+if$ -- 125
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 13
+num.names$ -- 1
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 16
+swap$ -- 8
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 4
+width$ -- 2
+write$ -- 20
+(There was 1 warning)

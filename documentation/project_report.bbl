@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{kim_design-centric_2019}
+P.~H. Kim, J.~Grove, S.~Wurster, R.~Crawfis,
+  \href{https://doi.org/10.1145/3337722.3341854}{Design-centric maze
+  generation}, in: Proceedings of the 14th International Conference on the
+  Foundations of Digital Games, {FDG} '19, Association for Computing Machinery,
+  pp. 1--9.
+\newblock \href {http://dx.doi.org/10.1145/3337722.3341854}
+  {\path{doi:10.1145/3337722.3341854}}.
+\newline\urlprefix\url{https://doi.org/10.1145/3337722.3341854}
+
+\end{thebibliography}
