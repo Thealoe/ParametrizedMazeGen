@@ -15,4 +15,9 @@ P.~H. Kim, J.~Grove, S.~Wurster, R.~Crawfis,
   {\path{doi:10.1145/3337722.3341854}}.
 \newline\urlprefix\url{https://doi.org/10.1145/3337722.3341854}
 
+\bibitem{noauthor_eugenia_nodate}
+\href{https://www.eclipse.org/epsilon/doc/articles/eugenia-nodes-with-images/}{Eugenia:
+  Nodes with images instead of shapes - epsilon}.
+\newline\urlprefix\url{https://www.eclipse.org/epsilon/doc/articles/eugenia-nodes-with-images/}
+
 \end{thebibliography}

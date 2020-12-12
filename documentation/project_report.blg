@@ -3,46 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: project_report.aux
 The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
+Warning--entry type for "noauthor_eugenia_nodate" isn't style-file defined
+--line 35 of file mybibfile.bib
 Warning--empty year in kim_design-centric_2019
-You've used 1 entry,
+You've used 2 entries,
             2937 wiz_defined-function locations,
-            677 strings with 5412 characters,
-and the built_in function-call counts, 508 in all, are:
-= -- 46
-> -- 13
+            680 strings with 5560 characters,
+and the built_in function-call counts, 665 in all, are:
+= -- 57
+> -- 14
 < -- 1
-+ -- 5
++ -- 6
 - -- 4
-* -- 37
-:= -- 82
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 1
+* -- 43
+:= -- 96
+add.period$ -- 3
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 19
-empty$ -- 56
+cite$ -- 3
+duplicate$ -- 27
+empty$ -- 84
 format.name$ -- 5
-if$ -- 125
+if$ -- 173
 int.to.chr$ -- 0
-int.to.str$ -- 1
+int.to.str$ -- 2
 missing$ -- 1
-newline$ -- 13
+newline$ -- 17
 num.names$ -- 1
-pop$ -- 9
+pop$ -- 18
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 31
+skip$ -- 45
 stack$ -- 0
 substring$ -- 16
-swap$ -- 8
+swap$ -- 9
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
 while$ -- 4
-width$ -- 2
-write$ -- 20
-(There was 1 warning)
+width$ -- 3
+write$ -- 26
+(There were 2 warnings)

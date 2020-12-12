@@ -77,11 +77,19 @@ In the context of our Model-driven Engineering project assignment, I was charged
 (TODO) - Details of the sections presented
 
 \section{Solution}
+In the following sections, I give details on the solution choices used and the purposes behind theses.
 
-In this section, I give details on the solution choices used and the purposes behind theses.
+\subsection{Overview}
+The project is split into two very distinct part: (1) MDE and (2) Generation. To give a good synopsis of the project, I provided Figure \ref{fig:overview} to grasp how it was build. We can observe the purple part to be MDE related and the yellow part to be Software Engineering related. The pipeline of the project is structured as follow: (1) Build the Meta-model. (2) Generate \textit{Emfactic} sources and designed the DSL semantic. (3) Create a dynamic instance of the root object. (4) Define transformation. (5) Produce a JSON valid output from this M2T transformation. (5) Fetch the data with the Generator program. (6) Last but not least, generate the maze output.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{overview.png}
+	\caption{Pipeline of the project}
+	\label{fig:overview}
+\end{figure}
 
 \subsection{DSL}
-The domain specific language represent the parameters used to generate the maze. Presented as a visual syntax in Figure \ref{fig:model}, it contains four types of generator. From left to right, generators are represented as blue rectangles: (1) \textit{RGen} is the first step of the maze generation, it gives the initial borders of the maze using a row count (\textit{RC}) and a column count (\textit{CC}) represented as red squares. (2) \textit{FPGen} inject maze cells in this initial shape to force a pattern, it allows users to create drawing in the maze. Cells are represented as orangish square (\textit{Marked 15 with a CP}) where a point is defined inside of it. In Figure \ref{fig:model}, we only force a single cell. (3) \textit{SPGen} is the generation of a solution path with specific parameters, allowing to gives different behaviours from the general maze body. Used rates are represented as green circles. (4) \textit{MBGen} is the last step, the maze body generation. Using rates as green circles also. The main reason for choosing the visual, rather than textual, approach for the DSL  is for the representation of forced pattern cells in the maze where used is able to create more complex drawing.
+The domain specific language represent the parameters used to generate the maze. Presented as a visual syntax in Figure \ref{fig:model}, it contains four types of generator. From left to right, generators are represented as blue rectangles: (1) \textit{RGen} is the first step of the maze generation, it gives the initial borders of the maze using a row count (\textit{RC}) and a column count (\textit{CC}) represented as red squares. (2) \textit{FPGen} inject maze cells in this initial shape to force a pattern, it allows users to create drawing in the maze. Cells are represented as orangish square (\textit{Marked 15 with a CP}) where a point is defined inside of it. In Figure \ref{fig:model}, we only force a single cell. (3) \textit{SPGen} is the generation of a solution path with specific parameters, allowing to gives different behaviours from the general maze body. Used rates are represented as green circles. (4) \textit{MBGen} is the last step, the maze body generation. Using rates as green circles also. The main reason for choosing the visual, rather than textual, approach for the DSL  is for the representation of forced pattern cells in the maze where used is able to create more complex drawing. Based on Eugenia documentation\cite{noauthor_eugenia_nodate}, there is a way to integrate custom images into a DSL, after many hours of debugging, I was not able to do it, concluding this is probably a tool issue. My original idea was to integrate maze cells as in Figure \ref{fig:cells}.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{model.png}
@@ -90,12 +98,7 @@ The domain specific language represent the parameters used to generate the maze.
 \end{figure}
 
 \paragraph{Types of rate}
-The DSL uses 4 types of rates: (1) StraightRate marked as \textit{SR} that represent weight of straight path. (2) TurnRate marked as \textit{TR} that represent uni-directional turning path. (3) DecisionRate marked as \textit{DR} that represent bi-directional turns and crossroads. (4) EndRate marked as \textit{ER} that represent the famous dead-end, also known as  \textit{cul-de-sac}. Theses rate values will determine the behaviours of generation and will be used in a probabilist approach. A random number will be generated and is associated to a weighted value, it returns a list of cell types that represent this rate type. The list is than intersected with a possible neighbours list and a random cell is chosen as a type of cell.
-
-\subsubsection{Meta-model}
-As mentioned earlier, our DSL is a representation of different types of parameters to generate a maze. This generation is a sequential order of four steps: rectangle, forced patterns, solution path, maze body. The root Class of the meta-model is \textit{MazeDiagram} with mandatory attributes for the four generators steps. Three abstract Class are used here to encapsulated shared concepts between generators: (1) \textit{Count} with a integer attribute \textit{value} used by \textit{RectangleGenerator} to represent row and columns counts. (2) \textit{Point} used to locate forced maze cells on the grid for \textit{ForcePatternGenerator} and also to locate starting and ending point for \textit{SolutionPathGenerator} (3) \textit{Rate} to gives weight to probabilistic algorithms that defines the solution path and the maze body (\textit{SolutionPathGenerator, MazeBodyGenerator}). Note the EndRate is only used during the maze body generation as it doesn't makes sense to create solution path with no possible exit. The use of multiplicity \textit{1..1} almost everywhere made sure every parameters are contained in the graph, so parameters will be missing during the generation. Multiplicity for mazeCells is \textit{0..*} since forcing cells into the maze is an optional features
--> Present root object, link with generators (4), shared rates, abstract classes, end rate...
-
+The DSL uses 4 types of rates: (1) StraightRate marked as \textit{SR} that represent weight of straight path. (2) TurnRate marked as \textit{TR} that represent uni-directional turning path. (3) DecisionRate marked as \textit{DR} that represent bi-directional turns and crossroads, the higher the rate is more the player will have to make decision to find the correct path, making the maze more complex to solve. (4) EndRate marked as \textit{ER} that represent the famous dead-end, also known as  \textit{cul-de-sac}. The user apply weight on each rates, this will determine the behaviours of generation. Weight are used in a probabilist approach. More details on this process will be given in the Generator section.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{metamodel.png}
@@ -103,11 +106,32 @@ As mentioned earlier, our DSL is a representation of different types of paramete
 	\label{fig:metamodel}
 \end{figure}
 
+\subsubsection{Meta-model}
+As mentioned earlier, our DSL is a representation of different types of parameters to generate a maze. Meta-model is refereed in Figure \ref{fig:metamodel}. This generation is a sequential order of four steps: rectangle, forced patterns, solution path, maze body. The root Class of the meta-model is \textit{MazeDiagram} with mandatory attributes for the four generators steps. Three abstract Class are used here to encapsulated shared concepts between generators: (1) \textit{Count} with a integer attribute \textit{value} used by \textit{RectangleGenerator} to represent row and columns counts. (2) \textit{Point} used to locate forced maze cells on the grid for \textit{ForcePatternGenerator} and also to locate starting and ending point for \textit{SolutionPathGenerator} (3) \textit{Rate} to gives weight to probabilistic algorithms that defines the solution path and the maze body (\textit{SolutionPathGenerator, MazeBodyGenerator}). Note the EndRate is only used during the maze body generation as it doesn't makes sense to create solution path with no possible exit. The use of multiplicity \textit{1..1} almost everywhere made sure every parameters are contained in the graph, so parameters will be missing during the generation. Multiplicity for \textit{mazeCells} is \textit{0..*} since forcing cells into the maze is an optional features.
+
+\subsubsection{Model to Text Transformation }
+Using a valid model instance, we can produce a JSON file that is readable by the Generator. Once this file is produced using an EGL defined transformation the JSON is put into a folder where the Generator fetch data. No manual operations on the outputted file is needed.
 
 \subsection{Generator}
+Build as an external object oriented program in Python. As presented in the Figure \ref{fig:class_diagram}, the software hold four main parts: (1) \textit{Cell feeding services} used to provide cell instances during the generation process that are valid considering neighbours and rate type choice. \textit{AllowCellTypeFeeder} provides possible cells concerning the neighbours cells, \textit{CellRateTypeFeeder} gives set of cell that are of a given rate type (2) \textit{Cell} that is internal representation of Maze cells in the program. \textit{Cell} class contains information that are not subject to changes during the generation and \textit{CellInfo} contains changeable information. (3) \textit{Printing services} charged to gives readable output for the user. (4) \textit{Generation algorithms or the MazeGrid Class} for every phase of the generation as represented in the DSL.
 
-\paragraph{Maze cells}
-The generator uses a total of 16 maze cells types, as in Figure \ref{fig:cells}. Each cells have a list allowed neighbours, this list is computed in class \textit{AllowedCellTypeFeeder}. Generation algorithms will used this features to intersect will other desired cells types to make sure all cells can connect together at the end of the generation.
+\begin{figure}
+	\includegraphics[width=\linewidth]{class_diagram.png}
+	\caption{Class Diagram of the Python program}
+	\label{fig:class_diagram}
+\end{figure}
+
+\subsubsection{Determining next generated cell}
+There are five distinct parts to determine what will be the next generated cell in the maze. This process is roughly exposed in Figure \ref{fig:next_decision} and used for the solution path and the maze body generation steps, the steps are as follow: (1) Generate a list of possible cell types for the currently generated cell considering left, top, right, bottom neighbours (2) Use associated rate weights in the input JSON file to probabilistically determine what will be the next rate. (3) With this rate, generate a list of valid cell types (4) Intersect both list (5) Choose a random value within this list and assign the type to the currently generated cell.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{next_decision_formula.png}
+	\caption{Formula for the next cell generation}
+	\label{fig:next_decision}
+\end{figure}
+
+\subsubsection{Maze cells}
+The generator uses a total of 16 maze cells types, as in Figure \ref{fig:cells}. Each cells have a list allowed neighbours, this list is computed in class \textit{AllowedCellTypeFeeder}. Generation algorithms will used this features to intersect will other desired cells types to make sure all cells can connect together at the end of the generation as mentioned earlier. Each cells have associated rate to it, the class \textit{CellRateTypeFeeder} is meant to build those lists.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{maze_cells_clean.png}
@@ -115,7 +139,17 @@ The generator uses a total of 16 maze cells types, as in Figure \ref{fig:cells}.
 	\label{fig:cells}
 \end{figure}
 
+\subsubsection{Produced output}
+The output is produced on the user console where the Python program got executed. Figure \ref{fig:pretty_output} illustrate this output. Tiles are to be considered as follow: (1) \textit{Brown} are the walls, (2) \textit{Green} are the paths, (4) Blue is the player spawn point and (4) \textit{Red} is the target point the player wants to reach.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{pretty_output.png}
+	\caption{Maze output example}
+	\label{fig:pretty_output}
+\end{figure}
+
 \section{Evaluation}
+The goal of giving a more user-friendly orientation to generate maze is a success within my work, except for the maze cell design representation in the DSL. The Generator program is also capable to give distinct behaviour to the solution path and the maze body, giving personality to mazes. As shown in X and Y, we can clearly identify the solution as ..... ..... Difficulty dec, force pattern, missing constraints. Adademic scope, not industrial utility, maybe in gaming but propably already more complex verison exists (Go to windows to generate pictures)
 
 \section{Related Work}
 
