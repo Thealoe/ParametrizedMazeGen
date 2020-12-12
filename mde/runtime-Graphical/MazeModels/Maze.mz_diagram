@@ -150,7 +150,16 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fnp2RDtBEeu35uJoMfqIKw" x="5" y="11"/>
       </children>
     </children>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_In9nZDtBEeu35uJoMfqIKw" type="7013"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_In9nZDtBEeu35uJoMfqIKw" type="7013">
+      <children xmi:type="notation:Node" xmi:id="_DjBf0DyfEeuDP_speX5r-g" type="3013">
+        <children xmi:type="notation:DecorationNode" xmi:id="_DjCG4DyfEeuDP_speX5r-g" type="5016"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_DjBf0TyfEeuDP_speX5r-g"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_DjBf0jyfEeuDP_speX5r-g" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_DjBf0zyfEeuDP_speX5r-g"/>
+        <element xmi:type="mz:EndRate" href="Maze.mz#//@mazeBodyGen/@er"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DjBf1DyfEeuDP_speX5r-g" x="8" y="9"/>
+      </children>
+    </children>
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_In9AUTtBEeu35uJoMfqIKw"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_In9AUjtBEeu35uJoMfqIKw" fontName="Segoe UI"/>
     <styles xmi:type="notation:LineStyle" xmi:id="_In9AUztBEeu35uJoMfqIKw"/>
