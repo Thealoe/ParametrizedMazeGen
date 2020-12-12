@@ -66,7 +66,7 @@ python src/generate.py pretty=False
 
 Here an image of all 16 possible maze types that are used during generation.
 
-![alt text](documentation/maze_cells_clean.jpg "Maze cell types")
+![alt text](documentation/maze_cells_clean.png "Maze cell types")
 
 ## Model-driven Engineering
 
