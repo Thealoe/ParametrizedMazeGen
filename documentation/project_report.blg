@@ -5,46 +5,52 @@ The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
 Warning--entry type for "noauthor_eugenia_nodate" isn't style-file defined
 --line 35 of file mybibfile.bib
+Warning--entry type for "noauthor_maze_nodate" isn't style-file defined
+--line 49 of file mybibfile.bib
+Warning--entry type for "bouda_day_2017" isn't style-file defined
+--line 65 of file mybibfile.bib
 Warning--empty year in kim_design-centric_2019
-You've used 2 entries,
+Warning--empty journal in leroy_create_nodate
+Warning--empty year in leroy_create_nodate
+You've used 5 entries,
             2937 wiz_defined-function locations,
-            680 strings with 5560 characters,
-and the built_in function-call counts, 665 in all, are:
-= -- 57
-> -- 14
+            691 strings with 5940 characters,
+and the built_in function-call counts, 1243 in all, are:
+= -- 95
+> -- 35
 < -- 1
-+ -- 6
-- -- 4
-* -- 43
-:= -- 96
-add.period$ -- 3
-call.type$ -- 2
-change.case$ -- 2
++ -- 15
+- -- 10
+* -- 75
+:= -- 168
+add.period$ -- 6
+call.type$ -- 5
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 27
-empty$ -- 84
-format.name$ -- 5
-if$ -- 173
+cite$ -- 8
+duplicate$ -- 51
+empty$ -- 164
+format.name$ -- 12
+if$ -- 329
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 1
-newline$ -- 17
-num.names$ -- 1
-pop$ -- 18
+int.to.str$ -- 5
+missing$ -- 2
+newline$ -- 28
+num.names$ -- 3
+pop$ -- 44
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 45
+skip$ -- 89
 stack$ -- 0
-substring$ -- 16
-swap$ -- 9
+substring$ -- 19
+swap$ -- 11
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 4
-width$ -- 3
-write$ -- 26
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 7
+width$ -- 6
+write$ -- 45
+(There were 6 warnings)

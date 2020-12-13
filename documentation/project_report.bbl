@@ -20,4 +20,18 @@ P.~H. Kim, J.~Grove, S.~Wurster, R.~Crawfis,
   Nodes with images instead of shapes - epsilon}.
 \newline\urlprefix\url{https://www.eclipse.org/epsilon/doc/articles/eugenia-nodes-with-images/}
 
+\bibitem{noauthor_maze_nodate}
+\href{http://mazegenerator.net/}{Maze generator}.
+\newline\urlprefix\url{http://mazegenerator.net/}
+
+\bibitem{bouda_day_2017}
+T.~Bouda,
+  \href{https://medium.com/100-days-of-algorithms/day-84-maze-generation-634aaca67e34}{Day
+  84: Maze generation}.
+\newline\urlprefix\url{https://medium.com/100-days-of-algorithms/day-84-maze-generation-634aaca67e34}
+
+\bibitem{leroy_create_nodate}
+D.~Leroy, E.~Bousse, M.~Wimmer, B.~Combemale, W.~Schwinger, Create and play
+  your pac-man game with the {GEMOC} studio (tool demonstration)  7.
+
 \end{thebibliography}
