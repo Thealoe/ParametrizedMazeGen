@@ -121,12 +121,22 @@ Build as an external object oriented program in Python. As presented in the Figu
 \end{figure}
 
 \subsubsection{Determining next generated cell}
-There are five distinct parts to determine what will be the next generated cell in the maze. This process is roughly exposed in Figure \ref{fig:next_decision} and used for the solution path and the maze body generation steps, the steps are as follow: (1) Generate a list of possible cell types for the currently generated cell considering left, top, right, bottom neighbours (2) Use associated rate weights in the input JSON file to probabilistically determine what will be the next rate. (3) With this rate, generate a list of valid cell types (4) Intersect both list (5) Choose a random value within this list and assign the type to the currently generated cell.
+There are five distinct parts to determine what will be the next generated cell in the maze. This process is roughly exposed in Figure \ref{fig:next_decision} and used for the solution path and the maze body generation steps, it works as follow: (1) Generate a list of possible cell types for the currently generated cell considering left, top, right, bottom neighbours (2) Use associated rate weights in the input JSON file to probabilistically determine what will be the next rate. (3) With this rate, generate a list of valid cell types (4) Intersect both list (5) Choose a random value within this list and assign the type to the currently generated cell.
 
 \begin{figure}
-	\includegraphics[width=\linewidth]{next_decision_formula.png}
+	\includegraphics[width=75mm]{next_decision_formula.png}
+	\centering
 	\caption{Formula for the next cell generation}
 	\label{fig:next_decision}
+\end{figure}
+
+\subsubsection{Probabilistic decision example}
+The next decision for the rate is illustrated in Figure \ref{fig:prob_algo}. Vectors 'w's are the values used as weights. Theses are than sum and a random number is generated within this sum. The algorithm will return the rate type associated to the random value generated. This process is repeated every cell generation.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{prob_algo.png}
+	\caption{Illustration of the probabilist algorithm}
+	\label{fig:prob_algo}
 \end{figure}
 
 \subsubsection{Maze cells}

@@ -6,8 +6,9 @@
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Model to Text Transformation }{subsection.2.2}% 6
 \BOOKMARK [2][-]{subsection.2.3}{Generator}{section.2}% 7
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Determining next generated cell}{subsection.2.3}% 8
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Maze cells}{subsection.2.3}% 9
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Produced output}{subsection.2.3}% 10
-\BOOKMARK [1][-]{section.3}{Evaluation}{}% 11
-\BOOKMARK [1][-]{section.4}{Related Work}{}% 12
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Probabilistic decision example}{subsection.2.3}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Maze cells}{subsection.2.3}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Produced output}{subsection.2.3}% 11
+\BOOKMARK [1][-]{section.3}{Evaluation}{}% 12
+\BOOKMARK [1][-]{section.4}{Related Work}{}% 13
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 14
