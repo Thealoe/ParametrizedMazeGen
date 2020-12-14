@@ -97,7 +97,7 @@ The domain specific language represent the parameters used to generate the maze.
 \end{figure}
 
 \paragraph{Types of rate}
-The DSL uses 4 types of rates: (1) StraightRate marked as \textit{SR} that represent weight of straight path. (2) TurnRate marked as \textit{TR} that represent uni-directional turning path. (3) DecisionRate marked as \textit{DR} that represent bi-directional turns and crossroads, the higher the rate is more the player will have to make decision to find the correct path, making the maze more complex to solve. (4) EndRate marked as \textit{ER} that represent the famous dead-end, also known as  \textit{cul-de-sac}. The user apply weight on each rates, this will determine the behaviours of generation. Weight are used in a probabilist approach. More details on this process will be given in the Generator section.
+Rates are represented as weights. Each cell types are associated with a rate category. These weights will be used to define how much theses associated cells will be present in the maze. The higher weight value is, the more the associated cell with be in the maze. DSL uses 4 types of rates: (1) StraightRate marked as \textit{SR} that represent weight of straight path. (2) TurnRate marked as \textit{TR} that represent uni-directional turning path. (3) DecisionRate marked as \textit{DR} that represent bi-directional turns and crossroads. This rate allow user to make the maze more complex to solve. (4) EndRate marked as \textit{ER} that represent the famous dead-end, also known as  \textit{cul-de-sac}. Weight are used in a probabilist approach. More details on this process will be given in the Generator section.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{metamodel.png}
