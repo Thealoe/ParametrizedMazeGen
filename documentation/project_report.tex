@@ -131,7 +131,7 @@ There are five distinct parts to determine what will be the next generated cell 
 \end{figure}
 
 \subsubsection{Probabilistic decision example}
-The next decision for the rate is illustrated in Figure \ref{fig:prob_algo}. Vectors 'w's are the values used as weights. Theses are than sum and a random number is generated within this sum. The algorithm will return the rate type associated to the random value generated. This process is repeated every cell generation.
+The next decision for the rate is illustrated in Figure \ref{fig:prob_algo}. Vectors 'w's are the values used as weights. Than, theses numbers are summed and a random number is generated within this sum. The algorithm will return the rate type associated to the random value generated. This process is repeated every cell generation.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{prob_algo.png}
@@ -155,10 +155,10 @@ The generator uses a total of 16 maze cells types, as in Figure \ref{fig:cells}.
 \end{figure}
 
 \subsubsection{Produced output}
-The output is produced on the user console where the Python program got executed. Figure \ref{fig:pretty_output} illustrate this output. Tiles are to be considered as follow: (1) \textit{Brown} are the walls, (2) \textit{Green} are the paths, (4) Blue is the player spawn point and (4) \textit{Red} is the target point the player wants to reach.
+The output is produced on the user console where the Python program got executed. Figure \ref{fig:pretty_output} illustrate this output. Tiles are to be considered as follow: (1) \textit{Brown} are the walls, (2) \textit{Green} are the paths, (4) Blue is the player spawn point and (4) \textit{Red} is the target point player wants to reach.
 
 \section{Evaluation}
-The interesting part of this project is the MDE part since this is the real gain. Maze generation algorithm is nothing new in the world on computer science, this parameter-driven approach allow the justification of a DSL. This tool, with more work, could be used as an academic tool to learn about maze and the theory behind it, for example, we could try to find optimal parameters to output the most complex maze, or the easiest. We could also find how many decision a player as to do for finding the exit before considering the maze is not doable by a human being.
+The interesting part of this project is the MDE part since this is the real gain. Maze generation algorithm is nothing new in the world on computer science, this parameter-driven approach allow the justification of a DSL. This tool, with more work, could be used as an academic tool to learn about maze and the theory behind it, for example, we could try to find optimal parameters to output the most complex maze, or the easiest. We could also find how many decision a player as to do for finding the exit before considering the maze is not doable by a human being. It was interesting to discover how DSL could impact real problematic in the software engineering world and see they can cooperate within the same system.
 
 \begin{figure}
 	\includegraphics[width=50mm]{maze_diff.png}
